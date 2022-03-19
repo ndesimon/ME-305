@@ -1,0 +1,326 @@
+\hypertarget{_t_task_8py}{}\doxysection{TTask.\+py File Reference}
+\label{_t_task_8py}\index{TTask.py@{TTask.py}}
+
+
+Determines actuation for motor control.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_t_task_8py_a295f91f155ec4104e5f38b7fa5c132f5}{TTask.\+Touchpad\+Function}} (task\+Name, period, Pos, touch, alpha, betaf, abf\+Share)
+\begin{DoxyCompactList}\small\item\em Touchpad function that passes values for the balls positions and velocities. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_t_task_8py_af8ab8f62d158544bdf7f6ce4d7ab8fdc}{TTask.\+cal\+Info}} ()
+\item 
+def \mbox{\hyperlink{_t_task_8py_ab9f03924b94543575a25b5d17262a0f2}{TTask.\+get\+Ready}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_t_task_8py_a3868d3a5d620c249d5c6b3b47791767b}{TTask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_a5d16a70b531d1c09587bb9ac37462977}{TTask.\+S1\+\_\+\+RUN}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+RUN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_a281d5dacf03cf32281a061a3d14a6ece}{TTask.\+S2\+\_\+\+CALIB}} = micropython.\+const (2)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+CALIB. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_ae340d67482c43a772570e0e1063c01eb}{TTask.\+S3\+\_\+\+SAVE\+\_\+\+CAL\+\_\+\+COEFFS}} = micropython.\+const (3)
+\begin{DoxyCompactList}\small\item\em Creates a state called S3\+\_\+\+SAVE\+\_\+\+CAL\+\_\+\+COEFFS. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_aaac93be2a35df1a304b43c75733a446d}{TTask.\+S4\+\_\+\+WRITE\+\_\+\+CAL\+\_\+\+COEFFS}} = micropython.\+const (4)
+\begin{DoxyCompactList}\small\item\em Creates a state called S4\+\_\+\+WRITE\+\_\+\+CAL\+\_\+\+COEFFS. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_ab58a3d5bca15209b5fd725e8c0cf12ba}{TTask.\+CAL\+\_\+\+CENTER}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a variable for the center of the pad. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_a459412226052a1c6d034811a3adad814}{TTask.\+CAL\+\_\+\+TOP\+\_\+\+LEFT}} = micropython.\+const(1)
+\begin{DoxyCompactList}\small\item\em Creates a variable for the top left of the pad. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_a18366a450f6b788b9823f8b08ddc8905}{TTask.\+CAL\+\_\+\+TOP\+\_\+\+RIGHT}} = micropython.\+const(2)
+\begin{DoxyCompactList}\small\item\em Creates a variable for the top right of the pad. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_aa05e5cf9f8aca9a626d84a09cbc70d03}{TTask.\+CAL\+\_\+\+BOTTOM\+\_\+\+LEFT}} = micropython.\+const(3)
+\begin{DoxyCompactList}\small\item\em Creates a variable for the bottom left of the pad. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_t_task_8py_ad8981d37d05248e8b58a0694f525f6d4}{TTask.\+CAL\+\_\+\+BOTTOM\+\_\+\+RIGHT}} = micropython.\+const(4)
+\begin{DoxyCompactList}\small\item\em Creates a variable for the bottom right of the pad. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_t_task_8py_a53552309071867f72a8e39edb08e602e}\label{_t_task_8py_a53552309071867f72a8e39edb08e602e}} 
+\mbox{\hyperlink{_t_task_8py_a53552309071867f72a8e39edb08e602e}{TTask.\+xC}}
+\begin{DoxyCompactList}\small\item\em print(\textquotesingle{}head\+: \textquotesingle{} +str(head), \textquotesingle{}pitch\+: \textquotesingle{} +str(pitch), \textquotesingle{}roll\+: \textquotesingle{} +str(roll)) gyr\+Vel.\+write(BNO.\+get\+\_\+omega()) gyr\+\_\+x,gyr\+\_\+y,gyr\+\_\+z = gyr\+Vel.\+read() print(\textquotesingle{}ang\+\_\+vel\+\_\+x\+: \textquotesingle{} +str(gyr\+\_\+x), \textquotesingle{}ang\+\_\+vel\+\_\+y\+: \textquotesingle{} +str(gyr\+\_\+y), \textquotesingle{}ang\+\_\+vel\+\_\+z\+: \textquotesingle{} +str(gyr\+\_\+z)) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_t_task_8py_acfabf57220c1c9093d26f823c260570d}\label{_t_task_8py_acfabf57220c1c9093d26f823c260570d}} 
+{\bfseries TTask.\+yC}
+\item 
+\mbox{\Hypertarget{_t_task_8py_af1e2ae0685347449d3f5699d3e1d69cd}\label{_t_task_8py_af1e2ae0685347449d3f5699d3e1d69cd}} 
+{\bfseries TTask.\+zC}
+\item 
+\mbox{\Hypertarget{_t_task_8py_af2b911e5c1f5465bfb15ae22ca511bab}\label{_t_task_8py_af2b911e5c1f5465bfb15ae22ca511bab}} 
+{\bfseries TTask.\+xd}
+\item 
+\mbox{\Hypertarget{_t_task_8py_ac42d82a6a1aa7ce436529a2dc17480c7}\label{_t_task_8py_ac42d82a6a1aa7ce436529a2dc17480c7}} 
+{\bfseries TTask.\+yd}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a051e1f99e26eb24d9c0478a7b0031af9}\label{_t_task_8py_a051e1f99e26eb24d9c0478a7b0031af9}} 
+{\bfseries TTask.\+zF}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a60410ee57eea9c29e3856ca57f0c3ead}\label{_t_task_8py_a60410ee57eea9c29e3856ca57f0c3ead}} 
+{\bfseries TTask.\+c} = CAL\+\_\+\+TOP\+\_\+\+LEFT
+\item 
+\mbox{\Hypertarget{_t_task_8py_a807ad59c1b8b164d93b7486d8488bfd2}\label{_t_task_8py_a807ad59c1b8b164d93b7486d8488bfd2}} 
+{\bfseries TTask.\+x\+TL}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a076c917b4b123c292223973e78a9b22d}\label{_t_task_8py_a076c917b4b123c292223973e78a9b22d}} 
+{\bfseries TTask.\+y\+TL}
+\item 
+\mbox{\Hypertarget{_t_task_8py_ae21ab37de387040dbc0d5af222a2c8bf}\label{_t_task_8py_ae21ab37de387040dbc0d5af222a2c8bf}} 
+{\bfseries TTask.\+z\+TL}
+\item 
+\mbox{\Hypertarget{_t_task_8py_aad54817cce6277c111ee60f3a7af5051}\label{_t_task_8py_aad54817cce6277c111ee60f3a7af5051}} 
+{\bfseries TTask.\+x\+TR}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a41c17fa96f0d2233e781c5fd6da1243b}\label{_t_task_8py_a41c17fa96f0d2233e781c5fd6da1243b}} 
+{\bfseries TTask.\+y\+TR}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a51ac705b4b2c144792922b2b58258032}\label{_t_task_8py_a51ac705b4b2c144792922b2b58258032}} 
+{\bfseries TTask.\+z\+TR}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a01d16a7aeae3388b882296b90b013d32}\label{_t_task_8py_a01d16a7aeae3388b882296b90b013d32}} 
+{\bfseries TTask.\+x\+BL}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a963fd989aa5741d2c82c3e5faf55e006}\label{_t_task_8py_a963fd989aa5741d2c82c3e5faf55e006}} 
+{\bfseries TTask.\+y\+BL}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a24113f7f40c891dad53e065ade64a90b}\label{_t_task_8py_a24113f7f40c891dad53e065ade64a90b}} 
+{\bfseries TTask.\+z\+BL}
+\item 
+\mbox{\Hypertarget{_t_task_8py_aed4256c007f1b6505ecca61535a480c0}\label{_t_task_8py_aed4256c007f1b6505ecca61535a480c0}} 
+{\bfseries TTask.\+x\+BR}
+\item 
+\mbox{\Hypertarget{_t_task_8py_ad6e5e13946e54f4664bc93a19ebbc262}\label{_t_task_8py_ad6e5e13946e54f4664bc93a19ebbc262}} 
+{\bfseries TTask.\+y\+BR}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a3e9af45aff4df2763eaf2e4313743e08}\label{_t_task_8py_a3e9af45aff4df2763eaf2e4313743e08}} 
+{\bfseries TTask.\+z\+BR}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a642641c9e19fbe58d5d49c37823feaa6}\label{_t_task_8py_a642641c9e19fbe58d5d49c37823feaa6}} 
+{\bfseries TTask.\+state} = S3\+\_\+\+SAVE\+\_\+\+CAL\+\_\+\+COEFFS
+\item 
+\mbox{\Hypertarget{_t_task_8py_a287a17b9e15e4171924309b9278572ce}\label{_t_task_8py_a287a17b9e15e4171924309b9278572ce}} 
+{\bfseries TTask.\+X} = np.\+array(\mbox{[}\mbox{[}xC, yC, 1\mbox{]}, \mbox{[}x\+TL, y\+TL, 1\mbox{]}, \mbox{[}x\+TR, y\+TR, 1\mbox{]}, \mbox{[}x\+BL, y\+BL, 1\mbox{]}, \mbox{[}x\+BR, y\+BR, 1\mbox{]}\mbox{]})
+\item 
+\mbox{\Hypertarget{_t_task_8py_a48e7d453f71f83ea89c137d0d6fe3a53}\label{_t_task_8py_a48e7d453f71f83ea89c137d0d6fe3a53}} 
+{\bfseries TTask.\+X\+\_\+t} = X.\+transpose()
+\item 
+\mbox{\Hypertarget{_t_task_8py_a243bfcfa76098892a8b0cd88e2192285}\label{_t_task_8py_a243bfcfa76098892a8b0cd88e2192285}} 
+{\bfseries TTask.\+Y} = np.\+array(\mbox{[}\mbox{[}0, 0\mbox{]}, \mbox{[}-\/80, 40\mbox{]}, \mbox{[}80, 40\mbox{]}, \mbox{[}-\/80, -\/40\mbox{]}, \mbox{[}80, -\/40\mbox{]}\mbox{]})
+\item 
+\mbox{\Hypertarget{_t_task_8py_a8b3436c27e88cd8e1597ce546f63232a}\label{_t_task_8py_a8b3436c27e88cd8e1597ce546f63232a}} 
+{\bfseries TTask.\+X\+\_\+tX} = np.\+dot(X\+\_\+t, X)
+\item 
+\mbox{\Hypertarget{_t_task_8py_a8c98ce7d5137817fbdef947ef4e56612}\label{_t_task_8py_a8c98ce7d5137817fbdef947ef4e56612}} 
+{\bfseries TTask.\+X\+\_\+t\+X1} = np.\+linalg.\+inv(X\+\_\+tX)
+\item 
+\mbox{\Hypertarget{_t_task_8py_aa37075a9058aee541b3d9e1f6e117221}\label{_t_task_8py_aa37075a9058aee541b3d9e1f6e117221}} 
+{\bfseries TTask.\+X\+\_\+t\+X1\+\_\+\+X\+\_\+t} = np.\+dot(X\+\_\+t\+X1, X\+\_\+t)
+\item 
+\mbox{\Hypertarget{_t_task_8py_a93f9b14434b5950d0c43423e5500ad27}\label{_t_task_8py_a93f9b14434b5950d0c43423e5500ad27}} 
+{\bfseries TTask.\+beta} = np.\+dot(X\+\_\+t\+X1\+\_\+\+X\+\_\+t, Y)
+\item 
+\mbox{\Hypertarget{_t_task_8py_af1b345630bc2f4e9fc5442beeb6f3722}\label{_t_task_8py_af1b345630bc2f4e9fc5442beeb6f3722}} 
+{\bfseries TTask.\+Kxx} = beta\mbox{[}0\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a36d1caa0357a62d3d588113cd75cceb4}\label{_t_task_8py_a36d1caa0357a62d3d588113cd75cceb4}} 
+{\bfseries TTask.\+Kyx} = beta\mbox{[}0\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_ab9e6a1ba3c22a62f62d06bcbe0e86d9e}\label{_t_task_8py_ab9e6a1ba3c22a62f62d06bcbe0e86d9e}} 
+{\bfseries TTask.\+Kxy} = beta\mbox{[}1\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a8df4b88db0c5a04aa22c78c9f52cffad}\label{_t_task_8py_a8df4b88db0c5a04aa22c78c9f52cffad}} 
+{\bfseries TTask.\+Kyy} = beta\mbox{[}1\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a1603c2035fb332b248608b55577eb77f}\label{_t_task_8py_a1603c2035fb332b248608b55577eb77f}} 
+{\bfseries TTask.\+xo} = beta\mbox{[}2\mbox{]}\mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_ad85d0e392231957fe2cb730d0a548410}\label{_t_task_8py_ad85d0e392231957fe2cb730d0a548410}} 
+{\bfseries TTask.\+yo} = beta\mbox{[}2\mbox{]}\mbox{[}1\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a5c9c600d08c019f83ca4d3d613df610c}\label{_t_task_8py_a5c9c600d08c019f83ca4d3d613df610c}} 
+list {\bfseries TTask.\+buf} = \mbox{[}Kxx, Kxy, xo, Kyx, Kyy, yo\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_ad0f4f115dc1dc76db43c8b90b29db769}\label{_t_task_8py_ad0f4f115dc1dc76db43c8b90b29db769}} 
+{\bfseries TTask.\+filestring} = filestring\mbox{[}\+:-\/1\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_acf157c60b1bd36235ec006980fe3c4e5}\label{_t_task_8py_acf157c60b1bd36235ec006980fe3c4e5}} 
+{\bfseries TTask.\+t} = ticks\+\_\+us()
+\item 
+\mbox{\Hypertarget{_t_task_8py_a9fab639f5a9b4fd116fbe88fb2ae7717}\label{_t_task_8py_a9fab639f5a9b4fd116fbe88fb2ae7717}} 
+{\bfseries TTask.\+cal\+\_\+data\+\_\+string} = f.\+readline()
+\item 
+\mbox{\Hypertarget{_t_task_8py_a53f7753acb972dcc16187533ea85b103}\label{_t_task_8py_a53f7753acb972dcc16187533ea85b103}} 
+list {\bfseries TTask.\+cal\+\_\+values} = \mbox{[}float(cal\+\_\+value) for cal\+\_\+value in cal\+\_\+data\+\_\+string.\+strip().split(\textquotesingle{},\textquotesingle{})\mbox{]}
+\item 
+\mbox{\Hypertarget{_t_task_8py_a51726173471929b11cc023ff38676b81}\label{_t_task_8py_a51726173471929b11cc023ff38676b81}} 
+{\bfseries TTask.\+next\+\_\+time} = ticks\+\_\+add(next\+\_\+time, period)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Determines actuation for motor control. 
+
+This task computes the actuation for motors. It receives desired velocity values from the UTask, measured velocity values from the ETask, and sends the required duty cycle to the MTask. ~\newline
+
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab4/CTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab4/\+CTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03-\/18-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_t_task_8py_af8ab8f62d158544bdf7f6ce4d7ab8fdc}\label{_t_task_8py_af8ab8f62d158544bdf7f6ce4d7ab8fdc}} 
+\index{TTask.py@{TTask.py}!calInfo@{calInfo}}
+\index{calInfo@{calInfo}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{calInfo()}{calInfo()}}
+{\footnotesize\ttfamily def TTask.\+cal\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Prints IMU calibration instructions
+@details Prints three strings in a 3 second interval in order to inform the user\end{DoxyVerb}
+ \mbox{\Hypertarget{_t_task_8py_ab9f03924b94543575a25b5d17262a0f2}\label{_t_task_8py_ab9f03924b94543575a25b5d17262a0f2}} 
+\index{TTask.py@{TTask.py}!getReady@{getReady}}
+\index{getReady@{getReady}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{getReady()}{getReady()}}
+{\footnotesize\ttfamily def TTask.\+get\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Gives three ready statements as a buffer before calibration
+@details Prints three strings in a 3 second interval in order to inform the user\end{DoxyVerb}
+ \mbox{\Hypertarget{_t_task_8py_a295f91f155ec4104e5f38b7fa5c132f5}\label{_t_task_8py_a295f91f155ec4104e5f38b7fa5c132f5}} 
+\index{TTask.py@{TTask.py}!TouchpadFunction@{TouchpadFunction}}
+\index{TouchpadFunction@{TouchpadFunction}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{TouchpadFunction()}{TouchpadFunction()}}
+{\footnotesize\ttfamily def TTask.\+Touchpad\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{Pos,  }\item[{}]{touch,  }\item[{}]{alpha,  }\item[{}]{betaf,  }\item[{}]{abf\+Share }\end{DoxyParamCaption})}
+
+
+
+Touchpad function that passes values for the balls positions and velocities. 
+
+This function passes the values of the balls positions and velocities on the touch pad with respect to the center of the pad. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em Pos} & A tuple containing positions of the x,y,z direction. \\
+\hline
+{\em touch} & An object of the touchpad driver \\
+\hline
+{\em alpha} & A value for the alpha variable of the filtering \\
+\hline
+{\em betaf} & A value for the betaf variable of the filtering \\
+\hline
+{\em abfshare} & A shared parameter that indicates the position and velocities of the ball for filtering. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_task_8py_aa05e5cf9f8aca9a626d84a09cbc70d03}\label{_t_task_8py_aa05e5cf9f8aca9a626d84a09cbc70d03}} 
+\index{TTask.py@{TTask.py}!CAL\_BOTTOM\_LEFT@{CAL\_BOTTOM\_LEFT}}
+\index{CAL\_BOTTOM\_LEFT@{CAL\_BOTTOM\_LEFT}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{CAL\_BOTTOM\_LEFT}{CAL\_BOTTOM\_LEFT}}
+{\footnotesize\ttfamily TTask.\+CAL\+\_\+\+BOTTOM\+\_\+\+LEFT = micropython.\+const(3)}
+
+
+
+Creates a variable for the bottom left of the pad. 
+
+Variable will be the location in the bottom left used for calibration \mbox{\Hypertarget{_t_task_8py_ad8981d37d05248e8b58a0694f525f6d4}\label{_t_task_8py_ad8981d37d05248e8b58a0694f525f6d4}} 
+\index{TTask.py@{TTask.py}!CAL\_BOTTOM\_RIGHT@{CAL\_BOTTOM\_RIGHT}}
+\index{CAL\_BOTTOM\_RIGHT@{CAL\_BOTTOM\_RIGHT}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{CAL\_BOTTOM\_RIGHT}{CAL\_BOTTOM\_RIGHT}}
+{\footnotesize\ttfamily TTask.\+CAL\+\_\+\+BOTTOM\+\_\+\+RIGHT = micropython.\+const(4)}
+
+
+
+Creates a variable for the bottom right of the pad. 
+
+Variable will be the location in the bottom right used for calibration \mbox{\Hypertarget{_t_task_8py_ab58a3d5bca15209b5fd725e8c0cf12ba}\label{_t_task_8py_ab58a3d5bca15209b5fd725e8c0cf12ba}} 
+\index{TTask.py@{TTask.py}!CAL\_CENTER@{CAL\_CENTER}}
+\index{CAL\_CENTER@{CAL\_CENTER}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{CAL\_CENTER}{CAL\_CENTER}}
+{\footnotesize\ttfamily TTask.\+CAL\+\_\+\+CENTER = micropython.\+const(0)}
+
+
+
+Creates a variable for the center of the pad. 
+
+Variable will be the location in the center used for calibration \mbox{\Hypertarget{_t_task_8py_a459412226052a1c6d034811a3adad814}\label{_t_task_8py_a459412226052a1c6d034811a3adad814}} 
+\index{TTask.py@{TTask.py}!CAL\_TOP\_LEFT@{CAL\_TOP\_LEFT}}
+\index{CAL\_TOP\_LEFT@{CAL\_TOP\_LEFT}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{CAL\_TOP\_LEFT}{CAL\_TOP\_LEFT}}
+{\footnotesize\ttfamily TTask.\+CAL\+\_\+\+TOP\+\_\+\+LEFT = micropython.\+const(1)}
+
+
+
+Creates a variable for the top left of the pad. 
+
+Variable will be the location in the top left used for calibration \mbox{\Hypertarget{_t_task_8py_a18366a450f6b788b9823f8b08ddc8905}\label{_t_task_8py_a18366a450f6b788b9823f8b08ddc8905}} 
+\index{TTask.py@{TTask.py}!CAL\_TOP\_RIGHT@{CAL\_TOP\_RIGHT}}
+\index{CAL\_TOP\_RIGHT@{CAL\_TOP\_RIGHT}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{CAL\_TOP\_RIGHT}{CAL\_TOP\_RIGHT}}
+{\footnotesize\ttfamily TTask.\+CAL\+\_\+\+TOP\+\_\+\+RIGHT = micropython.\+const(2)}
+
+
+
+Creates a variable for the top right of the pad. 
+
+Variable will be the location in the top right used for calibration \mbox{\Hypertarget{_t_task_8py_a3868d3a5d620c249d5c6b3b47791767b}\label{_t_task_8py_a3868d3a5d620c249d5c6b3b47791767b}} 
+\index{TTask.py@{TTask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily TTask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{_t_task_8py_a5d16a70b531d1c09587bb9ac37462977}\label{_t_task_8py_a5d16a70b531d1c09587bb9ac37462977}} 
+\index{TTask.py@{TTask.py}!S1\_RUN@{S1\_RUN}}
+\index{S1\_RUN@{S1\_RUN}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_RUN}{S1\_RUN}}
+{\footnotesize\ttfamily TTask.\+S1\+\_\+\+RUN = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+RUN. 
+
+Variable will be the state 1 for reading and wriing values \mbox{\Hypertarget{_t_task_8py_a281d5dacf03cf32281a061a3d14a6ece}\label{_t_task_8py_a281d5dacf03cf32281a061a3d14a6ece}} 
+\index{TTask.py@{TTask.py}!S2\_CALIB@{S2\_CALIB}}
+\index{S2\_CALIB@{S2\_CALIB}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{S2\_CALIB}{S2\_CALIB}}
+{\footnotesize\ttfamily TTask.\+S2\+\_\+\+CALIB = micropython.\+const (2)}
+
+
+
+Creates a state called S2\+\_\+\+CALIB. 
+
+Variable will be the state 2 for calibrating the touchpad \mbox{\Hypertarget{_t_task_8py_ae340d67482c43a772570e0e1063c01eb}\label{_t_task_8py_ae340d67482c43a772570e0e1063c01eb}} 
+\index{TTask.py@{TTask.py}!S3\_SAVE\_CAL\_COEFFS@{S3\_SAVE\_CAL\_COEFFS}}
+\index{S3\_SAVE\_CAL\_COEFFS@{S3\_SAVE\_CAL\_COEFFS}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{S3\_SAVE\_CAL\_COEFFS}{S3\_SAVE\_CAL\_COEFFS}}
+{\footnotesize\ttfamily TTask.\+S3\+\_\+\+SAVE\+\_\+\+CAL\+\_\+\+COEFFS = micropython.\+const (3)}
+
+
+
+Creates a state called S3\+\_\+\+SAVE\+\_\+\+CAL\+\_\+\+COEFFS. 
+
+Variable will be the state 3 for storing the calibration coefficients \mbox{\Hypertarget{_t_task_8py_aaac93be2a35df1a304b43c75733a446d}\label{_t_task_8py_aaac93be2a35df1a304b43c75733a446d}} 
+\index{TTask.py@{TTask.py}!S4\_WRITE\_CAL\_COEFFS@{S4\_WRITE\_CAL\_COEFFS}}
+\index{S4\_WRITE\_CAL\_COEFFS@{S4\_WRITE\_CAL\_COEFFS}!TTask.py@{TTask.py}}
+\doxysubsubsection{\texorpdfstring{S4\_WRITE\_CAL\_COEFFS}{S4\_WRITE\_CAL\_COEFFS}}
+{\footnotesize\ttfamily TTask.\+S4\+\_\+\+WRITE\+\_\+\+CAL\+\_\+\+COEFFS = micropython.\+const (4)}
+
+
+
+Creates a state called S4\+\_\+\+WRITE\+\_\+\+CAL\+\_\+\+COEFFS. 
+
+Variable will be the state 4 for writing the calibration coefficients 

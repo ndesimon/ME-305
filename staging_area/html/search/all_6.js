@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['gather_44',['gather',['../class_u_i___encoder___task_1_1_u_i.html#ad6ac0bfc65a6f85c6fe53c238daeef58',1,'UI_Encoder_Task::UI']]],
+  ['get_45',['get',['../classshares_1_1_queue.html#a45835daf8ee60391cca9667a942ade25',1,'shares::Queue']]],
+  ['get_5factuation_46',['get_Actuation',['../classclosedloop_1_1_closed_loop.html#ad24ed6b0ba7a0b04e45d9265e99cde80',1,'closedloop.ClosedLoop.get_Actuation()'],['../classclosedloop5_1_1_closed_loop.html#afc536844efcc1da7a7fafa57cd1eda79',1,'closedloop5.ClosedLoop.get_Actuation()']]],
+  ['get_5fcal_5fcoeff_47',['get_cal_coeff',['../class_b_n_o055_1_1_b_n_o055.html#a0a5a424155e7216d0f052d4d285c7f21',1,'BNO055::BNO055']]],
+  ['get_5fcal_5fstatus_48',['get_cal_status',['../class_b_n_o055_1_1_b_n_o055.html#a3a2b8d7ed61c3483350ee6d31a823492',1,'BNO055::BNO055']]],
+  ['get_5fcalibration_5fcoeffs_49',['get_calibration_coeffs',['../class_i_m_u__driver_1_1_i_m_u___driver.html#aa0203dcf295ad4e7c1b7a7b9f278f706',1,'IMU_driver::IMU_Driver']]],
+  ['get_5fcalibration_5fstatus_50',['get_calibration_status',['../class_i_m_u__driver_1_1_i_m_u___driver.html#ada79803298840169fd45cf360f885ec8',1,'IMU_driver::IMU_Driver']]],
+  ['get_5fdelta_51',['get_delta',['../classencoder_1_1_encoder.html#a2f451b6cb3e85e03d45e0ac097e29a29',1,'encoder::Encoder']]],
+  ['get_5fdeltatime_52',['get_deltaTime',['../classencoder_1_1_encoder.html#aa34f4c02c82b48e615bdd5acdac8d37f',1,'encoder::Encoder']]],
+  ['get_5feuler_53',['get_euler',['../class_b_n_o055_1_1_b_n_o055.html#a1873696ee7301f1188f5cdbbeb1d1900',1,'BNO055::BNO055']]],
+  ['get_5fkp_54',['get_Kp',['../classclosedloop_1_1_closed_loop.html#aabfd126eb373a40747f7fd312ed0056c',1,'closedloop.ClosedLoop.get_Kp()'],['../classclosedloop5_1_1_closed_loop.html#a1fefaee78fe69f04ec4b2dd844ce8d06',1,'closedloop5.ClosedLoop.get_Kp()']]],
+  ['get_5fomega_55',['get_omega',['../class_b_n_o055_1_1_b_n_o055.html#a5cc089e83e452a99b718645047c07f43',1,'BNO055::BNO055']]],
+  ['get_5fposition_56',['get_position',['../classencoder_1_1_encoder.html#abc44b0bb3d2ee93571f00d6bab5e7c53',1,'encoder::Encoder']]],
+  ['get_5freference_57',['get_Reference',['../classclosedloop_1_1_closed_loop.html#a1e8661da077f6829bb7e784a3a52eb71',1,'closedloop.ClosedLoop.get_Reference()'],['../classclosedloop5_1_1_closed_loop.html#aa3762edb369caa4159237b040e942d52',1,'closedloop5.ClosedLoop.get_Reference()']]],
+  ['get_5fvel_58',['get_vel',['../classencoder_1_1_encoder.html#a2ef9460483583e201ebb6732c4ba2fa5',1,'encoder::Encoder']]],
+  ['getinput_59',['getInput',['../class_u_i___encoder___task_1_1_u_i.html#a3182d1f21aaa733c8f553471e6f97d77',1,'UI_Encoder_Task::UI']]],
+  ['getready_60',['getReady',['../classsimon_says_1_1simon_says.html#a4cc3c9dbe0ee1c321ed75968ebe287d0',1,'simonSays.simonSays.getReady()'],['../_i_m_u_task_8py.html#ab94be82619f8adc66716f98a23ea08e2',1,'IMUTask.getReady()'],['../_t_task_8py.html#ab9f03924b94543575a25b5d17262a0f2',1,'TTask.getReady()']]]
+];

@@ -1,0 +1,100 @@
+\hypertarget{_e_task_8py}{}\doxysection{ETask.\+py File Reference}
+\label{_e_task_8py}\index{ETask.py@{ETask.py}}
+
+
+Obtains data from the encoder.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_e_task_8py_a6b77e003d688a912281315698b841e96}{ETask.\+update\+Function}} (task\+Name, period, z\+Flag, enc\+Data, ENC1, delta\+Time, CLC)
+\begin{DoxyCompactList}\small\item\em Updates and zeros the encoder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_e_task_8py_a2cb100135fc5342eb90a55c9fedf9504}{ETask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_task_8py_a0dc288581a76113f5f67b9e62be758ef}{ETask.\+S1\+\_\+\+UPDATE}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+UPDATE. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_e_task_8py_a2f793dd33f4f525c9af30dae9786494b}{ETask.\+S2\+\_\+\+ZERO}} = micropython.\+const(2)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+ZERO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Obtains data from the encoder. 
+
+Constantly collects position, time, delta, and velocity values from the encoder. The state transition diagram for this task is depicted below\+: 
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab3/ETask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab3/\+ETask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/17-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_e_task_8py_a6b77e003d688a912281315698b841e96}\label{_e_task_8py_a6b77e003d688a912281315698b841e96}} 
+\index{ETask.py@{ETask.py}!updateFunction@{updateFunction}}
+\index{updateFunction@{updateFunction}!ETask.py@{ETask.py}}
+\doxysubsubsection{\texorpdfstring{updateFunction()}{updateFunction()}}
+{\footnotesize\ttfamily def ETask.\+update\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{z\+Flag,  }\item[{}]{enc\+Data,  }\item[{}]{ENC1,  }\item[{}]{delta\+Time,  }\item[{}]{CLC }\end{DoxyParamCaption})}
+
+
+
+Updates and zeros the encoder. 
+
+Collects all values from the encoder. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em z\+Flag} & A shared parameter that indicates if the \textquotesingle{}z\textquotesingle{} key has been pressed. \\
+\hline
+{\em enc\+Data} & A tuple containing time, position, and delta of the encoder. \\
+\hline
+{\em ENC1} & passes in the values from the encoder module. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_e_task_8py_a2cb100135fc5342eb90a55c9fedf9504}\label{_e_task_8py_a2cb100135fc5342eb90a55c9fedf9504}} 
+\index{ETask.py@{ETask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!ETask.py@{ETask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily ETask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{_e_task_8py_a0dc288581a76113f5f67b9e62be758ef}\label{_e_task_8py_a0dc288581a76113f5f67b9e62be758ef}} 
+\index{ETask.py@{ETask.py}!S1\_UPDATE@{S1\_UPDATE}}
+\index{S1\_UPDATE@{S1\_UPDATE}!ETask.py@{ETask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_UPDATE}{S1\_UPDATE}}
+{\footnotesize\ttfamily ETask.\+S1\+\_\+\+UPDATE = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+UPDATE. 
+
+Variable will be the state 1 for updating the program \mbox{\Hypertarget{_e_task_8py_a2f793dd33f4f525c9af30dae9786494b}\label{_e_task_8py_a2f793dd33f4f525c9af30dae9786494b}} 
+\index{ETask.py@{ETask.py}!S2\_ZERO@{S2\_ZERO}}
+\index{S2\_ZERO@{S2\_ZERO}!ETask.py@{ETask.py}}
+\doxysubsubsection{\texorpdfstring{S2\_ZERO}{S2\_ZERO}}
+{\footnotesize\ttfamily ETask.\+S2\+\_\+\+ZERO = micropython.\+const(2)}
+
+
+
+Creates a state called S2\+\_\+\+ZERO. 
+
+Variable will be the state 2 for zeroing the program 

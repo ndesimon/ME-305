@@ -1,0 +1,51 @@
+\hypertarget{namespacesimon_says}{}\doxysection{simon\+Says Namespace Reference}
+\label{namespacesimon_says}\index{simonSays@{simonSays}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsimon_says_1_1simon_says}{simon\+Says}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacesimon_says_a67d96663df15854e4461bde4a803f138}\label{namespacesimon_says_a67d96663df15854e4461bde4a803f138}} 
+\mbox{\hyperlink{namespacesimon_says_a67d96663df15854e4461bde4a803f138}{ready}} = input()
+\begin{DoxyCompactList}\small\item\em Waits for user to declare readiness for game start. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacesimon_says_a9e60a884961b7a9cb4bb2a2d50eebc1e}\label{namespacesimon_says_a9e60a884961b7a9cb4bb2a2d50eebc1e}} 
+\mbox{\hyperlink{namespacesimon_says_a9e60a884961b7a9cb4bb2a2d50eebc1e}{pin\+C13}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+C13)
+\begin{DoxyCompactList}\small\item\em Assign Pin C13 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacesimon_says_a10f27dd146ae8a7b034414d4d855b303}\label{namespacesimon_says_a10f27dd146ae8a7b034414d4d855b303}} 
+\mbox{\hyperlink{namespacesimon_says_a10f27dd146ae8a7b034414d4d855b303}{pin\+A5}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+A5)
+\begin{DoxyCompactList}\small\item\em Assign Pin A5 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacesimon_says_a5a437e905dc005bf8accf6bdb8490008}\label{namespacesimon_says_a5a437e905dc005bf8accf6bdb8490008}} 
+\mbox{\hyperlink{namespacesimon_says_a5a437e905dc005bf8accf6bdb8490008}{tim2}} = pyb.\+Timer(2, freq = 20000)
+\begin{DoxyCompactList}\small\item\em Timer for PWM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacesimon_says_a9286828ed2f269b3ffb0a2c006053d63}\label{namespacesimon_says_a9286828ed2f269b3ffb0a2c006053d63}} 
+\mbox{\hyperlink{namespacesimon_says_a9286828ed2f269b3ffb0a2c006053d63}{t2ch1}} = tim2.\+channel(1, pyb.\+Timer.\+PWM, pin=\mbox{\hyperlink{namespacesimon_says_a10f27dd146ae8a7b034414d4d855b303}{pin\+A5}})
+\begin{DoxyCompactList}\small\item\em Pulse Width Modulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacesimon_says_a73cd1289b4d3998168314bc45cefb075}\label{namespacesimon_says_a73cd1289b4d3998168314bc45cefb075}} 
+int \mbox{\hyperlink{namespacesimon_says_a73cd1289b4d3998168314bc45cefb075}{level}} = 0
+\begin{DoxyCompactList}\small\item\em Establish game play level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file    simonSays.py
+@brief   Displays Morse patterns on Nucleo LED and asks user to repeat them
+@details Implements a FSM, shown below, to create an interactive game for a
+         user. The game entails blinking of a Nucleo LED in morse code patterns,
+         whereupon the user is asked to repeat said pattern using the Nucleo's
+         blue button.
+
+         @image html simon_fsm.png
+                  
+         See source code here: 
+             https://bitbucket.org/ndesimon/me405_labs/src/master/Lab%203/
+             
+         See short demonstration video here:
+             https://drive.google.com/file/d/1Z7y6_3cOUfyDuwKpqxwhg9-7uB3f_5j9/view?usp=sharing
+
+@author         Nick De Simone
+@date           4/9/21
+@copyright      License Info Here
+\end{DoxyVerb}
+ 

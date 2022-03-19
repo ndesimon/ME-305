@@ -1,0 +1,99 @@
+\hypertarget{class_i_m_u__driver_1_1_i_m_u___driver}{}\doxysection{IMU\+\_\+driver.\+IMU\+\_\+\+Driver Class Reference}
+\label{class_i_m_u__driver_1_1_i_m_u___driver}\index{IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_i_m_u__driver_1_1_i_m_u___driver_a781f71dd796ecff70ff1e96af1e55594}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, id=0x28)
+\item 
+def \mbox{\hyperlink{class_i_m_u__driver_1_1_i_m_u___driver_a6b639eb3f27605e6cbd40e31dd4886c8}{change\+\_\+mode}} (self, mode\+\_\+value)
+\item 
+def \mbox{\hyperlink{class_i_m_u__driver_1_1_i_m_u___driver_ada79803298840169fd45cf360f885ec8}{get\+\_\+calibration\+\_\+status}} (self)
+\item 
+def \mbox{\hyperlink{class_i_m_u__driver_1_1_i_m_u___driver_aa0203dcf295ad4e7c1b7a7b9f278f706}{get\+\_\+calibration\+\_\+coeffs}} (self)
+\item 
+def \mbox{\hyperlink{class_i_m_u__driver_1_1_i_m_u___driver_acdd7d9a53110c59db576b14e030fae4f}{write\+\_\+calibration\+\_\+coeffs}} (self, b\+\_\+buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_a743b3fd0da9d4fbda10a15d6ce793b4d}\label{class_i_m_u__driver_1_1_i_m_u___driver_a743b3fd0da9d4fbda10a15d6ce793b4d}} 
+{\bfseries i2c}
+\item 
+\mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_a8b24af6683df840999e9d33525d390b9}\label{class_i_m_u__driver_1_1_i_m_u___driver_a8b24af6683df840999e9d33525d390b9}} 
+{\bfseries buff}
+\item 
+\mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_a7aa6520b4019acc767a37c2e4d028ddd}\label{class_i_m_u__driver_1_1_i_m_u___driver_a7aa6520b4019acc767a37c2e4d028ddd}} 
+{\bfseries id}
+\item 
+\mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_aa69d40161ca4b39747020616ebf8399d}\label{class_i_m_u__driver_1_1_i_m_u___driver_aa69d40161ca4b39747020616ebf8399d}} 
+\mbox{\hyperlink{class_i_m_u__driver_1_1_i_m_u___driver_aa69d40161ca4b39747020616ebf8399d}{mode}}
+\begin{DoxyCompactList}\small\item\em mode = dictionary of mode values Mode Value\+: Decimal Value return decimal value after specifying mode value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} @brief        Read and write with BNO055
+    @details
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_a781f71dd796ecff70ff1e96af1e55594}\label{class_i_m_u__driver_1_1_i_m_u___driver_a781f71dd796ecff70ff1e96af1e55594}} 
+\index{IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def IMU\+\_\+driver.\+IMU\+\_\+\+Driver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id = {\ttfamily 0x28} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} @brief
+    @details
+    @param 
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_a6b639eb3f27605e6cbd40e31dd4886c8}\label{class_i_m_u__driver_1_1_i_m_u___driver_a6b639eb3f27605e6cbd40e31dd4886c8}} 
+\index{IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}!change\_mode@{change\_mode}}
+\index{change\_mode@{change\_mode}!IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}}
+\doxysubsubsection{\texorpdfstring{change\_mode()}{change\_mode()}}
+{\footnotesize\ttfamily def IMU\+\_\+driver.\+IMU\+\_\+\+Driver.\+change\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mode\+\_\+value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} @brief      Change operating mode of IMU
+    @details    Writes specified operating mode to appropriate device/register address
+    @param mode_value Name of desired operating mode as a string
+    @return     none
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_aa0203dcf295ad4e7c1b7a7b9f278f706}\label{class_i_m_u__driver_1_1_i_m_u___driver_aa0203dcf295ad4e7c1b7a7b9f278f706}} 
+\index{IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}!get\_calibration\_coeffs@{get\_calibration\_coeffs}}
+\index{get\_calibration\_coeffs@{get\_calibration\_coeffs}!IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}}
+\doxysubsubsection{\texorpdfstring{get\_calibration\_coeffs()}{get\_calibration\_coeffs()}}
+{\footnotesize\ttfamily def IMU\+\_\+driver.\+IMU\+\_\+\+Driver.\+get\+\_\+calibration\+\_\+coeffs (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} @brief      Read current calibration coefficients
+    @details    Reads from appropriate register address into a bytearray
+    @return     buff
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_ada79803298840169fd45cf360f885ec8}\label{class_i_m_u__driver_1_1_i_m_u___driver_ada79803298840169fd45cf360f885ec8}} 
+\index{IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}!get\_calibration\_status@{get\_calibration\_status}}
+\index{get\_calibration\_status@{get\_calibration\_status}!IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}}
+\doxysubsubsection{\texorpdfstring{get\_calibration\_status()}{get\_calibration\_status()}}
+{\footnotesize\ttfamily def IMU\+\_\+driver.\+IMU\+\_\+\+Driver.\+get\+\_\+calibration\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} @brief      Read current calibration status
+    @details    Reads from appropriate register address
+    @return     Calibration Status
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_i_m_u__driver_1_1_i_m_u___driver_acdd7d9a53110c59db576b14e030fae4f}\label{class_i_m_u__driver_1_1_i_m_u___driver_acdd7d9a53110c59db576b14e030fae4f}} 
+\index{IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}!write\_calibration\_coeffs@{write\_calibration\_coeffs}}
+\index{write\_calibration\_coeffs@{write\_calibration\_coeffs}!IMU\_driver.IMU\_Driver@{IMU\_driver.IMU\_Driver}}
+\doxysubsubsection{\texorpdfstring{write\_calibration\_coeffs()}{write\_calibration\_coeffs()}}
+{\footnotesize\ttfamily def IMU\+\_\+driver.\+IMU\+\_\+\+Driver.\+write\+\_\+calibration\+\_\+coeffs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{b\+\_\+buffer }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} @brief      Writes specified calibration coefficients to the BNO055
+    @details    Writes a bytearray of coeff values to appropriate register address
+    @param b_buffer bytearray of desired calibration coefficients
+    @return     none
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+IMU\+\_\+driver.\+py\end{DoxyCompactItemize}

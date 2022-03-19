@@ -1,0 +1,160 @@
+\hypertarget{staging__area_2Lab_012_2LED__waves_8py}{}\doxysection{Lab 2/\+LED\+\_\+waves.py File Reference}
+\label{staging__area_2Lab_012_2LED__waves_8py}\index{Lab 2/LED\_waves.py@{Lab 2/LED\_waves.py}}
+
+
+Cycles through LED pulse patterns.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_ab2e983615b7894caa2fed550ccd52905}{LED\+\_\+waves.\+on\+Button\+Press\+FCN}} (IRQ\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Commands Nucleo upon button push. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_ad459c4f5cb904d6dcaa8d45adc65a14d}{LED\+\_\+waves.\+square\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs square wave LED pattern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_aa9e9a87633bc2c8c1e0ffaab246c5c6b}{LED\+\_\+waves.\+sine\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs sine wave LED pattern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a6361dcfb02b15da8a17138eb05249e34}{LED\+\_\+waves.\+saw\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs saw wave LED pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a5586352019554f64cf52c90dd54e940f}\label{staging__area_2Lab_012_2LED__waves_8py_a5586352019554f64cf52c90dd54e940f}} 
+bool {\bfseries LED\+\_\+waves.\+button\+Pushed} = False
+\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_aa43aa68fe821020af7b6d42c250ea6d6}\label{staging__area_2Lab_012_2LED__waves_8py_aa43aa68fe821020af7b6d42c250ea6d6}} 
+\mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_aa43aa68fe821020af7b6d42c250ea6d6}{LED\+\_\+waves.\+pin\+C13}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+C13)
+\begin{DoxyCompactList}\small\item\em Assign Pin C13 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a8514180ff5198524dc30f9be318fcb71}\label{staging__area_2Lab_012_2LED__waves_8py_a8514180ff5198524dc30f9be318fcb71}} 
+\mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a8514180ff5198524dc30f9be318fcb71}{LED\+\_\+waves.\+pin\+A5}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+A5)
+\begin{DoxyCompactList}\small\item\em Assign Pin A5 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a71593cc09f656e9248c24b8eacdce414}\label{staging__area_2Lab_012_2LED__waves_8py_a71593cc09f656e9248c24b8eacdce414}} 
+\mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a71593cc09f656e9248c24b8eacdce414}{LED\+\_\+waves.\+tim2}} = pyb.\+Timer(2, freq = 20000)
+\begin{DoxyCompactList}\small\item\em Timer for PWM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a461f6c0c58c18e4d87bd0eaa2a4b78e7}\label{staging__area_2Lab_012_2LED__waves_8py_a461f6c0c58c18e4d87bd0eaa2a4b78e7}} 
+\mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a461f6c0c58c18e4d87bd0eaa2a4b78e7}{LED\+\_\+waves.\+t2ch1}} = tim2.\+channel(1, pyb.\+Timer.\+PWM, pin=pin\+A5)
+\begin{DoxyCompactList}\small\item\em Pulse Width Modulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a8eb0f16f5ee3c10c0298fd1930073ae4}{LED\+\_\+waves.\+Button\+Int}}
+\begin{DoxyCompactList}\small\item\em External interrupt associated with button callback function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_ae9f3ab5883b6c0a1c9e49dbaab7dd1b3}\label{staging__area_2Lab_012_2LED__waves_8py_ae9f3ab5883b6c0a1c9e49dbaab7dd1b3}} 
+int \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_ae9f3ab5883b6c0a1c9e49dbaab7dd1b3}{LED\+\_\+waves.\+state}} = 0
+\begin{DoxyCompactList}\small\item\em The current state of the finite state machine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_ae6b4682ffa99b4706b9fa39d2c681f70}\label{staging__area_2Lab_012_2LED__waves_8py_ae6b4682ffa99b4706b9fa39d2c681f70}} 
+int \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_ae6b4682ffa99b4706b9fa39d2c681f70}{LED\+\_\+waves.\+time\+\_\+one}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for square wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_aeb479ba7467c5bd315868d0bdfe1867c}\label{staging__area_2Lab_012_2LED__waves_8py_aeb479ba7467c5bd315868d0bdfe1867c}} 
+int \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_aeb479ba7467c5bd315868d0bdfe1867c}{LED\+\_\+waves.\+time\+\_\+two}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for sine wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a096e3f9e303d6a5312559cef623162a9}\label{staging__area_2Lab_012_2LED__waves_8py_a096e3f9e303d6a5312559cef623162a9}} 
+int \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a096e3f9e303d6a5312559cef623162a9}{LED\+\_\+waves.\+time\+\_\+three}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for saw wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_acfa41294827841a9bb4434ba56970160}\label{staging__area_2Lab_012_2LED__waves_8py_acfa41294827841a9bb4434ba56970160}} 
+int \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_acfa41294827841a9bb4434ba56970160}{LED\+\_\+waves.\+duty}} = 0
+\begin{DoxyCompactList}\small\item\em Defines duty cycle for the desired waveform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_afb036c8f0de4298828126a7711152691}\label{staging__area_2Lab_012_2LED__waves_8py_afb036c8f0de4298828126a7711152691}} 
+int \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_afb036c8f0de4298828126a7711152691}{LED\+\_\+waves.\+time\+\_\+diff}} = 0
+\begin{DoxyCompactList}\small\item\em Calculates difference between current time and latest button push. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cycles through LED pulse patterns. 
+
+Implements finite state machine, shown below, and Nucleo blue user button to cycle through LED pulse patterns
+
+
+
+See source code here\+: \href{https://bitbucket.org/ndesimon/me405_labs/src/master/Lab\%202/}{\texttt{ https\+://bitbucket.\+org/ndesimon/me405\+\_\+labs/src/master/\+Lab\%202/}}
+
+See short demonstration video here\+: \href{https://drive.google.com/file/d/1gsICIg6rI42QG8VJxdCG4akqodxdDdyq/view?usp=sharing}{\texttt{ https\+://drive.\+google.\+com/file/d/1gs\+ICIg6r\+I42\+QG8\+VJxd\+CG4akqodxd\+Ddyq/view?usp=sharing}}
+
+\begin{DoxyAuthor}{Author}
+Nick De Simone 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/4/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+License Info Here 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_ab2e983615b7894caa2fed550ccd52905}\label{staging__area_2Lab_012_2LED__waves_8py_ab2e983615b7894caa2fed550ccd52905}} 
+\index{LED\_waves.py@{LED\_waves.py}!onButtonPressFCN@{onButtonPressFCN}}
+\index{onButtonPressFCN@{onButtonPressFCN}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{onButtonPressFCN()}{onButtonPressFCN()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+on\+Button\+Press\+FCN (\begin{DoxyParamCaption}\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+
+
+Commands Nucleo upon button push. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQ\+\_\+src} & Associated with button interrupt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a6361dcfb02b15da8a17138eb05249e34}\label{staging__area_2Lab_012_2LED__waves_8py_a6361dcfb02b15da8a17138eb05249e34}} 
+\index{LED\_waves.py@{LED\_waves.py}!sawWave@{sawWave}}
+\index{sawWave@{sawWave}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{sawWave()}{sawWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+saw\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs saw wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_aa9e9a87633bc2c8c1e0ffaab246c5c6b}\label{staging__area_2Lab_012_2LED__waves_8py_aa9e9a87633bc2c8c1e0ffaab246c5c6b}} 
+\index{LED\_waves.py@{LED\_waves.py}!sineWave@{sineWave}}
+\index{sineWave@{sineWave}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{sineWave()}{sineWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+sine\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs sine wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_ad459c4f5cb904d6dcaa8d45adc65a14d}\label{staging__area_2Lab_012_2LED__waves_8py_ad459c4f5cb904d6dcaa8d45adc65a14d}} 
+\index{LED\_waves.py@{LED\_waves.py}!squareWave@{squareWave}}
+\index{squareWave@{squareWave}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{squareWave()}{squareWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+square\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs square wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a8eb0f16f5ee3c10c0298fd1930073ae4}\label{staging__area_2Lab_012_2LED__waves_8py_a8eb0f16f5ee3c10c0298fd1930073ae4}} 
+\index{LED\_waves.py@{LED\_waves.py}!ButtonInt@{ButtonInt}}
+\index{ButtonInt@{ButtonInt}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{ButtonInt}{ButtonInt}}
+{\footnotesize\ttfamily LED\+\_\+waves.\+Button\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  pyb.ExtInt(pinC13, mode=pyb.ExtInt.IRQ\_FALLING,}
+\DoxyCodeLine{2                            pull=pyb.Pin.PULL\_NONE, callback=onButtonPressFCN)}
+
+\end{DoxyCode}
+
+
+External interrupt associated with button callback function. 
+

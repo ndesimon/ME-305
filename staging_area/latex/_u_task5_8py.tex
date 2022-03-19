@@ -1,0 +1,269 @@
+\hypertarget{_u_task5_8py}{}\doxysection{UTask5.\+py File Reference}
+\label{_u_task5_8py}\index{UTask5.py@{UTask5.py}}
+
+
+Creates the User\+Interface of the program.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_u_task5_8py_a36636100a03776b37bc525b0e0a03431}{UTask5.\+task\+User\+FCN}} (task\+Name, period, eul\+Ang, gyr\+Vel, duty1, duty2, Kp\+Share, Kd\+Share, Ki\+Share, Kp\+Out, Kd\+Out, Ki\+Out, w\+Flag, d\+Flag, DFlag, abf\+Share, y\+Share, YSHARE, y\+Flag)
+\begin{DoxyCompactList}\small\item\em Creates the user interface. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_u_task5_8py_a52b12726c4fc78abc249fd1fd0527410}{UTask5.\+print\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Creates the User Interface Display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_u_task5_8py_aa0d6aae25ccaa0c64691e47ea42155d5}{UTask5.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_aa5c005cd996815be9179f1f3ac88663c}{UTask5.\+S1\+\_\+\+CMD}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+CMD. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_ae12836cdd6896c66625c0714fe06f3a6}{UTask5.\+S2\+\_\+\+COLLECT}} = micropython.\+const(2)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+COLLECT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_a80d44323082ba22d40a0c0ae8b0500ab}{UTask5.\+S3\+\_\+\+PRINT\+\_\+\+DATA}} = micropython.\+const(3)
+\begin{DoxyCompactList}\small\item\em Creates a state called S3\+\_\+\+PRINT\+\_\+\+DATA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_add0aadbe37bc00370f538698af5a5037}{UTask5.\+S4\+\_\+\+DIGI\+\_\+\+IN}} = micropython.\+const(4)
+\begin{DoxyCompactList}\small\item\em Creates a state called S4\+\_\+\+DIGI\+\_\+\+IN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_aba9007108e2713e678cf238b742a38c7}{UTask5.\+k\+Press}} = micropython.\+const(5)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}y\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_a7f71557ea4108c680cefd51cb49a59f3}{UTask5.\+kd\+Press}} = micropython.\+const(6)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}k\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_ab7e1067826d83ef61d1b0615c799ba5f}{UTask5.\+ki\+Press}} = micropython.\+const(7)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}k\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_a606d8d200aa2e7c8bbc590cfa2ef7528}{UTask5.\+KPRESS}} = micropython.\+const(8)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}K\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_aea6d924f2f2fbb079df7c60ffa174154}{UTask5.\+KDPRESS}} = micropython.\+const(9)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}K\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_a08883e42f25626a0170be16eb97292a4}{UTask5.\+KIPRESS}} = micropython.\+const(10)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}K\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_a98abab0cc78413a17f260d3a6e38e5f7}{UTask5.\+y\+Press}} = micropython.\+const(11)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}y\textquotesingle{} has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task5_8py_aaa961eefc75fcd9a409cf8a5362f8135}{UTask5.\+YPRESS}} = micropython.\+const(12)
+\begin{DoxyCompactList}\small\item\em Variable that indicates whether \textquotesingle{}Y\textquotesingle{} has been pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the User\+Interface of the program. 
+
+The User Interface lists all possible ways in which the user can interact with the balancing platform. ~\newline
+
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab3/UTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab3/\+UTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03-\/18-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_task5_8py_a52b12726c4fc78abc249fd1fd0527410}\label{_u_task5_8py_a52b12726c4fc78abc249fd1fd0527410}} 
+\index{UTask5.py@{UTask5.py}!printHelp@{printHelp}}
+\index{printHelp@{printHelp}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{printHelp()}{printHelp()}}
+{\footnotesize\ttfamily def UTask5.\+print\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the User Interface Display. 
+
+Creates a stylsh display with all possible ways for user to interact with the encoder. \mbox{\Hypertarget{_u_task5_8py_a36636100a03776b37bc525b0e0a03431}\label{_u_task5_8py_a36636100a03776b37bc525b0e0a03431}} 
+\index{UTask5.py@{UTask5.py}!taskUserFCN@{taskUserFCN}}
+\index{taskUserFCN@{taskUserFCN}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{taskUserFCN()}{taskUserFCN()}}
+{\footnotesize\ttfamily def UTask5.\+task\+User\+FCN (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{eul\+Ang,  }\item[{}]{gyr\+Vel,  }\item[{}]{duty1,  }\item[{}]{duty2,  }\item[{}]{Kp\+Share,  }\item[{}]{Kd\+Share,  }\item[{}]{Ki\+Share,  }\item[{}]{Kp\+Out,  }\item[{}]{Kd\+Out,  }\item[{}]{Ki\+Out,  }\item[{}]{w\+Flag,  }\item[{}]{d\+Flag,  }\item[{}]{DFlag,  }\item[{}]{abf\+Share,  }\item[{}]{y\+Share,  }\item[{}]{YSHARE,  }\item[{}]{y\+Flag }\end{DoxyParamCaption})}
+
+
+
+Creates the user interface. 
+
+Creates the many functionalities required. Motor can be controlled and data can be collected. User is prompted as to what inputs are valid. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em eul\+Ang} & A tuple containing Euler angles head, pitch, and roll. \\
+\hline
+{\em gyr\+Vel} & A tuple containing angular velocity about X,Y, and Z. \\
+\hline
+{\em duty1} & A shared parameter that passes in the value for the duty cycle of motor 1. \\
+\hline
+{\em duty2} & A shared parameter that passes in the value for the duty cycle of motor 2. \\
+\hline
+{\em Kpshare} & A shared parameter that passes in the value for the gain of Kp. \\
+\hline
+{\em Kd\+Share} & A shared parameter that indicates the gain value Kd for the inner loop. \\
+\hline
+{\em Kishare} & A shared parameter that passes in the value for the gain of Ki. \\
+\hline
+{\em Kp\+Out} & A shared parameter that indicates the gain value Kp for the outer loop. \\
+\hline
+{\em Kd\+Out} & A shared parameter that indicates the gain value Kd for the outer loop. \\
+\hline
+{\em Ki\+Out} & A shared parameter that indicates the gain value Ki for the outer loop. \\
+\hline
+{\em w\+Flag} & A shared parameter that indicates if the closed loop control keys have been pressed. \\
+\hline
+{\em d\+Flag} & A shared parameter that indicates if the value for duty cycle of motor 1 is wanted. \\
+\hline
+{\em DFlag} & A shared parameter that indicates if the value for duty cycle of motor 2 is wanted. \\
+\hline
+{\em abfshare} & A shared parameter that indicates the position and velocities of the ball for filtering. \\
+\hline
+{\em y\+Share} & A shared parameter that passes in the value set motor angle 1. \\
+\hline
+{\em YSHARE} & A shared parameter that passes in the value set motor angle 2. \\
+\hline
+{\em y\+Flag} & A shared parameter that indicates if the set motor angle control keys have been pressed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_u_task5_8py_a7f71557ea4108c680cefd51cb49a59f3}\label{_u_task5_8py_a7f71557ea4108c680cefd51cb49a59f3}} 
+\index{UTask5.py@{UTask5.py}!kdPress@{kdPress}}
+\index{kdPress@{kdPress}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{kdPress}{kdPress}}
+{\footnotesize\ttfamily UTask5.\+kd\+Press = micropython.\+const(6)}
+
+
+
+Variable that indicates whether \textquotesingle{}k\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered a Kd for inner loop. \mbox{\Hypertarget{_u_task5_8py_aea6d924f2f2fbb079df7c60ffa174154}\label{_u_task5_8py_aea6d924f2f2fbb079df7c60ffa174154}} 
+\index{UTask5.py@{UTask5.py}!KDPRESS@{KDPRESS}}
+\index{KDPRESS@{KDPRESS}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{KDPRESS}{KDPRESS}}
+{\footnotesize\ttfamily UTask5.\+KDPRESS = micropython.\+const(9)}
+
+
+
+Variable that indicates whether \textquotesingle{}K\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered a Kd for outer loop. \mbox{\Hypertarget{_u_task5_8py_ab7e1067826d83ef61d1b0615c799ba5f}\label{_u_task5_8py_ab7e1067826d83ef61d1b0615c799ba5f}} 
+\index{UTask5.py@{UTask5.py}!kiPress@{kiPress}}
+\index{kiPress@{kiPress}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{kiPress}{kiPress}}
+{\footnotesize\ttfamily UTask5.\+ki\+Press = micropython.\+const(7)}
+
+
+
+Variable that indicates whether \textquotesingle{}k\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered a Ki for inner loop. \mbox{\Hypertarget{_u_task5_8py_a08883e42f25626a0170be16eb97292a4}\label{_u_task5_8py_a08883e42f25626a0170be16eb97292a4}} 
+\index{UTask5.py@{UTask5.py}!KIPRESS@{KIPRESS}}
+\index{KIPRESS@{KIPRESS}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{KIPRESS}{KIPRESS}}
+{\footnotesize\ttfamily UTask5.\+KIPRESS = micropython.\+const(10)}
+
+
+
+Variable that indicates whether \textquotesingle{}K\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered a Ki for outer loop. \mbox{\Hypertarget{_u_task5_8py_aba9007108e2713e678cf238b742a38c7}\label{_u_task5_8py_aba9007108e2713e678cf238b742a38c7}} 
+\index{UTask5.py@{UTask5.py}!kPress@{kPress}}
+\index{kPress@{kPress}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{kPress}{kPress}}
+{\footnotesize\ttfamily UTask5.\+k\+Press = micropython.\+const(5)}
+
+
+
+Variable that indicates whether \textquotesingle{}y\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered a setpoint in State 5. Allows State 5 to be used for multiple things. ~\newline
+
+
+y\+Press = micropython.\+const(4)
+
+Variable that indicates whether \textquotesingle{}k\textquotesingle{} has been pressed.
+
+Used to determine that user has entered a Kp for inner loop. ~\newline
+ \mbox{\Hypertarget{_u_task5_8py_a606d8d200aa2e7c8bbc590cfa2ef7528}\label{_u_task5_8py_a606d8d200aa2e7c8bbc590cfa2ef7528}} 
+\index{UTask5.py@{UTask5.py}!KPRESS@{KPRESS}}
+\index{KPRESS@{KPRESS}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{KPRESS}{KPRESS}}
+{\footnotesize\ttfamily UTask5.\+KPRESS = micropython.\+const(8)}
+
+
+
+Variable that indicates whether \textquotesingle{}K\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered a Kp for outer loop. \mbox{\Hypertarget{_u_task5_8py_aa0d6aae25ccaa0c64691e47ea42155d5}\label{_u_task5_8py_aa0d6aae25ccaa0c64691e47ea42155d5}} 
+\index{UTask5.py@{UTask5.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily UTask5.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{_u_task5_8py_aa5c005cd996815be9179f1f3ac88663c}\label{_u_task5_8py_aa5c005cd996815be9179f1f3ac88663c}} 
+\index{UTask5.py@{UTask5.py}!S1\_CMD@{S1\_CMD}}
+\index{S1\_CMD@{S1\_CMD}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{S1\_CMD}{S1\_CMD}}
+{\footnotesize\ttfamily UTask5.\+S1\+\_\+\+CMD = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+CMD. 
+
+Variable will be the state 1 for updating the program \mbox{\Hypertarget{_u_task5_8py_ae12836cdd6896c66625c0714fe06f3a6}\label{_u_task5_8py_ae12836cdd6896c66625c0714fe06f3a6}} 
+\index{UTask5.py@{UTask5.py}!S2\_COLLECT@{S2\_COLLECT}}
+\index{S2\_COLLECT@{S2\_COLLECT}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{S2\_COLLECT}{S2\_COLLECT}}
+{\footnotesize\ttfamily UTask5.\+S2\+\_\+\+COLLECT = micropython.\+const(2)}
+
+
+
+Creates a state called S2\+\_\+\+COLLECT. 
+
+Variable will be the state 3 for collecting data \mbox{\Hypertarget{_u_task5_8py_a80d44323082ba22d40a0c0ae8b0500ab}\label{_u_task5_8py_a80d44323082ba22d40a0c0ae8b0500ab}} 
+\index{UTask5.py@{UTask5.py}!S3\_PRINT\_DATA@{S3\_PRINT\_DATA}}
+\index{S3\_PRINT\_DATA@{S3\_PRINT\_DATA}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{S3\_PRINT\_DATA}{S3\_PRINT\_DATA}}
+{\footnotesize\ttfamily UTask5.\+S3\+\_\+\+PRINT\+\_\+\+DATA = micropython.\+const(3)}
+
+
+
+Creates a state called S3\+\_\+\+PRINT\+\_\+\+DATA. 
+
+Variable will be the state 4 for printing data. \mbox{\Hypertarget{_u_task5_8py_add0aadbe37bc00370f538698af5a5037}\label{_u_task5_8py_add0aadbe37bc00370f538698af5a5037}} 
+\index{UTask5.py@{UTask5.py}!S4\_DIGI\_IN@{S4\_DIGI\_IN}}
+\index{S4\_DIGI\_IN@{S4\_DIGI\_IN}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{S4\_DIGI\_IN}{S4\_DIGI\_IN}}
+{\footnotesize\ttfamily UTask5.\+S4\+\_\+\+DIGI\+\_\+\+IN = micropython.\+const(4)}
+
+
+
+Creates a state called S4\+\_\+\+DIGI\+\_\+\+IN. 
+
+Variable sets state where user inputs are evaluated as to whether they are valid duty cycles \mbox{\Hypertarget{_u_task5_8py_a98abab0cc78413a17f260d3a6e38e5f7}\label{_u_task5_8py_a98abab0cc78413a17f260d3a6e38e5f7}} 
+\index{UTask5.py@{UTask5.py}!yPress@{yPress}}
+\index{yPress@{yPress}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{yPress}{yPress}}
+{\footnotesize\ttfamily UTask5.\+y\+Press = micropython.\+const(11)}
+
+
+
+Variable that indicates whether \textquotesingle{}y\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered an angle for motor 1. \mbox{\Hypertarget{_u_task5_8py_aaa961eefc75fcd9a409cf8a5362f8135}\label{_u_task5_8py_aaa961eefc75fcd9a409cf8a5362f8135}} 
+\index{UTask5.py@{UTask5.py}!YPRESS@{YPRESS}}
+\index{YPRESS@{YPRESS}!UTask5.py@{UTask5.py}}
+\doxysubsubsection{\texorpdfstring{YPRESS}{YPRESS}}
+{\footnotesize\ttfamily UTask5.\+YPRESS = micropython.\+const(12)}
+
+
+
+Variable that indicates whether \textquotesingle{}Y\textquotesingle{} has been pressed. 
+
+Used to determine that user has entered an angle for motor 2. 

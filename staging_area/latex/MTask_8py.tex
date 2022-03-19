@@ -1,0 +1,90 @@
+\hypertarget{MTask_8py}{}\doxysection{MTask.\+py File Reference}
+\label{MTask_8py}\index{MTask.py@{MTask.py}}
+
+
+!  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{MTask_8py_aa1f0b87b201d96d79b43f1be24548e60}{MTask.\+motor\+Function}} (task\+Name, period, motor, duty\+Val)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{MTask_8py_a621ca386bd7d94f588b0fe811264bea3}{MTask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{MTask_8py_a1680015a8b661e881c72c80117907565}{MTask.\+S1\+\_\+\+WAIT}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+WAIT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+! 
+
+Allows control of individual motors.
+
+This task allows users to control the speed of individual motors by receiving user-\/inputted duty cycles from the UTask. The state transition diagram for this task is depicted below\+: 
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab3/MTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab3/\+MTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/17-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{MTask_8py_aa1f0b87b201d96d79b43f1be24548e60}\label{MTask_8py_aa1f0b87b201d96d79b43f1be24548e60}} 
+\index{MTask.py@{MTask.py}!motorFunction@{motorFunction}}
+\index{motorFunction@{motorFunction}!MTask.py@{MTask.py}}
+\doxysubsubsection{\texorpdfstring{motorFunction()}{motorFunction()}}
+{\footnotesize\ttfamily def MTask.\+motor\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{motor,  }\item[{}]{duty\+Val }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Generator function that passes the duty cycles to the motor.
+
+This function passes the duty cycle to the method setduty which then sends the value to the motor. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em motor} & A shared parameter that indicates which motor to work with. \\
+\hline
+{\em duty\+Val} & A shared parameter that indicates the value of th duty cycle. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{MTask_8py_a621ca386bd7d94f588b0fe811264bea3}\label{MTask_8py_a621ca386bd7d94f588b0fe811264bea3}} 
+\index{MTask.py@{MTask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!MTask.py@{MTask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily MTask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{MTask_8py_a1680015a8b661e881c72c80117907565}\label{MTask_8py_a1680015a8b661e881c72c80117907565}} 
+\index{MTask.py@{MTask.py}!S1\_WAIT@{S1\_WAIT}}
+\index{S1\_WAIT@{S1\_WAIT}!MTask.py@{MTask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_WAIT}{S1\_WAIT}}
+{\footnotesize\ttfamily MTask.\+S1\+\_\+\+WAIT = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+WAIT. 
+
+Variable will be the state 1 for waiting for the command 

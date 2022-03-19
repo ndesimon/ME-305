@@ -1,0 +1,141 @@
+\hypertarget{classDRV8847_1_1DRV8847}{}\doxysection{DRV8847.\+DRV8847 Class Reference}
+\label{classDRV8847_1_1DRV8847}\index{DRV8847.DRV8847@{DRV8847.DRV8847}}
+
+
+!  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classDRV8847_1_1DRV8847_a1edc2eb40f208f12c3e507dac0ffca00}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, timer, n\+SLEEP, n\+FAULT)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classDRV8847_1_1DRV8847_a57adaca9549fa5935979ff8f0bcdda13}{enable}} (self)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classDRV8847_1_1DRV8847_acd9dbef9212b3014eab18a57a6e0f13a}{disable}} (self)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classDRV8847_1_1DRV8847_a1b42a1831c397b58546a4261afd621ec}{fault\+\_\+cb}} (self, IRQ\+\_\+src)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classDRV8847_1_1DRV8847_a7c279d4bea9206340dc1661889e7e5af}{motor}} (self, InA, InB, ChX, ChY)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_a8dac50b1822893772cd5f71be80144ac}\label{classDRV8847_1_1DRV8847_a8dac50b1822893772cd5f71be80144ac}} 
+{\bfseries timer}
+\item 
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_aedae22eb42efbed4ef2608c52ff1e43a}\label{classDRV8847_1_1DRV8847_aedae22eb42efbed4ef2608c52ff1e43a}} 
+{\bfseries n\+SLEEP}
+\item 
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_ac1cf4b2c8547051b9f4aaf0a5e5f77c6}\label{classDRV8847_1_1DRV8847_ac1cf4b2c8547051b9f4aaf0a5e5f77c6}} 
+{\bfseries n\+FAULT}
+\item 
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_a853eca0a3ea190880403ef218a4f5268}\label{classDRV8847_1_1DRV8847_a853eca0a3ea190880403ef218a4f5268}} 
+{\bfseries Fault\+Int}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+! 
+
+A motor driver class for the \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}} from TI.
+
+Objects of this class can be used to configure the \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}} motor driver and to create one or more objects of the Motor class which can be used to perform motor control. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_a1edc2eb40f208f12c3e507dac0ffca00}\label{classDRV8847_1_1DRV8847_a1edc2eb40f208f12c3e507dac0ffca00}} 
+\index{DRV8847.DRV8847@{DRV8847.DRV8847}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!DRV8847.DRV8847@{DRV8847.DRV8847}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def DRV8847.\+DRV8847.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{timer,  }\item[{}]{n\+SLEEP,  }\item[{}]{n\+FAULT }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Initializes and returns a \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}} object.
+
+Creates a driver, which can control the enabling and disabling of the motor. 
+\begin{DoxyParams}{Parameters}
+{\em timer} & The value set for which timer to use \\
+\hline
+{\em n\+SLEEP} & Allows the motor to enable or disable \\
+\hline
+{\em n\+FAULT} & Recognizes if a fault occurs within the chip \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_acd9dbef9212b3014eab18a57a6e0f13a}\label{classDRV8847_1_1DRV8847_acd9dbef9212b3014eab18a57a6e0f13a}} 
+\index{DRV8847.DRV8847@{DRV8847.DRV8847}!disable@{disable}}
+\index{disable@{disable}!DRV8847.DRV8847@{DRV8847.DRV8847}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily def DRV8847.\+DRV8847.\+disable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Puts the \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}} in sleep mode.
+
+Disables \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}}, stopping any motor motion. \mbox{\Hypertarget{classDRV8847_1_1DRV8847_a57adaca9549fa5935979ff8f0bcdda13}\label{classDRV8847_1_1DRV8847_a57adaca9549fa5935979ff8f0bcdda13}} 
+\index{DRV8847.DRV8847@{DRV8847.DRV8847}!enable@{enable}}
+\index{enable@{enable}!DRV8847.DRV8847@{DRV8847.DRV8847}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily def DRV8847.\+DRV8847.\+enable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Brings the \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}} out of sleep mode.
+
+Enables \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}}. Temporarily disables fault triggering to fix a bug in which the sensor would fault upon enabling. \mbox{\Hypertarget{classDRV8847_1_1DRV8847_a1b42a1831c397b58546a4261afd621ec}\label{classDRV8847_1_1DRV8847_a1b42a1831c397b58546a4261afd621ec}} 
+\index{DRV8847.DRV8847@{DRV8847.DRV8847}!fault\_cb@{fault\_cb}}
+\index{fault\_cb@{fault\_cb}!DRV8847.DRV8847@{DRV8847.DRV8847}}
+\doxysubsubsection{\texorpdfstring{fault\_cb()}{fault\_cb()}}
+{\footnotesize\ttfamily def DRV8847.\+DRV8847.\+fault\+\_\+cb (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Callback function to run on fault condition.
+
+If a fault is triggered, this is the function that is called. This function gets \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}} to disable the motors. 
+\begin{DoxyParams}{Parameters}
+{\em IRQ\+\_\+src} & The source of the interrupt req \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDRV8847_1_1DRV8847_a7c279d4bea9206340dc1661889e7e5af}\label{classDRV8847_1_1DRV8847_a7c279d4bea9206340dc1661889e7e5af}} 
+\index{DRV8847.DRV8847@{DRV8847.DRV8847}!motor@{motor}}
+\index{motor@{motor}!DRV8847.DRV8847@{DRV8847.DRV8847}}
+\doxysubsubsection{\texorpdfstring{motor()}{motor()}}
+{\footnotesize\ttfamily def DRV8847.\+DRV8847.\+motor (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{InA,  }\item[{}]{InB,  }\item[{}]{ChX,  }\item[{}]{ChY }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Creates a DC motor object connected to the \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}}.
+
+Creates an object which the motor class can furth specify. Allows multiple motors to be controlled by just one \mbox{\hyperlink{classDRV8847_1_1DRV8847}{DRV8847}}. 
+\begin{DoxyParams}{Parameters}
+{\em InA} & The value of Pin A to be passed into the motor module \\
+\hline
+{\em InB} & The value of Pin B to be passed into the motor module \\
+\hline
+{\em ChX} & The value of Channel X to be passed into the motor module \\
+\hline
+{\em ChY} & The value of Channel Y to be passed into the motor module \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Motor() An object in which the motor class can further control 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DRV8847_8py}{DRV8847.\+py}}\end{DoxyCompactItemize}

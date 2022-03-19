@@ -1,0 +1,103 @@
+\hypertarget{staging__area_2LED__waves_8py}{}\doxysection{LED\+\_\+waves.\+py File Reference}
+\label{staging__area_2LED__waves_8py}\index{LED\_waves.py@{LED\_waves.py}}
+
+
+Cycles through LED pulse patterns.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_ab2e983615b7894caa2fed550ccd52905}{LED\+\_\+waves.\+on\+Button\+Press\+FCN}} (IRQ\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Commands Nucleo upon button push. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_ad459c4f5cb904d6dcaa8d45adc65a14d}{LED\+\_\+waves.\+square\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs square wave LED pattern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_aa9e9a87633bc2c8c1e0ffaab246c5c6b}{LED\+\_\+waves.\+sine\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs sine wave LED pattern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{staging__area_2Lab_012_2LED__waves_8py_a6361dcfb02b15da8a17138eb05249e34}{LED\+\_\+waves.\+saw\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs saw wave LED pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cycles through LED pulse patterns. 
+
+Implements finite state machine, shown below, and Nucleo blue user button to cycle through LED pulse patterns
+
+
+
+See source code here\+: \href{https://bitbucket.org/ndesimon/me405_labs/src/master/Lab\%202/}{\texttt{ https\+://bitbucket.\+org/ndesimon/me405\+\_\+labs/src/master/\+Lab\%202/}}
+
+See short demonstration video here\+: \href{https://drive.google.com/file/d/1gsICIg6rI42QG8VJxdCG4akqodxdDdyq/view?usp=sharing}{\texttt{ https\+://drive.\+google.\+com/file/d/1gs\+ICIg6r\+I42\+QG8\+VJxd\+CG4akqodxd\+Ddyq/view?usp=sharing}}
+
+\begin{DoxyAuthor}{Author}
+Nick De Simone 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/4/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+License Info Here 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_ab2e983615b7894caa2fed550ccd52905}\label{staging__area_2Lab_012_2LED__waves_8py_ab2e983615b7894caa2fed550ccd52905}} 
+\index{LED\_waves.py@{LED\_waves.py}!onButtonPressFCN@{onButtonPressFCN}}
+\index{onButtonPressFCN@{onButtonPressFCN}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{onButtonPressFCN()}{onButtonPressFCN()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+on\+Button\+Press\+FCN (\begin{DoxyParamCaption}\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+
+
+Commands Nucleo upon button push. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQ\+\_\+src} & Associated with button interrupt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_a6361dcfb02b15da8a17138eb05249e34}\label{staging__area_2Lab_012_2LED__waves_8py_a6361dcfb02b15da8a17138eb05249e34}} 
+\index{LED\_waves.py@{LED\_waves.py}!sawWave@{sawWave}}
+\index{sawWave@{sawWave}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{sawWave()}{sawWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+saw\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs saw wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_aa9e9a87633bc2c8c1e0ffaab246c5c6b}\label{staging__area_2Lab_012_2LED__waves_8py_aa9e9a87633bc2c8c1e0ffaab246c5c6b}} 
+\index{LED\_waves.py@{LED\_waves.py}!sineWave@{sineWave}}
+\index{sineWave@{sineWave}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{sineWave()}{sineWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+sine\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs sine wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{staging__area_2Lab_012_2LED__waves_8py_ad459c4f5cb904d6dcaa8d45adc65a14d}\label{staging__area_2Lab_012_2LED__waves_8py_ad459c4f5cb904d6dcaa8d45adc65a14d}} 
+\index{LED\_waves.py@{LED\_waves.py}!squareWave@{squareWave}}
+\index{squareWave@{squareWave}!LED\_waves.py@{LED\_waves.py}}
+\doxysubsubsection{\texorpdfstring{squareWave()}{squareWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+square\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs square wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}

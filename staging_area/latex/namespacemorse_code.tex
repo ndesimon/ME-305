@@ -1,0 +1,57 @@
+\hypertarget{namespacemorse_code}{}\doxysection{morse\+Code Namespace Reference}
+\label{namespacemorse_code}\index{morseCode@{morseCode}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemorse_code_aa042302f3b537ddc5c10e963c7b34f2d}{create\+Phrase}} (level)
+\item 
+def \mbox{\hyperlink{namespacemorse_code_a880725727842766302ffdfab445876e9}{convert\+Phrase\+To\+Morse}} (n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacemorse_code_adae74e338d5860477c3321dfd238d1c2}\label{namespacemorse_code_adae74e338d5860477c3321dfd238d1c2}} 
+list {\bfseries word\+Bank}
+\item 
+\mbox{\Hypertarget{namespacemorse_code_a7254f309986225d49a20bbf15523e838}\label{namespacemorse_code_a7254f309986225d49a20bbf15523e838}} 
+dictionary {\bfseries code\+Bank}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} @file           morseCode.py
+    @brief          Provides Morse Code patterns
+    @details        Contains a wordBank and codeBank along with functions to
+                    be called in the simonSays class
+    @author         Nick De Simone
+    @date           4/9/21
+    @copyright      License Info Here
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacemorse_code_a880725727842766302ffdfab445876e9}\label{namespacemorse_code_a880725727842766302ffdfab445876e9}} 
+\index{morseCode@{morseCode}!convertPhraseToMorse@{convertPhraseToMorse}}
+\index{convertPhraseToMorse@{convertPhraseToMorse}!morseCode@{morseCode}}
+\doxysubsubsection{\texorpdfstring{convertPhraseToMorse()}{convertPhraseToMorse()}}
+{\footnotesize\ttfamily def morse\+Code.\+convert\+Phrase\+To\+Morse (\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Converts characters to Morse code
+@details  Converts the randomly generated phrase/character into a 
+            list containing its/their Morse code equivalent
+@param n Value corresponding to the elements contained in the 
+            random phrase
+@return List of Morse code characters
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacemorse_code_aa042302f3b537ddc5c10e963c7b34f2d}\label{namespacemorse_code_aa042302f3b537ddc5c10e963c7b34f2d}} 
+\index{morseCode@{morseCode}!createPhrase@{createPhrase}}
+\index{createPhrase@{createPhrase}!morseCode@{morseCode}}
+\doxysubsubsection{\texorpdfstring{createPhrase()}{createPhrase()}}
+{\footnotesize\ttfamily def morse\+Code.\+create\+Phrase (\begin{DoxyParamCaption}\item[{}]{level }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief  Randomly generates a phrase from the word bank based on user's 
+        progress in the game
+@param level Value corresponding to user's progress in the game
+@return Phrase of alphabetic characters in the form of a list
+\end{DoxyVerb}
+ 

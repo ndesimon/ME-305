@@ -1,0 +1,178 @@
+\hypertarget{classclosedloop_1_1_closed_loop}{}\doxysection{closedloop.\+Closed\+Loop Class Reference}
+\label{classclosedloop_1_1_closed_loop}\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+
+
+A Closed Loop class for one motor of the Nucleo.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_ac038f2149f9353779af4499490b2d9fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Kp, Ki, setpoint, sathigh, satlow)
+\begin{DoxyCompactList}\small\item\em Creates the initial setup for the closed loop driver. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_a976834505394e94f7d6abaf7c19fad46}{run}} (self, measured, delta\+Time)
+\begin{DoxyCompactList}\small\item\em Computes the actuation signal sent to the motor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_a9977f9a73888261059c38e25671d0cbc}{set\+\_\+\+Gain}} (self, Kp, Ki)
+\begin{DoxyCompactList}\small\item\em Set the gain for the motor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_aabfd126eb373a40747f7fd312ed0056c}{get\+\_\+\+Kp}} (self)
+\begin{DoxyCompactList}\small\item\em Return the value of Kp. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_ae280c2736be4764a84235da504431ca3}{set\+\_\+\+Reference}} (self, reference)
+\begin{DoxyCompactList}\small\item\em Set the reference veloctiy for the calculations. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_a1e8661da077f6829bb7e784a3a52eb71}{get\+\_\+\+Reference}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the reference velocity. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1_closed_loop_ad24ed6b0ba7a0b04e45d9265e99cde80}{get\+\_\+\+Actuation}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the value for actuation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_aae8c3c1b5cb36912bca6b14089e108f3}\label{classclosedloop_1_1_closed_loop_aae8c3c1b5cb36912bca6b14089e108f3}} 
+{\bfseries Kp}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a3b721b7bdb9fbbdf0900f5a30b2d435d}\label{classclosedloop_1_1_closed_loop_a3b721b7bdb9fbbdf0900f5a30b2d435d}} 
+{\bfseries Ki}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_ae05a5dd808235ae0c12a3dded340c754}\label{classclosedloop_1_1_closed_loop_ae05a5dd808235ae0c12a3dded340c754}} 
+{\bfseries reference}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a012041bf1a3b4da8f0f6a486e9ee4447}\label{classclosedloop_1_1_closed_loop_a012041bf1a3b4da8f0f6a486e9ee4447}} 
+{\bfseries sathigh}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a7a524a8c06f48e29cc02ba92929a2ef9}\label{classclosedloop_1_1_closed_loop_a7a524a8c06f48e29cc02ba92929a2ef9}} 
+{\bfseries satlow}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a07163bb7e5e04b4732404891cda92e09}\label{classclosedloop_1_1_closed_loop_a07163bb7e5e04b4732404891cda92e09}} 
+{\bfseries actuation}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a5ef95e7ca63a2141f54ec785141d1432}\label{classclosedloop_1_1_closed_loop_a5ef95e7ca63a2141f54ec785141d1432}} 
+{\bfseries error}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_ae72a9a056e4ab853f0e6524074a2e390}\label{classclosedloop_1_1_closed_loop_ae72a9a056e4ab853f0e6524074a2e390}} 
+{\bfseries error\+\_\+sum}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Closed Loop class for one motor of the Nucleo. 
+
+Objects of this class can be used to apply PWM to a given DC motor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_ac038f2149f9353779af4499490b2d9fc}\label{classclosedloop_1_1_closed_loop_ac038f2149f9353779af4499490b2d9fc}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{Ki,  }\item[{}]{setpoint,  }\item[{}]{sathigh,  }\item[{}]{satlow }\end{DoxyParamCaption})}
+
+
+
+Creates the initial setup for the closed loop driver. 
+
+Objects of this class should not be instantiated directly. Instead create a Closed Loop object and use that to create Motor objects using the methods within this class. 
+\begin{DoxyParams}{Parameters}
+{\em Kp} & Placeholder for the gain Kp of the motor \\
+\hline
+{\em Ki} & Placeholder for the gain Ki of the motor \\
+\hline
+{\em setpoint} & Placeholder for the reference velocity inputted from yshare \\
+\hline
+{\em sathigh} & Placeholder for the max saturation value \\
+\hline
+{\em satlow} & Placeholder for the min saturation value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_ad24ed6b0ba7a0b04e45d9265e99cde80}\label{classclosedloop_1_1_closed_loop_ad24ed6b0ba7a0b04e45d9265e99cde80}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!get\_Actuation@{get\_Actuation}}
+\index{get\_Actuation@{get\_Actuation}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Actuation()}{get\_Actuation()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+get\+\_\+\+Actuation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the value for actuation. 
+
+\begin{DoxyReturn}{Returns}
+Gives the actuation value calculated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_aabfd126eb373a40747f7fd312ed0056c}\label{classclosedloop_1_1_closed_loop_aabfd126eb373a40747f7fd312ed0056c}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!get\_Kp@{get\_Kp}}
+\index{get\_Kp@{get\_Kp}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Kp()}{get\_Kp()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+get\+\_\+\+Kp (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the value of Kp. 
+
+\begin{DoxyReturn}{Returns}
+Gives the proportional gain value Kp 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a1e8661da077f6829bb7e784a3a52eb71}\label{classclosedloop_1_1_closed_loop_a1e8661da077f6829bb7e784a3a52eb71}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!get\_Reference@{get\_Reference}}
+\index{get\_Reference@{get\_Reference}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Reference()}{get\_Reference()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+get\+\_\+\+Reference (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the reference velocity. 
+
+\begin{DoxyReturn}{Returns}
+Gives the value of the reference velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a976834505394e94f7d6abaf7c19fad46}\label{classclosedloop_1_1_closed_loop_a976834505394e94f7d6abaf7c19fad46}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!run@{run}}
+\index{run@{run}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{measured,  }\item[{}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Computes the actuation signal sent to the motor. 
+
+Based on the difference between the desired setpoint and motor velocity 
+\begin{DoxyParams}{Parameters}
+{\em measured} & Passed value of the measured velocity of the motor \\
+\hline
+{\em delta\+Time} & Difference between encoder readings \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_a9977f9a73888261059c38e25671d0cbc}\label{classclosedloop_1_1_closed_loop_a9977f9a73888261059c38e25671d0cbc}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!set\_Gain@{set\_Gain}}
+\index{set\_Gain@{set\_Gain}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Gain()}{set\_Gain()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+set\+\_\+\+Gain (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{Ki }\end{DoxyParamCaption})}
+
+
+
+Set the gain for the motor. 
+
+This method sets the gain to be sent to the motor with the value for Kp or Ki. 
+\begin{DoxyParams}{Parameters}
+{\em Kp} & gain value for proportional control \\
+\hline
+{\em Ki} & gain value for integral control \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop_1_1_closed_loop_ae280c2736be4764a84235da504431ca3}\label{classclosedloop_1_1_closed_loop_ae280c2736be4764a84235da504431ca3}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!set\_Reference@{set\_Reference}}
+\index{set\_Reference@{set\_Reference}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Reference()}{set\_Reference()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+set\+\_\+\+Reference (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{reference }\end{DoxyParamCaption})}
+
+
+
+Set the reference veloctiy for the calculations. 
+
+This method sets the reference velocity used for the calculations to find the duty cycle 
+\begin{DoxyParams}{Parameters}
+{\em reference} & velocity passed from the setpoint \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{closedloop_8py}{closedloop.\+py}}\end{DoxyCompactItemize}

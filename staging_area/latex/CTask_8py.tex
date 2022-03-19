@@ -1,0 +1,118 @@
+\hypertarget{CTask_8py}{}\doxysection{CTask.\+py File Reference}
+\label{CTask_8py}\index{CTask.py@{CTask.py}}
+
+
+!  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{CTask_8py_a6b7334c222da00573672fce3af3424cc}{CTask.\+loop\+Function}} (task\+Name, period, k\+Flag, CLC, enc\+Data, w\+Flag, Kp\+Val, Ki\+Val, Ref\+Val, duty1, delta\+Time)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{CTask_8py_a5151a94f24eeea32dd852e64342be01e}{CTask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{CTask_8py_a1f4cc0d1ee4ced1fa8ff1705b065b0f1}{CTask.\+S1\+\_\+\+RUN}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+WAIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{CTask_8py_a68eda041b5d9be3752b928126e9fb119}{CTask.\+S2\+\_\+\+SET\+\_\+\+GAIN}} = micropython.\+const (2)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+CONTROLLER. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{CTask_8py_a78a80f074918bcb9212943c2e14d0dbd}{CTask.\+S3\+\_\+\+SET\+\_\+\+SETPOINT}} = micropython.\+const (3)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+CONTROLLER. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+! 
+
+Allows control of individual motors.
+
+This task allows users to control the speed of individual motors by receiving user-\/inputted duty cycles from the UTask. The state transition diagram for this task is depicted below\+: 
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab3/MTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab3/\+MTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/24-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CTask_8py_a6b7334c222da00573672fce3af3424cc}\label{CTask_8py_a6b7334c222da00573672fce3af3424cc}} 
+\index{CTask.py@{CTask.py}!loopFunction@{loopFunction}}
+\index{loopFunction@{loopFunction}!CTask.py@{CTask.py}}
+\doxysubsubsection{\texorpdfstring{loopFunction()}{loopFunction()}}
+{\footnotesize\ttfamily def CTask.\+loop\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{k\+Flag,  }\item[{}]{CLC,  }\item[{}]{enc\+Data,  }\item[{}]{w\+Flag,  }\item[{}]{Kp\+Val,  }\item[{}]{Ki\+Val,  }\item[{}]{Ref\+Val,  }\item[{}]{duty1,  }\item[{}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Generator function that passes the duty cycles to the motor.
+
+This function passes the duty cycle to the method setduty which then sends the value to the motor. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em k\+Flag} & A shared parameter that indicates if the \textquotesingle{}k\textquotesingle{} key has been pressed. \\
+\hline
+{\em CLC} & A shared parameter that indicates the value of th duty cycle. \\
+\hline
+{\em encdata} & A tuple containing time, position, and delta of the encoder. \\
+\hline
+{\em w\+Flag} & A shared parameter that indicates if the closed loop control keys have been pressed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{CTask_8py_a5151a94f24eeea32dd852e64342be01e}\label{CTask_8py_a5151a94f24eeea32dd852e64342be01e}} 
+\index{CTask.py@{CTask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!CTask.py@{CTask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily CTask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{CTask_8py_a1f4cc0d1ee4ced1fa8ff1705b065b0f1}\label{CTask_8py_a1f4cc0d1ee4ced1fa8ff1705b065b0f1}} 
+\index{CTask.py@{CTask.py}!S1\_RUN@{S1\_RUN}}
+\index{S1\_RUN@{S1\_RUN}!CTask.py@{CTask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_RUN}{S1\_RUN}}
+{\footnotesize\ttfamily CTask.\+S1\+\_\+\+RUN = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+WAIT. 
+
+Variable will be the state 1 for waiting for the command \mbox{\Hypertarget{CTask_8py_a68eda041b5d9be3752b928126e9fb119}\label{CTask_8py_a68eda041b5d9be3752b928126e9fb119}} 
+\index{CTask.py@{CTask.py}!S2\_SET\_GAIN@{S2\_SET\_GAIN}}
+\index{S2\_SET\_GAIN@{S2\_SET\_GAIN}!CTask.py@{CTask.py}}
+\doxysubsubsection{\texorpdfstring{S2\_SET\_GAIN}{S2\_SET\_GAIN}}
+{\footnotesize\ttfamily CTask.\+S2\+\_\+\+SET\+\_\+\+GAIN = micropython.\+const (2)}
+
+
+
+Creates a state called S2\+\_\+\+CONTROLLER. 
+
+Variable will be the state 1 for waiting for the command \mbox{\Hypertarget{CTask_8py_a78a80f074918bcb9212943c2e14d0dbd}\label{CTask_8py_a78a80f074918bcb9212943c2e14d0dbd}} 
+\index{CTask.py@{CTask.py}!S3\_SET\_SETPOINT@{S3\_SET\_SETPOINT}}
+\index{S3\_SET\_SETPOINT@{S3\_SET\_SETPOINT}!CTask.py@{CTask.py}}
+\doxysubsubsection{\texorpdfstring{S3\_SET\_SETPOINT}{S3\_SET\_SETPOINT}}
+{\footnotesize\ttfamily CTask.\+S3\+\_\+\+SET\+\_\+\+SETPOINT = micropython.\+const (3)}
+
+
+
+Creates a state called S2\+\_\+\+CONTROLLER. 
+
+Variable will be the state 1 for waiting for the command 

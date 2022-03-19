@@ -1,0 +1,175 @@
+\hypertarget{classclosedloop_1_1ClosedLoop}{}\doxysection{closedloop.\+Closed\+Loop Class Reference}
+\label{classclosedloop_1_1ClosedLoop}\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+
+
+!  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classclosedloop_1_1ClosedLoop_ac038f2149f9353779af4499490b2d9fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Kp, Ki, setpoint, sathigh, satlow)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1ClosedLoop_a976834505394e94f7d6abaf7c19fad46}{run}} (self, measured, delta\+Time)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1ClosedLoop_a9977f9a73888261059c38e25671d0cbc}{set\+\_\+\+Gain}} (self, Kp, Ki)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1ClosedLoop_aabfd126eb373a40747f7fd312ed0056c}{get\+\_\+\+Kp}} (self)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1ClosedLoop_ae280c2736be4764a84235da504431ca3}{set\+\_\+\+Reference}} (self, reference)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop_1_1ClosedLoop_a1e8661da077f6829bb7e784a3a52eb71}{get\+\_\+\+Reference}} (self)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_ad24ed6b0ba7a0b04e45d9265e99cde80}\label{classclosedloop_1_1ClosedLoop_ad24ed6b0ba7a0b04e45d9265e99cde80}} 
+def {\bfseries get\+\_\+\+Actuation} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_aae8c3c1b5cb36912bca6b14089e108f3}\label{classclosedloop_1_1ClosedLoop_aae8c3c1b5cb36912bca6b14089e108f3}} 
+{\bfseries Kp}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a3b721b7bdb9fbbdf0900f5a30b2d435d}\label{classclosedloop_1_1ClosedLoop_a3b721b7bdb9fbbdf0900f5a30b2d435d}} 
+{\bfseries Ki}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_ae05a5dd808235ae0c12a3dded340c754}\label{classclosedloop_1_1ClosedLoop_ae05a5dd808235ae0c12a3dded340c754}} 
+{\bfseries reference}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a012041bf1a3b4da8f0f6a486e9ee4447}\label{classclosedloop_1_1ClosedLoop_a012041bf1a3b4da8f0f6a486e9ee4447}} 
+{\bfseries sathigh}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a7a524a8c06f48e29cc02ba92929a2ef9}\label{classclosedloop_1_1ClosedLoop_a7a524a8c06f48e29cc02ba92929a2ef9}} 
+{\bfseries satlow}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a07163bb7e5e04b4732404891cda92e09}\label{classclosedloop_1_1ClosedLoop_a07163bb7e5e04b4732404891cda92e09}} 
+{\bfseries actuation}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a5ef95e7ca63a2141f54ec785141d1432}\label{classclosedloop_1_1ClosedLoop_a5ef95e7ca63a2141f54ec785141d1432}} 
+{\bfseries error}
+\item 
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_ae72a9a056e4ab853f0e6524074a2e390}\label{classclosedloop_1_1ClosedLoop_ae72a9a056e4ab853f0e6524074a2e390}} 
+{\bfseries error\+\_\+sum}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+! 
+
+A motor class for one channel of the DRV8847.
+
+Objects of this class can be used to apply PWM to a given DC motor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_ac038f2149f9353779af4499490b2d9fc}\label{classclosedloop_1_1ClosedLoop_ac038f2149f9353779af4499490b2d9fc}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{Ki,  }\item[{}]{setpoint,  }\item[{}]{sathigh,  }\item[{}]{satlow }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Initializes and returns an object associated with a DC Motor.
+
+Objects of this class should not be instantiated directly. Instead create a DRV8847 object and use that to create Motor objects using the method DRV8847.\+motor(). 
+\begin{DoxyParams}{Parameters}
+{\em PWM\+\_\+tim} & Placeholder for the timer of the motor \\
+\hline
+{\em IN1\+\_\+pin} & Placeholder for the first pin to be passed in \\
+\hline
+{\em IN2\+\_\+pin} & Placeholder for the second pin to be passed in \\
+\hline
+{\em CH\+\_\+X} & Placeholder for the first channel of the timer passed in \\
+\hline
+{\em CH\+\_\+Y} & Placeholder for the second channel of the timer passed in \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_aabfd126eb373a40747f7fd312ed0056c}\label{classclosedloop_1_1ClosedLoop_aabfd126eb373a40747f7fd312ed0056c}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!get\_Kp@{get\_Kp}}
+\index{get\_Kp@{get\_Kp}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Kp()}{get\_Kp()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+get\+\_\+\+Kp (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Set the PWM duty cycle for the motor channel.
+
+This method sets the duty cycle to be sent to the motor to the given level. Positive values cause effort in one direction, negative values in the opposite direction. 
+\begin{DoxyParams}{Parameters}
+{\em duty} & A signed number holding the duty 27 cycle of the PWM signal sent to the motor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a1e8661da077f6829bb7e784a3a52eb71}\label{classclosedloop_1_1ClosedLoop_a1e8661da077f6829bb7e784a3a52eb71}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!get\_Reference@{get\_Reference}}
+\index{get\_Reference@{get\_Reference}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Reference()}{get\_Reference()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+get\+\_\+\+Reference (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Set the PWM duty cycle for the motor channel.
+
+This method sets the duty cycle to be sent to the motor to the given level. Positive values cause effort in one direction, negative values in the opposite direction. 
+\begin{DoxyParams}{Parameters}
+{\em duty} & A signed number holding the duty 27 cycle of the PWM signal sent to the motor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a976834505394e94f7d6abaf7c19fad46}\label{classclosedloop_1_1ClosedLoop_a976834505394e94f7d6abaf7c19fad46}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!run@{run}}
+\index{run@{run}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{measured,  }\item[{}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Constantly updates the counter that tracks position.
+
+The position is tracked with a 16-\/bit counter. To prevent the counter from overflowing, a change, or delta between previous counts is computed. If the magnitude of the delta is larger than half of the maximum count (indicating that the counter reset), the delta is corrected such that the reset isn\textquotesingle{}t seen. Adding up all the deltas gives the current position. \mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_a9977f9a73888261059c38e25671d0cbc}\label{classclosedloop_1_1ClosedLoop_a9977f9a73888261059c38e25671d0cbc}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!set\_Gain@{set\_Gain}}
+\index{set\_Gain@{set\_Gain}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Gain()}{set\_Gain()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+set\+\_\+\+Gain (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{Ki }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Set the PWM duty cycle for the motor channel.
+
+This method sets the duty cycle to be sent to the motor to the given level. Positive values cause effort in one direction, negative values in the opposite direction. 
+\begin{DoxyParams}{Parameters}
+{\em duty} & A signed number holding the duty 27 cycle of the PWM signal sent to the motor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop_1_1ClosedLoop_ae280c2736be4764a84235da504431ca3}\label{classclosedloop_1_1ClosedLoop_ae280c2736be4764a84235da504431ca3}} 
+\index{closedloop.ClosedLoop@{closedloop.ClosedLoop}!set\_Reference@{set\_Reference}}
+\index{set\_Reference@{set\_Reference}!closedloop.ClosedLoop@{closedloop.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Reference()}{set\_Reference()}}
+{\footnotesize\ttfamily def closedloop.\+Closed\+Loop.\+set\+\_\+\+Reference (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{reference }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Set the PWM duty cycle for the motor channel.
+
+This method sets the duty cycle to be sent to the motor to the given level. Positive values cause effort in one direction, negative values in the opposite direction. 
+\begin{DoxyParams}{Parameters}
+{\em duty} & A signed number holding the duty 27 cycle of the PWM signal sent to the motor \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{closedloop_8py}{closedloop.\+py}}\end{DoxyCompactItemize}

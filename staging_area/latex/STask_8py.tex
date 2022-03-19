@@ -1,0 +1,92 @@
+\hypertarget{STask_8py}{}\doxysection{STask.\+py File Reference}
+\label{STask_8py}\index{STask.py@{STask.py}}
+
+
+!  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{STask_8py_a0c4c7b12525514234089754d5fd84bb8}{STask.\+safety\+Function}} (task\+Name, period, motor\+\_\+drv, c\+Flag, e\+Flag)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{STask_8py_afbcd282c6cef5dd97ebff913ee13a0cc}{STask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{STask_8py_a919a252ce4ab7a311f366ec6491d977c}{STask.\+S1\+\_\+\+WAIT}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+WAIT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+! 
+
+Calls functions of the DRV8847 module.
+
+This task enables all assigned motors when the user inputs a \textquotesingle{}c\textquotesingle{} or an \textquotesingle{}s\textquotesingle{} into the UTask. This task also disables all assigned motors if a fault condition is triggered. 
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab3/STask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab3/\+STask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/17-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{STask_8py_a0c4c7b12525514234089754d5fd84bb8}\label{STask_8py_a0c4c7b12525514234089754d5fd84bb8}} 
+\index{STask.py@{STask.py}!safetyFunction@{safetyFunction}}
+\index{safetyFunction@{safetyFunction}!STask.py@{STask.py}}
+\doxysubsubsection{\texorpdfstring{safetyFunction()}{safetyFunction()}}
+{\footnotesize\ttfamily def STask.\+safety\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{motor\+\_\+drv,  }\item[{}]{c\+Flag,  }\item[{}]{e\+Flag }\end{DoxyParamCaption})}
+
+
+
+! 
+
+Enables and disables motors.
+
+This is the function that controls enabling and disabling of the motors. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em motor\+\_\+drv} & Object that pulls in the pins and timer from the DRV8847 module. \\
+\hline
+{\em c\+Flag} & A shared parameter that indicates if the \textquotesingle{}c\textquotesingle{} key has been pressed. \\
+\hline
+{\em e\+Flag} & A shared parameter that indicates if the \textquotesingle{}e\textquotesingle{} key has been pressed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{STask_8py_afbcd282c6cef5dd97ebff913ee13a0cc}\label{STask_8py_afbcd282c6cef5dd97ebff913ee13a0cc}} 
+\index{STask.py@{STask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!STask.py@{STask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily STask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{STask_8py_a919a252ce4ab7a311f366ec6491d977c}\label{STask_8py_a919a252ce4ab7a311f366ec6491d977c}} 
+\index{STask.py@{STask.py}!S1\_WAIT@{S1\_WAIT}}
+\index{S1\_WAIT@{S1\_WAIT}!STask.py@{STask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_WAIT}{S1\_WAIT}}
+{\footnotesize\ttfamily STask.\+S1\+\_\+\+WAIT = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+WAIT. 
+
+Variable will be the state 1 for waiting for the command 

@@ -1,0 +1,86 @@
+\hypertarget{classmotor_1_1_motor}{}\doxysection{motor.\+Motor Class Reference}
+\label{classmotor_1_1_motor}\index{motor.Motor@{motor.Motor}}
+
+
+A motor class for one channel of the DRV8847.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classmotor_1_1_motor_a98971212033b36291dbd95d195542f58}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, PWM\+\_\+tim, IN1\+\_\+pin, IN2\+\_\+pin, CH\+\_\+X, CH\+\_\+Y)
+\begin{DoxyCompactList}\small\item\em Initializes and returns an object associated with a DC \mbox{\hyperlink{classmotor_1_1_motor}{Motor}}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classmotor_1_1_motor_a08f41a32c8b122a8b94496fef2a0a901}{set\+\_\+duty}} (self, duty)
+\begin{DoxyCompactList}\small\item\em Set the PWM duty cycle for the motor channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmotor_1_1_motor_acc871c92cc0600699dd6ddf8a9b772fc}\label{classmotor_1_1_motor_acc871c92cc0600699dd6ddf8a9b772fc}} 
+{\bfseries PWM\+\_\+tim}
+\item 
+\mbox{\Hypertarget{classmotor_1_1_motor_afa6b53be8ec74865d87df686c22bac21}\label{classmotor_1_1_motor_afa6b53be8ec74865d87df686c22bac21}} 
+{\bfseries IN1\+\_\+pin}
+\item 
+\mbox{\Hypertarget{classmotor_1_1_motor_ad08424f0cb3e308b567c2eeb7534bb8b}\label{classmotor_1_1_motor_ad08424f0cb3e308b567c2eeb7534bb8b}} 
+{\bfseries IN2\+\_\+pin}
+\item 
+\mbox{\Hypertarget{classmotor_1_1_motor_a25d8864d4214ed4c9a77f51ab725b62d}\label{classmotor_1_1_motor_a25d8864d4214ed4c9a77f51ab725b62d}} 
+{\bfseries PWM\+\_\+tim\+\_\+\+CH\+\_\+X}
+\item 
+\mbox{\Hypertarget{classmotor_1_1_motor_a51ca9b97b72d47b7b762284f832feb53}\label{classmotor_1_1_motor_a51ca9b97b72d47b7b762284f832feb53}} 
+{\bfseries PWM\+\_\+tim\+\_\+\+CH\+\_\+Y}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A motor class for one channel of the DRV8847. 
+
+Objects of this class can be used to apply PWM to a given DC motor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmotor_1_1_motor_a98971212033b36291dbd95d195542f58}\label{classmotor_1_1_motor_a98971212033b36291dbd95d195542f58}} 
+\index{motor.Motor@{motor.Motor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!motor.Motor@{motor.Motor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def motor.\+Motor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{PWM\+\_\+tim,  }\item[{}]{IN1\+\_\+pin,  }\item[{}]{IN2\+\_\+pin,  }\item[{}]{CH\+\_\+X,  }\item[{}]{CH\+\_\+Y }\end{DoxyParamCaption})}
+
+
+
+Initializes and returns an object associated with a DC \mbox{\hyperlink{classmotor_1_1_motor}{Motor}}. 
+
+Objects of this class should not be instantiated directly. Instead create a DRV8847 object and use that to create \mbox{\hyperlink{classmotor_1_1_motor}{Motor}} objects using the method DRV8847.\+motor(). 
+\begin{DoxyParams}{Parameters}
+{\em PWM\+\_\+tim} & Placeholder for the timer of the motor \\
+\hline
+{\em IN1\+\_\+pin} & Placeholder for the first pin to be passed in \\
+\hline
+{\em IN2\+\_\+pin} & Placeholder for the second pin to be passed in \\
+\hline
+{\em CH\+\_\+X} & Placeholder for the first channel of the timer passed in \\
+\hline
+{\em CH\+\_\+Y} & Placeholder for the second channel of the timer passed in \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmotor_1_1_motor_a08f41a32c8b122a8b94496fef2a0a901}\label{classmotor_1_1_motor_a08f41a32c8b122a8b94496fef2a0a901}} 
+\index{motor.Motor@{motor.Motor}!set\_duty@{set\_duty}}
+\index{set\_duty@{set\_duty}!motor.Motor@{motor.Motor}}
+\doxysubsubsection{\texorpdfstring{set\_duty()}{set\_duty()}}
+{\footnotesize\ttfamily def motor.\+Motor.\+set\+\_\+duty (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{duty }\end{DoxyParamCaption})}
+
+
+
+Set the PWM duty cycle for the motor channel. 
+
+This method sets the duty cycle to be sent to the motor to the given level. Positive values cause effort in one direction, negative values in the opposite direction. 
+\begin{DoxyParams}{Parameters}
+{\em duty} & A signed number holding the duty 27 cycle of the PWM signal sent to the motor \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{motor_8py}{motor.\+py}}\end{DoxyCompactItemize}

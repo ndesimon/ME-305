@@ -1,0 +1,55 @@
+\hypertarget{staging__area_2Lab_013_2simonSays_8py}{}\doxysection{Lab 3/simon\+Says.py File Reference}
+\label{staging__area_2Lab_013_2simonSays_8py}\index{Lab 3/simonSays.py@{Lab 3/simonSays.py}}
+
+
+Displays LED patteerns on Nucleo and asks user to repeat them.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsimonSays_1_1simonSays}{simon\+Says.\+simon\+Says}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{staging__area_2Lab_013_2simonSays_8py_a67d96663df15854e4461bde4a803f138}\label{staging__area_2Lab_013_2simonSays_8py_a67d96663df15854e4461bde4a803f138}} 
+\mbox{\hyperlink{staging__area_2Lab_013_2simonSays_8py_a67d96663df15854e4461bde4a803f138}{simon\+Says.\+ready}} = input()
+\begin{DoxyCompactList}\small\item\em Waits for user to declare readiness for game start. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_013_2simonSays_8py_a9e60a884961b7a9cb4bb2a2d50eebc1e}\label{staging__area_2Lab_013_2simonSays_8py_a9e60a884961b7a9cb4bb2a2d50eebc1e}} 
+\mbox{\hyperlink{staging__area_2Lab_013_2simonSays_8py_a9e60a884961b7a9cb4bb2a2d50eebc1e}{simon\+Says.\+pin\+C13}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+C13)
+\begin{DoxyCompactList}\small\item\em Assign Pin C13 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_013_2simonSays_8py_a10f27dd146ae8a7b034414d4d855b303}\label{staging__area_2Lab_013_2simonSays_8py_a10f27dd146ae8a7b034414d4d855b303}} 
+\mbox{\hyperlink{staging__area_2Lab_013_2simonSays_8py_a10f27dd146ae8a7b034414d4d855b303}{simon\+Says.\+pin\+A5}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+A5)
+\begin{DoxyCompactList}\small\item\em Assign Pin A5 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_013_2simonSays_8py_a5a437e905dc005bf8accf6bdb8490008}\label{staging__area_2Lab_013_2simonSays_8py_a5a437e905dc005bf8accf6bdb8490008}} 
+\mbox{\hyperlink{staging__area_2Lab_013_2simonSays_8py_a5a437e905dc005bf8accf6bdb8490008}{simon\+Says.\+tim2}} = pyb.\+Timer(2, freq = 20000)
+\begin{DoxyCompactList}\small\item\em Timer for PWM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_013_2simonSays_8py_a9286828ed2f269b3ffb0a2c006053d63}\label{staging__area_2Lab_013_2simonSays_8py_a9286828ed2f269b3ffb0a2c006053d63}} 
+\mbox{\hyperlink{staging__area_2Lab_013_2simonSays_8py_a9286828ed2f269b3ffb0a2c006053d63}{simon\+Says.\+t2ch1}} = tim2.\+channel(1, pyb.\+Timer.\+PWM, pin=pin\+A5)
+\begin{DoxyCompactList}\small\item\em Pulse Width Modulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{staging__area_2Lab_013_2simonSays_8py_a19a9f4e781d1400178c567d64ee00c3f}\label{staging__area_2Lab_013_2simonSays_8py_a19a9f4e781d1400178c567d64ee00c3f}} 
+int \mbox{\hyperlink{staging__area_2Lab_013_2simonSays_8py_a19a9f4e781d1400178c567d64ee00c3f}{simon\+Says.\+level}} = 0
+\begin{DoxyCompactList}\small\item\em Establish game play level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Displays LED patteerns on Nucleo and asks user to repeat them. 
+
+Implements a FSM, shown below, to create an interactive game for a user. The game entails blinking of a Nucleo LED in morse code patterns, whereupon the user is asked to repeat said pattern using the Nucleo\textquotesingle{}s blue button.
+
+
+
+See source code here\+: \href{https://bitbucket.org/ndesimon/me405_labs/src/master/Lab\%203/}{\texttt{ https\+://bitbucket.\+org/ndesimon/me405\+\_\+labs/src/master/\+Lab\%203/}}
+
+See short demonstration video here\+: \href{https://drive.google.com/file/d/1Z7y6_3cOUfyDuwKpqxwhg9-7uB3f_5j9/view?usp=sharing}{\texttt{ https\+://drive.\+google.\+com/file/d/1\+Z7y6\+\_\+3c\+OUfy\+Duw\+Kpqxwhg9-\/7u\+B3f\+\_\+5j9/view?usp=sharing}}
+
+\begin{DoxyAuthor}{Author}
+Nick De Simone 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+4/9/21 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+License Info Here 
+\end{DoxyCopyright}

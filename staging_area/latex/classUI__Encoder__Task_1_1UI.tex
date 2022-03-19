@@ -1,0 +1,89 @@
+\hypertarget{classUI__Encoder__Task_1_1UI}{}\doxysection{UI\+\_\+\+Encoder\+\_\+\+Task.\+UI Class Reference}
+\label{classUI__Encoder__Task_1_1UI}\index{UI\_Encoder\_Task.UI@{UI\_Encoder\_Task.UI}}
+
+
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI}{UI}} class that allows encoder to take user inputs.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classUI__Encoder__Task_1_1UI_a2554c85e68912588605b60be53ca03f5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, period)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classUI__Encoder__Task_1_1UI}{UI}} driver. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classUI__Encoder__Task_1_1UI_a3182d1f21aaa733c8f553471e6f97d77}{get\+Input}} (self, update\+\_\+data, motor)
+\begin{DoxyCompactList}\small\item\em Reads user inputs and writes encoder/motor commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_a987060b74d729321b59680b746675f09}\label{classUI__Encoder__Task_1_1UI_a987060b74d729321b59680b746675f09}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_a987060b74d729321b59680b746675f09}{user\+\_\+freq}}
+\begin{DoxyCompactList}\small\item\em Set input period equal to the frequency at which the user task will run. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_a3153292fbf54a80250b95520dda3cbad}\label{classUI__Encoder__Task_1_1UI_a3153292fbf54a80250b95520dda3cbad}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_a3153292fbf54a80250b95520dda3cbad}{coms}}
+\begin{DoxyCompactList}\small\item\em Assign VP communication for specified encoder Allows for reading and writing of data over the USB connecting user \& Nucleo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_ad60f18d67e515e22960c800e6d51bff8}\label{classUI__Encoder__Task_1_1UI_ad60f18d67e515e22960c800e6d51bff8}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_ad60f18d67e515e22960c800e6d51bff8}{input}}
+\begin{DoxyCompactList}\small\item\em Initiate input variable associated with user key presses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_a590924abe708cc66daafe8b4062390aa}\label{classUI__Encoder__Task_1_1UI_a590924abe708cc66daafe8b4062390aa}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_a590924abe708cc66daafe8b4062390aa}{state}}
+\begin{DoxyCompactList}\small\item\em Initiate state variable sent to encoder task. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_ad6ac0bfc65a6f85c6fe53c238daeef58}\label{classUI__Encoder__Task_1_1UI_ad6ac0bfc65a6f85c6fe53c238daeef58}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_ad6ac0bfc65a6f85c6fe53c238daeef58}{gather}}
+\begin{DoxyCompactList}\small\item\em Initiate gather flag, which enables the 30 sec data collection code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_a7877e0b2c62845751a6c090be7f1c3d8}\label{classUI__Encoder__Task_1_1UI_a7877e0b2c62845751a6c090be7f1c3d8}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_a7877e0b2c62845751a6c090be7f1c3d8}{next\+\_\+time}}
+\begin{DoxyCompactList}\small\item\em Next\+\_\+\+Time determines the time at which the user task will look for user inputs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_ab6552483b0ad94b1cedd8385993772ec}\label{classUI__Encoder__Task_1_1UI_ab6552483b0ad94b1cedd8385993772ec}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_ab6552483b0ad94b1cedd8385993772ec}{data}}
+\begin{DoxyCompactList}\small\item\em Initiate data list, which is filled with 30 sec of position and delta values when a \char`\"{}g\char`\"{} is pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_aae364ff1400a0c100f6e86f23aea30ed}\label{classUI__Encoder__Task_1_1UI_aae364ff1400a0c100f6e86f23aea30ed}} 
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI_aae364ff1400a0c100f6e86f23aea30ed}{run}}
+\begin{DoxyCompactList}\small\item\em Initiate run variable that allows for 30 seconds of data collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classUI__Encoder__Task_1_1UI}{UI}} class that allows encoder to take user inputs. 
+
+Uses micro python VCP module to accept user inputs for encoder 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_a2554c85e68912588605b60be53ca03f5}\label{classUI__Encoder__Task_1_1UI_a2554c85e68912588605b60be53ca03f5}} 
+\index{UI\_Encoder\_Task.UI@{UI\_Encoder\_Task.UI}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!UI\_Encoder\_Task.UI@{UI\_Encoder\_Task.UI}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def UI\+\_\+\+Encoder\+\_\+\+Task.\+UI.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{period }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classUI__Encoder__Task_1_1UI}{UI}} driver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & Period of time at which user task runs, in sec \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUI__Encoder__Task_1_1UI_a3182d1f21aaa733c8f553471e6f97d77}\label{classUI__Encoder__Task_1_1UI_a3182d1f21aaa733c8f553471e6f97d77}} 
+\index{UI\_Encoder\_Task.UI@{UI\_Encoder\_Task.UI}!getInput@{getInput}}
+\index{getInput@{getInput}!UI\_Encoder\_Task.UI@{UI\_Encoder\_Task.UI}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily def UI\+\_\+\+Encoder\+\_\+\+Task.\+UI.\+get\+Input (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{update\+\_\+data,  }\item[{}]{motor }\end{DoxyParamCaption})}
+
+
+
+Reads user inputs and writes encoder/motor commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\+\_\+data} & Refers to numbered encoder object passed in by main \\
+\hline
+{\em motor} & Refers to numbered motor object passed in by main \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+UI\+\_\+\+Encoder\+\_\+\+Task.\+py\end{DoxyCompactItemize}

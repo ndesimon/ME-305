@@ -1,0 +1,76 @@
+\hypertarget{classtask__encoder_1_1Task__Encoder}{}\doxysection{task\+\_\+encoder.\+Task\+\_\+\+Encoder Class Reference}
+\label{classtask__encoder_1_1Task__Encoder}\index{task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}}
+
+
+Import Encoder class to return position updates to main.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtask__encoder_1_1Task__Encoder_a7275a90667dc7fbe0bd3d7db068e7f91}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, encoder\+\_\+num, req\+\_\+period)
+\item 
+def \mbox{\hyperlink{classtask__encoder_1_1Task__Encoder_a2266252a7ac8f26472e927a50d4a3339}{get\+\_\+update}} (self, user)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a58c2fe241966baeb5271223d276a6453}\label{classtask__encoder_1_1Task__Encoder_a58c2fe241966baeb5271223d276a6453}} 
+\mbox{\hyperlink{classtask__encoder_1_1Task__Encoder_a58c2fe241966baeb5271223d276a6453}{encoder\+\_\+freq}}
+\begin{DoxyCompactList}\small\item\em Required Period\+: Determines how frequently the encoder count will be updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a0b0b120d3e7937318098271fe7eb1f5d}\label{classtask__encoder_1_1Task__Encoder_a0b0b120d3e7937318098271fe7eb1f5d}} 
+{\bfseries encoder\+\_\+num}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a0ca8f1c384e9c306f1e719ffb48eb79a}\label{classtask__encoder_1_1Task__Encoder_a0ca8f1c384e9c306f1e719ffb48eb79a}} 
+{\bfseries encoder\+\_\+obj}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a9843a1486cfbc703cbc2fb239165ac81}\label{classtask__encoder_1_1Task__Encoder_a9843a1486cfbc703cbc2fb239165ac81}} 
+{\bfseries runs}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_af76d78ac813dae45f04b764167da08b8}\label{classtask__encoder_1_1Task__Encoder_af76d78ac813dae45f04b764167da08b8}} 
+{\bfseries next\+\_\+time}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a5175543210b54d3c95514c56e1de88ca}\label{classtask__encoder_1_1Task__Encoder_a5175543210b54d3c95514c56e1de88ca}} 
+{\bfseries current}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Import Encoder class to return position updates to main. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a7275a90667dc7fbe0bd3d7db068e7f91}\label{classtask__encoder_1_1Task__Encoder_a7275a90667dc7fbe0bd3d7db068e7f91}} 
+\index{task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def task\+\_\+encoder.\+Task\+\_\+\+Encoder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{encoder\+\_\+num,  }\item[{}]{req\+\_\+period }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoder\+\_\+num} & Encoder defined by main as either the 1 or 2 physical encoder \\
+\hline
+{\em req\+\_\+period} & Period at which encoder task will run \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtask__encoder_1_1Task__Encoder_a2266252a7ac8f26472e927a50d4a3339}\label{classtask__encoder_1_1Task__Encoder_a2266252a7ac8f26472e927a50d4a3339}} 
+\index{task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}!get\_update@{get\_update}}
+\index{get\_update@{get\_update}!task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}}
+\doxysubsubsection{\texorpdfstring{get\_update()}{get\_update()}}
+{\footnotesize\ttfamily def task\+\_\+encoder.\+Task\+\_\+\+Encoder.\+get\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{user }\end{DoxyParamCaption})}
+
+Update position at specified interval 
+\begin{DoxyParams}{Parameters}
+{\em user} & Refers to UI class object instantiated in \mbox{\hyperlink{main_8py}{main.\+py}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position of the encoder shaft 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{task__encoder_8py}{task\+\_\+encoder.\+py}}\end{DoxyCompactItemize}

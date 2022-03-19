@@ -1,0 +1,139 @@
+\hypertarget{namespace_l_e_d___patterns}{}\doxysection{LED\+\_\+\+Patterns Namespace Reference}
+\label{namespace_l_e_d___patterns}\index{LED\_Patterns@{LED\_Patterns}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}{current\+\_\+time}} (time)
+\item 
+def \mbox{\hyperlink{namespace_l_e_d___patterns_abf5f721af322e7c161f8082363d26532}{square\+\_\+wave}} (\mbox{\hyperlink{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}{current\+\_\+time}})
+\item 
+def \mbox{\hyperlink{namespace_l_e_d___patterns_a86fc9ec9deb4eb9ee38a4e02b033d6d2}{sine\+\_\+wave}} (\mbox{\hyperlink{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}{current\+\_\+time}})
+\item 
+def \mbox{\hyperlink{namespace_l_e_d___patterns_a3e93070be2d63532fa5d7afd1a278ea2}{saw\+\_\+wave}} (\mbox{\hyperlink{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}{current\+\_\+time}})
+\item 
+def \mbox{\hyperlink{namespace_l_e_d___patterns_af51ad4ed69f1d76d68115298ca8097da}{button\+\_\+pressed}} (IRQ\+\_\+src)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_ae18518a1ff46443038e0bb52b4f56617}\label{namespace_l_e_d___patterns_ae18518a1ff46443038e0bb52b4f56617}} 
+\mbox{\hyperlink{namespace_l_e_d___patterns_ae18518a1ff46443038e0bb52b4f56617}{pin\+A5}} = pyb.\+Pin(pyb.\+Pin.\+cpu.\+A5)
+\begin{DoxyCompactList}\small\item\em Assign Green LED on Nucleo to Pin A5 for PWM usage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a2d1509b2e82c9aa1028bf33e015ae365}\label{namespace_l_e_d___patterns_a2d1509b2e82c9aa1028bf33e015ae365}} 
+\mbox{\hyperlink{namespace_l_e_d___patterns_a2d1509b2e82c9aa1028bf33e015ae365}{tim2}} = pyb.\+Timer(2, freq = 20000)
+\begin{DoxyCompactList}\small\item\em Establish Timer for PWM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a810656b888104afc66e6d95af0554010}\label{namespace_l_e_d___patterns_a810656b888104afc66e6d95af0554010}} 
+\mbox{\hyperlink{namespace_l_e_d___patterns_a810656b888104afc66e6d95af0554010}{t2ch1}} = tim2.\+channel(1, pyb.\+Timer.\+PWM, pin=\mbox{\hyperlink{namespace_l_e_d___patterns_ae18518a1ff46443038e0bb52b4f56617}{pin\+A5}})
+\begin{DoxyCompactList}\small\item\em Link PWM to Pin A5. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_ac4002f275d8e6e9a67332887de24c976}\label{namespace_l_e_d___patterns_ac4002f275d8e6e9a67332887de24c976}} 
+\mbox{\hyperlink{namespace_l_e_d___patterns_ac4002f275d8e6e9a67332887de24c976}{pin\+C13}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+C13)
+\begin{DoxyCompactList}\small\item\em Assign Blue Button on Nucleo to Pin C13 for Button Interrupt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_l_e_d___patterns_a93d1c7ad1c88563da9464bbeb55f381d}{Button\+Int}}
+\begin{DoxyCompactList}\small\item\em External interrupt associated with the blue button\textquotesingle{}s callback function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a8c90cedd635d2debb86cf91c02754d62}\label{namespace_l_e_d___patterns_a8c90cedd635d2debb86cf91c02754d62}} 
+int \mbox{\hyperlink{namespace_l_e_d___patterns_a8c90cedd635d2debb86cf91c02754d62}{state}} = 0
+\begin{DoxyCompactList}\small\item\em The current state for this iteration of the FSM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a402df8b9dc3c15cf6e714dc03f3407e0}\label{namespace_l_e_d___patterns_a402df8b9dc3c15cf6e714dc03f3407e0}} 
+int \mbox{\hyperlink{namespace_l_e_d___patterns_a402df8b9dc3c15cf6e714dc03f3407e0}{runs}} = 0
+\begin{DoxyCompactList}\small\item\em The current run loop of the program. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a33d61026da8bd62d72740be32a6fa190}\label{namespace_l_e_d___patterns_a33d61026da8bd62d72740be32a6fa190}} 
+int \mbox{\hyperlink{namespace_l_e_d___patterns_a33d61026da8bd62d72740be32a6fa190}{blue\+\_\+button\+\_\+pressed}} = 0
+\begin{DoxyCompactList}\small\item\em The current state of the button. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a45ee11eda489a029500c9b2d7ac7aa5d}\label{namespace_l_e_d___patterns_a45ee11eda489a029500c9b2d7ac7aa5d}} 
+bool \mbox{\hyperlink{namespace_l_e_d___patterns_a45ee11eda489a029500c9b2d7ac7aa5d}{ran}} = False
+\begin{DoxyCompactList}\small\item\em If the current state has already run once. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_aaa8320e1c2fe4f4cee48ffe9dcb4e6ea}\label{namespace_l_e_d___patterns_aaa8320e1c2fe4f4cee48ffe9dcb4e6ea}} 
+{\bfseries start\+\_\+time} = utime.\+ticks\+\_\+ms()
+\item 
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a0d9ea9d9aa71c613ec2d83ab07ed0551}\label{namespace_l_e_d___patterns_a0d9ea9d9aa71c613ec2d83ab07ed0551}} 
+def {\bfseries timer} = \mbox{\hyperlink{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}{current\+\_\+time}}(start\+\_\+time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file    LED_Patterns.py
+@brief   Script to change LED light pattern for lab01
+@details Using pyb and utime, the script changes a specific LED light
+         on a nucelo board in 3 different patterns: square qave, sine
+         wave, and saw wave.
+
+        @image html led_fsm.png
+        
+        See source code here:
+        https://bitbucket.org/ndesimon/me405_labs/src/master/Lab%200x01/LED_Patterns.py
+            
+        See short demonstration video here:
+        https://drive.google.com/file/d/1gsICIg6rI42QG8VJxdCG4akqodxdDdyq/view
+
+@author Tyler McCue, Nick De Simone
+@date   10/8/2021
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_l_e_d___patterns_af51ad4ed69f1d76d68115298ca8097da}\label{namespace_l_e_d___patterns_af51ad4ed69f1d76d68115298ca8097da}} 
+\index{LED\_Patterns@{LED\_Patterns}!button\_pressed@{button\_pressed}}
+\index{button\_pressed@{button\_pressed}!LED\_Patterns@{LED\_Patterns}}
+\doxysubsubsection{\texorpdfstring{button\_pressed()}{button\_pressed()}}
+{\footnotesize\ttfamily def LED\+\_\+\+Patterns.\+button\+\_\+pressed (\begin{DoxyParamCaption}\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Sets button flag variable to true upon user button press
+@param IRQ_src Interrupt request triggered by button push
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}\label{namespace_l_e_d___patterns_a3ba4c20913e92691ba5d42f1bf321afb}} 
+\index{LED\_Patterns@{LED\_Patterns}!current\_time@{current\_time}}
+\index{current\_time@{current\_time}!LED\_Patterns@{LED\_Patterns}}
+\doxysubsubsection{\texorpdfstring{current\_time()}{current\_time()}}
+{\footnotesize\ttfamily def LED\+\_\+\+Patterns.\+current\+\_\+time (\begin{DoxyParamCaption}\item[{}]{time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Returns updated time difference between button push and current time
+@details Uses the utime module to return a running clock that then updates
+         the LED patterns
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d___patterns_a3e93070be2d63532fa5d7afd1a278ea2}\label{namespace_l_e_d___patterns_a3e93070be2d63532fa5d7afd1a278ea2}} 
+\index{LED\_Patterns@{LED\_Patterns}!saw\_wave@{saw\_wave}}
+\index{saw\_wave@{saw\_wave}!LED\_Patterns@{LED\_Patterns}}
+\doxysubsubsection{\texorpdfstring{saw\_wave()}{saw\_wave()}}
+{\footnotesize\ttfamily def LED\+\_\+\+Patterns.\+saw\+\_\+wave (\begin{DoxyParamCaption}\item[{}]{current\+\_\+time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief runs LED with square wave pattern
+@details Using the pyb module, an LED flashes in a square wave pattern
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d___patterns_a86fc9ec9deb4eb9ee38a4e02b033d6d2}\label{namespace_l_e_d___patterns_a86fc9ec9deb4eb9ee38a4e02b033d6d2}} 
+\index{LED\_Patterns@{LED\_Patterns}!sine\_wave@{sine\_wave}}
+\index{sine\_wave@{sine\_wave}!LED\_Patterns@{LED\_Patterns}}
+\doxysubsubsection{\texorpdfstring{sine\_wave()}{sine\_wave()}}
+{\footnotesize\ttfamily def LED\+\_\+\+Patterns.\+sine\+\_\+wave (\begin{DoxyParamCaption}\item[{}]{current\+\_\+time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief runs LED with square wave pattern
+@details Using the pyb module, an LED flashes in a square wave pattern
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d___patterns_abf5f721af322e7c161f8082363d26532}\label{namespace_l_e_d___patterns_abf5f721af322e7c161f8082363d26532}} 
+\index{LED\_Patterns@{LED\_Patterns}!square\_wave@{square\_wave}}
+\index{square\_wave@{square\_wave}!LED\_Patterns@{LED\_Patterns}}
+\doxysubsubsection{\texorpdfstring{square\_wave()}{square\_wave()}}
+{\footnotesize\ttfamily def LED\+\_\+\+Patterns.\+square\+\_\+wave (\begin{DoxyParamCaption}\item[{}]{current\+\_\+time }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief runs LED with square wave pattern
+@details Using the pyb module, an LED flashes in a square wave pattern
+@param current_time Accumulated time difference between button push and current time
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_l_e_d___patterns_a93d1c7ad1c88563da9464bbeb55f381d}\label{namespace_l_e_d___patterns_a93d1c7ad1c88563da9464bbeb55f381d}} 
+\index{LED\_Patterns@{LED\_Patterns}!ButtonInt@{ButtonInt}}
+\index{ButtonInt@{ButtonInt}!LED\_Patterns@{LED\_Patterns}}
+\doxysubsubsection{\texorpdfstring{ButtonInt}{ButtonInt}}
+{\footnotesize\ttfamily LED\+\_\+\+Patterns.\+Button\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  pyb.ExtInt(pinC13, mode=pyb.ExtInt.IRQ\_FALLING,}
+\DoxyCodeLine{2                            pull=pyb.Pin.PULL\_NONE, callback=button\_pressed)}
+
+\end{DoxyCode}
+
+
+External interrupt associated with the blue button\textquotesingle{}s callback function. 
+

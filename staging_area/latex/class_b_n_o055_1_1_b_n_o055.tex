@@ -1,0 +1,158 @@
+\hypertarget{class_b_n_o055_1_1_b_n_o055}{}\doxysection{BNO055.\+BNO055 Class Reference}
+\label{class_b_n_o055_1_1_b_n_o055}\index{BNO055.BNO055@{BNO055.BNO055}}
+
+
+A sensor driver class for the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_adace37d9214a7ca2a1a02cd211f2c0c8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Initializes and returns a \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a46879e92a286997c935930164e6d850d}{change\+\_\+mode}} (self, mode)
+\begin{DoxyCompactList}\small\item\em Sets the mode of the IMU. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a3a2b8d7ed61c3483350ee6d31a823492}{get\+\_\+cal\+\_\+status}} (self)
+\begin{DoxyCompactList}\small\item\em Brings the DRV8847 out of sleep mode. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a0a5a424155e7216d0f052d4d285c7f21}{get\+\_\+cal\+\_\+coeff}} (self, calbuf)
+\begin{DoxyCompactList}\small\item\em Brings the DRV8847 out of sleep mode. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a7d537e6a13fda7024fd28ad6c04b9fa2}{set\+\_\+cal\+\_\+coeff}} (self, setbuf)
+\begin{DoxyCompactList}\small\item\em Sets the calibration coefficients. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a1873696ee7301f1188f5cdbbeb1d1900}{get\+\_\+euler}} (self)
+\begin{DoxyCompactList}\small\item\em Obtains the euler angles. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055_a5cc089e83e452a99b718645047c07f43}{get\+\_\+omega}} (self)
+\begin{DoxyCompactList}\small\item\em Obtains the angular velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a8eebc88bf7ecfe69323da2b089911508}\label{class_b_n_o055_1_1_b_n_o055_a8eebc88bf7ecfe69323da2b089911508}} 
+{\bfseries i2c}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a1d2c344a4125cbac35ccb6ed98436178}\label{class_b_n_o055_1_1_b_n_o055_a1d2c344a4125cbac35ccb6ed98436178}} 
+{\bfseries dev\+\_\+adr}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a9eb290aec298274318cfdb02ea51df59}\label{class_b_n_o055_1_1_b_n_o055_a9eb290aec298274318cfdb02ea51df59}} 
+{\bfseries opr\+\_\+mode}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a7d27bc79cb36610abfb6897b4146fe1f}\label{class_b_n_o055_1_1_b_n_o055_a7d27bc79cb36610abfb6897b4146fe1f}} 
+{\bfseries ndof\+\_\+mode}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a15786f5a63db81ff89cadfcd3ceb34b1}\label{class_b_n_o055_1_1_b_n_o055_a15786f5a63db81ff89cadfcd3ceb34b1}} 
+{\bfseries cal\+\_\+byte}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a4ba04df1e0ecd45b665dd782a638aaa6}\label{class_b_n_o055_1_1_b_n_o055_a4ba04df1e0ecd45b665dd782a638aaa6}} 
+{\bfseries eulbuf}
+\item 
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_aa44b4fe60bf44371871e06bbae35c728}\label{class_b_n_o055_1_1_b_n_o055_aa44b4fe60bf44371871e06bbae35c728}} 
+{\bfseries omebuf}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A sensor driver class for the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}}. 
+
+Objects of this class can be used to configure the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} IMU device and to create one or more objects of the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} class which can be used to perform platform control. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_adace37d9214a7ca2a1a02cd211f2c0c8}\label{class_b_n_o055_1_1_b_n_o055_adace37d9214a7ca2a1a02cd211f2c0c8}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Initializes and returns a \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} object. 
+
+Creates a driver, which can obtains the calibration, euler angles, and angular velocity. ~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a46879e92a286997c935930164e6d850d}\label{class_b_n_o055_1_1_b_n_o055_a46879e92a286997c935930164e6d850d}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!change\_mode@{change\_mode}}
+\index{change\_mode@{change\_mode}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{change\_mode()}{change\_mode()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+change\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the mode of the IMU. 
+
+Within the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}} chip, sets the mode of the IMU to run one of the three modes. ~\newline
+ \mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a0a5a424155e7216d0f052d4d285c7f21}\label{class_b_n_o055_1_1_b_n_o055_a0a5a424155e7216d0f052d4d285c7f21}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!get\_cal\_coeff@{get\_cal\_coeff}}
+\index{get\_cal\_coeff@{get\_cal\_coeff}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{get\_cal\_coeff()}{get\_cal\_coeff()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+get\+\_\+cal\+\_\+coeff (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{calbuf }\end{DoxyParamCaption})}
+
+
+
+Brings the DRV8847 out of sleep mode. 
+
+Reads the values of the calibration coefficients from the IMU 
+\begin{DoxyParams}{Parameters}
+{\em calbuf} & buffer of calibration coefficients \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The values of the calibration coefficients 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a3a2b8d7ed61c3483350ee6d31a823492}\label{class_b_n_o055_1_1_b_n_o055_a3a2b8d7ed61c3483350ee6d31a823492}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!get\_cal\_status@{get\_cal\_status}}
+\index{get\_cal\_status@{get\_cal\_status}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{get\_cal\_status()}{get\_cal\_status()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+get\+\_\+cal\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Brings the DRV8847 out of sleep mode. 
+
+Enables DRV8847. Temporarily disables fault triggering to fix a bug in which the sensor would fault upon enabling. \begin{DoxyReturn}{Returns}
+The values from each mode of the IMU status (mag,gyro,accel,sys) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a1873696ee7301f1188f5cdbbeb1d1900}\label{class_b_n_o055_1_1_b_n_o055_a1873696ee7301f1188f5cdbbeb1d1900}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!get\_euler@{get\_euler}}
+\index{get\_euler@{get\_euler}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{get\_euler()}{get\_euler()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+get\+\_\+euler (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Obtains the euler angles. 
+
+Gets the euler angles from the sensors within the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}}. \begin{DoxyReturn}{Returns}
+The values for head, roll, and pitch 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a5cc089e83e452a99b718645047c07f43}\label{class_b_n_o055_1_1_b_n_o055_a5cc089e83e452a99b718645047c07f43}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!get\_omega@{get\_omega}}
+\index{get\_omega@{get\_omega}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{get\_omega()}{get\_omega()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+get\+\_\+omega (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Obtains the angular velocity. 
+
+Gets the angular velocity from the sensors within the \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055}}. \begin{DoxyReturn}{Returns}
+The values of the angular velocities in the x,y,z directions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_b_n_o055_1_1_b_n_o055_a7d537e6a13fda7024fd28ad6c04b9fa2}\label{class_b_n_o055_1_1_b_n_o055_a7d537e6a13fda7024fd28ad6c04b9fa2}} 
+\index{BNO055.BNO055@{BNO055.BNO055}!set\_cal\_coeff@{set\_cal\_coeff}}
+\index{set\_cal\_coeff@{set\_cal\_coeff}!BNO055.BNO055@{BNO055.BNO055}}
+\doxysubsubsection{\texorpdfstring{set\_cal\_coeff()}{set\_cal\_coeff()}}
+{\footnotesize\ttfamily def BNO055.\+BNO055.\+set\+\_\+cal\+\_\+coeff (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{setbuf }\end{DoxyParamCaption})}
+
+
+
+Sets the calibration coefficients. 
+
+Writes the values of the calibration coefficients 
+\begin{DoxyParams}{Parameters}
+{\em setbuf} & buffer of read calib coefficients \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_b_n_o055_8py}{BNO055.\+py}}\end{DoxyCompactItemize}

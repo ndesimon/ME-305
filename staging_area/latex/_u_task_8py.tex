@@ -1,0 +1,253 @@
+\hypertarget{_u_task_8py}{}\doxysection{UTask.\+py File Reference}
+\label{_u_task_8py}\index{UTask.py@{UTask.py}}
+
+
+Creates the User\+Interface of the program.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_u_task_8py_a1bfed428c9d8e8cd71cb829cf44bb3b2}{UTask.\+task\+User\+FCN}} (task\+Name, period, z\+Flag, c\+Flag, e\+Flag, enc\+Data, duty1, duty2, Kp\+Share, Ki\+Share, y\+Share, w\+Flag)
+\begin{DoxyCompactList}\small\item\em Creates the user interface. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_u_task_8py_ac58cf599dc4fe41b98c65dea595d8bb6}{UTask.\+print\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Creates the User Interface Display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_u_task_8py_a7de7b2bc41543a2e6a779876956f44e3}{UTask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a2219c7faa3f9924b8b6c43dce7021107}{UTask.\+S1\+\_\+\+CMD}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+CMD. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a888eb971fe8056d2aa2ad2f642d870f2}{UTask.\+S2\+\_\+\+ZERO}} = micropython.\+const(2)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+ZERO. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a531c6d2a6eb2e52513ae2ee2298fb270}{UTask.\+S3\+\_\+\+COLLECT}} = micropython.\+const(3)
+\begin{DoxyCompactList}\small\item\em Creates a state called S3\+\_\+\+COLLECT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_ac9b4f37aaeabfb68f7644518f50e9831}{UTask.\+S4\+\_\+\+PRINT\+\_\+\+DATA}} = micropython.\+const(4)
+\begin{DoxyCompactList}\small\item\em Creates a state called S4\+\_\+\+PRINT\+\_\+\+DATA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_af3286ef4ac8f0a69af1bac67801f14c7}{UTask.\+S5\+\_\+\+DIGI\+\_\+\+IN}} = micropython.\+const(5)
+\begin{DoxyCompactList}\small\item\em Creates a state called S5\+\_\+\+DIGI\+\_\+\+IN. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a68278991915acb4486a5789e6df7d805}{UTask.\+S6\+\_\+\+TESTING}} = micropython.\+const(6)
+\begin{DoxyCompactList}\small\item\em Creates a state called S6\+\_\+\+TESTING. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a2ee58f8f701552c1fc61c0fcebbf0d89}{UTask.\+S7\+\_\+\+DETERMINE\+\_\+\+V\+\_\+\+AVG}} = micropython.\+const(7)
+\begin{DoxyCompactList}\small\item\em Creates a state called S7\+\_\+\+DETERMINE\+\_\+\+V\+\_\+\+AVG. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a6f09a4b574c73f40fb46df14ec4fd83f}{UTask.\+S8\+\_\+\+PRINT\+\_\+\+TEST}} = micropython.\+const(8)
+\begin{DoxyCompactList}\small\item\em Creates a state called S8\+\_\+\+PRINT\+\_\+\+TEST. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_aee08d45c35a4cefa49ffd519e3b302d1}{UTask.\+S9\+\_\+\+COLLECT\+\_\+\+STEP}} = micropython.\+const(9)
+\begin{DoxyCompactList}\small\item\em Creates a state called S9\+\_\+\+COLLECT\+\_\+\+STEP. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a99285a60fed5c87e18b9d487d33955a3}{UTask.\+S10\+\_\+\+PRINT\+\_\+\+STEP}} = micropython.\+const(10)
+\begin{DoxyCompactList}\small\item\em Creates a state called S10\+\_\+\+PRINT\+\_\+\+STEP. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_u_task_8py_a961ca7fad3dafc2f25a149a94794a714}{UTask.\+m\+Press}} = micropython.\+const(1)
+\begin{DoxyCompactList}\small\item\em Creates Press variables used tor switching to a state in closed loop control after entering a key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_u_task_8py_a70dafcedd6f32681c505d9de053f3885}\label{_u_task_8py_a70dafcedd6f32681c505d9de053f3885}} 
+{\bfseries UTask.\+MPress} = micropython.\+const(2)
+\item 
+\mbox{\Hypertarget{_u_task_8py_a0ea44c54fd4697895b60f1449f4c1e78}\label{_u_task_8py_a0ea44c54fd4697895b60f1449f4c1e78}} 
+{\bfseries UTask.\+t\+Press} = micropython.\+const(3)
+\item 
+\mbox{\Hypertarget{_u_task_8py_a2b16c3a0c369bb977fa0027872523fcd}\label{_u_task_8py_a2b16c3a0c369bb977fa0027872523fcd}} 
+{\bfseries UTask.\+y\+Press} = micropython.\+const(4)
+\item 
+\mbox{\Hypertarget{_u_task_8py_a7dfaab3668184e360175b9ccd5d09ff4}\label{_u_task_8py_a7dfaab3668184e360175b9ccd5d09ff4}} 
+{\bfseries UTask.\+k\+Press} = micropython.\+const(5)
+\item 
+\mbox{\Hypertarget{_u_task_8py_a294fe7f13eb92938ab334eaeb7d3856b}\label{_u_task_8py_a294fe7f13eb92938ab334eaeb7d3856b}} 
+{\bfseries UTask.\+ki\+Press} = micropython.\+const(6)
+\item 
+\mbox{\Hypertarget{_u_task_8py_a6fc059105550bfee282b7c257ff17c01}\label{_u_task_8py_a6fc059105550bfee282b7c257ff17c01}} 
+{\bfseries UTask.\+r\+Press} = micropython.\+const(7)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the User\+Interface of the program. 
+
+The User Interface lists all possible quantities and ways that the user can interact with the encoder, motor, and DRV8847 modules. The state transition diagram for this task is depicted below\+: 
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab3/UTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab3/\+UTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/24-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_task_8py_ac58cf599dc4fe41b98c65dea595d8bb6}\label{_u_task_8py_ac58cf599dc4fe41b98c65dea595d8bb6}} 
+\index{UTask.py@{UTask.py}!printHelp@{printHelp}}
+\index{printHelp@{printHelp}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{printHelp()}{printHelp()}}
+{\footnotesize\ttfamily def UTask.\+print\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the User Interface Display. 
+
+Creates a stylsh display with all possible ways for user to interact with the encoder. \mbox{\Hypertarget{_u_task_8py_a1bfed428c9d8e8cd71cb829cf44bb3b2}\label{_u_task_8py_a1bfed428c9d8e8cd71cb829cf44bb3b2}} 
+\index{UTask.py@{UTask.py}!taskUserFCN@{taskUserFCN}}
+\index{taskUserFCN@{taskUserFCN}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{taskUserFCN()}{taskUserFCN()}}
+{\footnotesize\ttfamily def UTask.\+task\+User\+FCN (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{z\+Flag,  }\item[{}]{c\+Flag,  }\item[{}]{e\+Flag,  }\item[{}]{enc\+Data,  }\item[{}]{duty1,  }\item[{}]{duty2,  }\item[{}]{Kp\+Share,  }\item[{}]{Ki\+Share,  }\item[{}]{y\+Share,  }\item[{}]{w\+Flag }\end{DoxyParamCaption})}
+
+
+
+Creates the user interface. 
+
+Creates the many functionalities required. Motor can be controlled and data can be collected. User is prompted as to what inputs are valid. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em z\+Flag} & A shared parameter that indicates if the \textquotesingle{}z\textquotesingle{} key has been pressed. \\
+\hline
+{\em c\+Flag} & A shared parameter that indicates if the \textquotesingle{}c\textquotesingle{} key has been pressed. \\
+\hline
+{\em e\+Flag} & A shared parameter that indicates if the \textquotesingle{}e\textquotesingle{} key has been pressed. \\
+\hline
+{\em enc\+Data} & A tuple containing time, position, and delta of the encoder. ~\newline
+ \\
+\hline
+{\em duty1} & A shared parameter that passes in the value for the duty cycle of motor 1. \\
+\hline
+{\em duty2} & A shared parameter that passes in the value for the duty cycle of motor 2. \\
+\hline
+{\em Kpshare} & A shared parameter that passes in the value for the gain of Kp. \\
+\hline
+{\em Kishare} & A shared parameter that passes in the value for the gain of Ki. \\
+\hline
+{\em yshare} & A shared parameter that passes in the value for the set point of the closed loop controller. \\
+\hline
+{\em w\+Flag} & A shared parameter that indicates if the closed loop control keys have been pressed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_u_task_8py_a961ca7fad3dafc2f25a149a94794a714}\label{_u_task_8py_a961ca7fad3dafc2f25a149a94794a714}} 
+\index{UTask.py@{UTask.py}!mPress@{mPress}}
+\index{mPress@{mPress}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{mPress}{mPress}}
+{\footnotesize\ttfamily UTask.\+m\+Press = micropython.\+const(1)}
+
+
+
+Creates Press variables used tor switching to a state in closed loop control after entering a key. 
+
+Once the keys\+: m,M,t,y,k,ki,or r are pressed, the states are swtiched to each of the corresponding keys while within closed loop control. \mbox{\Hypertarget{_u_task_8py_a7de7b2bc41543a2e6a779876956f44e3}\label{_u_task_8py_a7de7b2bc41543a2e6a779876956f44e3}} 
+\index{UTask.py@{UTask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily UTask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{_u_task_8py_a99285a60fed5c87e18b9d487d33955a3}\label{_u_task_8py_a99285a60fed5c87e18b9d487d33955a3}} 
+\index{UTask.py@{UTask.py}!S10\_PRINT\_STEP@{S10\_PRINT\_STEP}}
+\index{S10\_PRINT\_STEP@{S10\_PRINT\_STEP}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S10\_PRINT\_STEP}{S10\_PRINT\_STEP}}
+{\footnotesize\ttfamily UTask.\+S10\+\_\+\+PRINT\+\_\+\+STEP = micropython.\+const(10)}
+
+
+
+Creates a state called S10\+\_\+\+PRINT\+\_\+\+STEP. 
+
+Variable sets state where the values of time, velocity and duty cycle are printed. \mbox{\Hypertarget{_u_task_8py_a2219c7faa3f9924b8b6c43dce7021107}\label{_u_task_8py_a2219c7faa3f9924b8b6c43dce7021107}} 
+\index{UTask.py@{UTask.py}!S1\_CMD@{S1\_CMD}}
+\index{S1\_CMD@{S1\_CMD}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_CMD}{S1\_CMD}}
+{\footnotesize\ttfamily UTask.\+S1\+\_\+\+CMD = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+CMD. 
+
+Variable will be the state 1 for updating the program \mbox{\Hypertarget{_u_task_8py_a888eb971fe8056d2aa2ad2f642d870f2}\label{_u_task_8py_a888eb971fe8056d2aa2ad2f642d870f2}} 
+\index{UTask.py@{UTask.py}!S2\_ZERO@{S2\_ZERO}}
+\index{S2\_ZERO@{S2\_ZERO}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S2\_ZERO}{S2\_ZERO}}
+{\footnotesize\ttfamily UTask.\+S2\+\_\+\+ZERO = micropython.\+const(2)}
+
+
+
+Creates a state called S2\+\_\+\+ZERO. 
+
+Variable will be the state 2 for zeroing the program \mbox{\Hypertarget{_u_task_8py_a531c6d2a6eb2e52513ae2ee2298fb270}\label{_u_task_8py_a531c6d2a6eb2e52513ae2ee2298fb270}} 
+\index{UTask.py@{UTask.py}!S3\_COLLECT@{S3\_COLLECT}}
+\index{S3\_COLLECT@{S3\_COLLECT}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S3\_COLLECT}{S3\_COLLECT}}
+{\footnotesize\ttfamily UTask.\+S3\+\_\+\+COLLECT = micropython.\+const(3)}
+
+
+
+Creates a state called S3\+\_\+\+COLLECT. 
+
+Variable will be the state 3 for collecting data \mbox{\Hypertarget{_u_task_8py_ac9b4f37aaeabfb68f7644518f50e9831}\label{_u_task_8py_ac9b4f37aaeabfb68f7644518f50e9831}} 
+\index{UTask.py@{UTask.py}!S4\_PRINT\_DATA@{S4\_PRINT\_DATA}}
+\index{S4\_PRINT\_DATA@{S4\_PRINT\_DATA}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S4\_PRINT\_DATA}{S4\_PRINT\_DATA}}
+{\footnotesize\ttfamily UTask.\+S4\+\_\+\+PRINT\+\_\+\+DATA = micropython.\+const(4)}
+
+
+
+Creates a state called S4\+\_\+\+PRINT\+\_\+\+DATA. 
+
+Variable will be the state 4 for printing data. \mbox{\Hypertarget{_u_task_8py_af3286ef4ac8f0a69af1bac67801f14c7}\label{_u_task_8py_af3286ef4ac8f0a69af1bac67801f14c7}} 
+\index{UTask.py@{UTask.py}!S5\_DIGI\_IN@{S5\_DIGI\_IN}}
+\index{S5\_DIGI\_IN@{S5\_DIGI\_IN}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S5\_DIGI\_IN}{S5\_DIGI\_IN}}
+{\footnotesize\ttfamily UTask.\+S5\+\_\+\+DIGI\+\_\+\+IN = micropython.\+const(5)}
+
+
+
+Creates a state called S5\+\_\+\+DIGI\+\_\+\+IN. 
+
+Variable sets state where user inputs are evaluated as to whether they are valid duty cycles \mbox{\Hypertarget{_u_task_8py_a68278991915acb4486a5789e6df7d805}\label{_u_task_8py_a68278991915acb4486a5789e6df7d805}} 
+\index{UTask.py@{UTask.py}!S6\_TESTING@{S6\_TESTING}}
+\index{S6\_TESTING@{S6\_TESTING}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S6\_TESTING}{S6\_TESTING}}
+{\footnotesize\ttfamily UTask.\+S6\+\_\+\+TESTING = micropython.\+const(6)}
+
+
+
+Creates a state called S6\+\_\+\+TESTING. 
+
+Variable sets state where user inputs are collected to be tested and used to find the average velocity in the next state. \mbox{\Hypertarget{_u_task_8py_a2ee58f8f701552c1fc61c0fcebbf0d89}\label{_u_task_8py_a2ee58f8f701552c1fc61c0fcebbf0d89}} 
+\index{UTask.py@{UTask.py}!S7\_DETERMINE\_V\_AVG@{S7\_DETERMINE\_V\_AVG}}
+\index{S7\_DETERMINE\_V\_AVG@{S7\_DETERMINE\_V\_AVG}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S7\_DETERMINE\_V\_AVG}{S7\_DETERMINE\_V\_AVG}}
+{\footnotesize\ttfamily UTask.\+S7\+\_\+\+DETERMINE\+\_\+\+V\+\_\+\+AVG = micropython.\+const(7)}
+
+
+
+Creates a state called S7\+\_\+\+DETERMINE\+\_\+\+V\+\_\+\+AVG. 
+
+Variable sets state where user inputs are evaluated to find the average velocity of the data colleced \mbox{\Hypertarget{_u_task_8py_a6f09a4b574c73f40fb46df14ec4fd83f}\label{_u_task_8py_a6f09a4b574c73f40fb46df14ec4fd83f}} 
+\index{UTask.py@{UTask.py}!S8\_PRINT\_TEST@{S8\_PRINT\_TEST}}
+\index{S8\_PRINT\_TEST@{S8\_PRINT\_TEST}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S8\_PRINT\_TEST}{S8\_PRINT\_TEST}}
+{\footnotesize\ttfamily UTask.\+S8\+\_\+\+PRINT\+\_\+\+TEST = micropython.\+const(8)}
+
+
+
+Creates a state called S8\+\_\+\+PRINT\+\_\+\+TEST. 
+
+Variable sets state where user inputs are printed. The duty value and average velocity are printed to the user. \mbox{\Hypertarget{_u_task_8py_aee08d45c35a4cefa49ffd519e3b302d1}\label{_u_task_8py_aee08d45c35a4cefa49ffd519e3b302d1}} 
+\index{UTask.py@{UTask.py}!S9\_COLLECT\_STEP@{S9\_COLLECT\_STEP}}
+\index{S9\_COLLECT\_STEP@{S9\_COLLECT\_STEP}!UTask.py@{UTask.py}}
+\doxysubsubsection{\texorpdfstring{S9\_COLLECT\_STEP}{S9\_COLLECT\_STEP}}
+{\footnotesize\ttfamily UTask.\+S9\+\_\+\+COLLECT\+\_\+\+STEP = micropython.\+const(9)}
+
+
+
+Creates a state called S9\+\_\+\+COLLECT\+\_\+\+STEP. 
+
+Variable sets state where the step response is collected with the values of time, position, delta, velocity, and duty cycle. 

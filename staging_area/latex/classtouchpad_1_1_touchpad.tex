@@ -1,0 +1,191 @@
+\hypertarget{classtouchpad_1_1_touchpad}{}\doxysection{touchpad.\+Touchpad Class Reference}
+\label{classtouchpad_1_1_touchpad}\index{touchpad.Touchpad@{touchpad.Touchpad}}
+
+
+Contains methods to obtain values from the touchpad.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtouchpad_1_1_touchpad_ad8489de4ab5cdc455fe9b5c1c3d41856}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, xp\+Pin, xm\+Pin, yp\+Pin, ym\+Pin, xwidth, ylength)
+\begin{DoxyCompactList}\small\item\em Creates the initial setup for the touchpad. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpad_1_1_touchpad_a08f749db0528866aa9e3fb0ee2296603}{x\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Uses ADC measurements for x position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpad_1_1_touchpad_a4c621e35c52978b1f33e5385f5d345cc}{y\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Uses ADC measurements for y position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpad_1_1_touchpad_ae9551bd5f8725be88c259df0f69a3bd1}{z\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Determines if ball is in contact with pad. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpad_1_1_touchpad_a5a437023d15c0c53ade6eba7bf7da7e5}{XYZ\+\_\+\+Scan}} (self)
+\begin{DoxyCompactList}\small\item\em Uses all x,y,z scans and combines into one tuple. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtouchpad_1_1_touchpad_a2fa4b033ab496139edcde5540eb766e7}{set\+\_\+cal\+\_\+coeff}} (self, Kxx, Kxy, xo, Kyx, Kyy, yo)
+\begin{DoxyCompactList}\small\item\em Sets values for calibration coefficients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a8e33ca0a2b8a3057e34301b0dfd77912}\label{classtouchpad_1_1_touchpad_a8e33ca0a2b8a3057e34301b0dfd77912}} 
+{\bfseries xp\+Pin}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a5749725de59a5b73d9dffd1571feebf4}\label{classtouchpad_1_1_touchpad_a5749725de59a5b73d9dffd1571feebf4}} 
+{\bfseries xm\+Pin}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a7e8a4c814dabc85e66cf3e96b4a4cea6}\label{classtouchpad_1_1_touchpad_a7e8a4c814dabc85e66cf3e96b4a4cea6}} 
+{\bfseries yp\+Pin}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_afa892dfb9b939e8415226545e9f90a61}\label{classtouchpad_1_1_touchpad_afa892dfb9b939e8415226545e9f90a61}} 
+{\bfseries ym\+Pin}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_acc88e20881b739459370e4986a4c1fb0}\label{classtouchpad_1_1_touchpad_acc88e20881b739459370e4986a4c1fb0}} 
+{\bfseries OUT}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a03b7008480bde9ab2f9c017608ae5155}\label{classtouchpad_1_1_touchpad_a03b7008480bde9ab2f9c017608ae5155}} 
+{\bfseries IN}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_aaf3386859e9cceb47689a6f5ecf3a7fd}\label{classtouchpad_1_1_touchpad_aaf3386859e9cceb47689a6f5ecf3a7fd}} 
+{\bfseries xscale}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ae9b9d0391d50ce27d794cb429ed3a5e8}\label{classtouchpad_1_1_touchpad_ae9b9d0391d50ce27d794cb429ed3a5e8}} 
+{\bfseries yscale}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ac3c49c18892a54a911de1f51e490d40a}\label{classtouchpad_1_1_touchpad_ac3c49c18892a54a911de1f51e490d40a}} 
+{\bfseries xc}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_af41a25d0eda67cc43da18d21a61ed38d}\label{classtouchpad_1_1_touchpad_af41a25d0eda67cc43da18d21a61ed38d}} 
+{\bfseries yc}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a7b4846d96177a4a47fd1e0fb7ae033d4}\label{classtouchpad_1_1_touchpad_a7b4846d96177a4a47fd1e0fb7ae033d4}} 
+{\bfseries Kxx}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a398ab572da377ecd682d25e3833428a6}\label{classtouchpad_1_1_touchpad_a398ab572da377ecd682d25e3833428a6}} 
+{\bfseries Kxy}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a141412b46062edf2732fd2f63b51a192}\label{classtouchpad_1_1_touchpad_a141412b46062edf2732fd2f63b51a192}} 
+{\bfseries xo}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ad879e018daea467f70e5fbc6cb289cff}\label{classtouchpad_1_1_touchpad_ad879e018daea467f70e5fbc6cb289cff}} 
+{\bfseries Kyx}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a165b454fcca91cc883ce25fa3b940f62}\label{classtouchpad_1_1_touchpad_a165b454fcca91cc883ce25fa3b940f62}} 
+{\bfseries Kyy}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a96c1f1638048e4c8d9e3ae4f63577828}\label{classtouchpad_1_1_touchpad_a96c1f1638048e4c8d9e3ae4f63577828}} 
+{\bfseries yo}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ac0a3d8326733913c1b63a0312b7420b6}\label{classtouchpad_1_1_touchpad_ac0a3d8326733913c1b63a0312b7420b6}} 
+{\bfseries x\+ADC}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a187ee86e4f1add270971e0804f251e84}\label{classtouchpad_1_1_touchpad_a187ee86e4f1add270971e0804f251e84}} 
+{\bfseries y\+ADC}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a7e90bbbf78252bfb848ba971037c679b}\label{classtouchpad_1_1_touchpad_a7e90bbbf78252bfb848ba971037c679b}} 
+{\bfseries z}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ab1c5c1097cb91ab36ff14ad033fdd820}\label{classtouchpad_1_1_touchpad_ab1c5c1097cb91ab36ff14ad033fdd820}} 
+{\bfseries x}
+\item 
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_aa766552fe749b3da3db0c3ab7ada844f}\label{classtouchpad_1_1_touchpad_aa766552fe749b3da3db0c3ab7ada844f}} 
+{\bfseries y}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains methods to obtain values from the touchpad. 
+
+Configures pins to obtain position and velocities of the ball using ADC measurements. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ad8489de4ab5cdc455fe9b5c1c3d41856}\label{classtouchpad_1_1_touchpad_ad8489de4ab5cdc455fe9b5c1c3d41856}} 
+\index{touchpad.Touchpad@{touchpad.Touchpad}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!touchpad.Touchpad@{touchpad.Touchpad}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def touchpad.\+Touchpad.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{xp\+Pin,  }\item[{}]{xm\+Pin,  }\item[{}]{yp\+Pin,  }\item[{}]{ym\+Pin,  }\item[{}]{xwidth,  }\item[{}]{ylength }\end{DoxyParamCaption})}
+
+
+
+Creates the initial setup for the touchpad. 
+
+Sets up all the pins associated with the touchpad 
+\begin{DoxyParams}{Parameters}
+{\em xp\+Pin} & A pin used the positive x terminal of the touchpad. \\
+\hline
+{\em xm\+Pin} & A pin used the negative x terminal of the touchpad. \\
+\hline
+{\em yp\+Pin} & A pin used the positive y terminal of the touchpad. \\
+\hline
+{\em ym\+Pin} & A pin used the negative y terminal of the touchpad. \\
+\hline
+{\em xwidth} & A value used for the physical width of the pad. \\
+\hline
+{\em ylength} & A value used for the physical length of the pad. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a2fa4b033ab496139edcde5540eb766e7}\label{classtouchpad_1_1_touchpad_a2fa4b033ab496139edcde5540eb766e7}} 
+\index{touchpad.Touchpad@{touchpad.Touchpad}!set\_cal\_coeff@{set\_cal\_coeff}}
+\index{set\_cal\_coeff@{set\_cal\_coeff}!touchpad.Touchpad@{touchpad.Touchpad}}
+\doxysubsubsection{\texorpdfstring{set\_cal\_coeff()}{set\_cal\_coeff()}}
+{\footnotesize\ttfamily def touchpad.\+Touchpad.\+set\+\_\+cal\+\_\+coeff (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kxx,  }\item[{}]{Kxy,  }\item[{}]{xo,  }\item[{}]{Kyx,  }\item[{}]{Kyy,  }\item[{}]{yo }\end{DoxyParamCaption})}
+
+
+
+Sets values for calibration coefficients. 
+
+Calculated values for the calibration coefficients computed in TTask using the matricies. \mbox{\Hypertarget{classtouchpad_1_1_touchpad_a08f749db0528866aa9e3fb0ee2296603}\label{classtouchpad_1_1_touchpad_a08f749db0528866aa9e3fb0ee2296603}} 
+\index{touchpad.Touchpad@{touchpad.Touchpad}!xScan@{xScan}}
+\index{xScan@{xScan}!touchpad.Touchpad@{touchpad.Touchpad}}
+\doxysubsubsection{\texorpdfstring{xScan()}{xScan()}}
+{\footnotesize\ttfamily def touchpad.\+Touchpad.\+x\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Uses ADC measurements for x position. 
+
+Configures pins to obtain the ADC measurement of the x position which will be converted to mm. \begin{DoxyReturn}{Returns}
+The value of x position in mm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a5a437023d15c0c53ade6eba7bf7da7e5}\label{classtouchpad_1_1_touchpad_a5a437023d15c0c53ade6eba7bf7da7e5}} 
+\index{touchpad.Touchpad@{touchpad.Touchpad}!XYZ\_Scan@{XYZ\_Scan}}
+\index{XYZ\_Scan@{XYZ\_Scan}!touchpad.Touchpad@{touchpad.Touchpad}}
+\doxysubsubsection{\texorpdfstring{XYZ\_Scan()}{XYZ\_Scan()}}
+{\footnotesize\ttfamily def touchpad.\+Touchpad.\+XYZ\+\_\+\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Uses all x,y,z scans and combines into one tuple. 
+
+Configures the values from x,y,z scan to be inserted into a tuple that can be passed into other modules. \begin{DoxyReturn}{Returns}
+tuple containing x,y,z scan 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_a4c621e35c52978b1f33e5385f5d345cc}\label{classtouchpad_1_1_touchpad_a4c621e35c52978b1f33e5385f5d345cc}} 
+\index{touchpad.Touchpad@{touchpad.Touchpad}!yScan@{yScan}}
+\index{yScan@{yScan}!touchpad.Touchpad@{touchpad.Touchpad}}
+\doxysubsubsection{\texorpdfstring{yScan()}{yScan()}}
+{\footnotesize\ttfamily def touchpad.\+Touchpad.\+y\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Uses ADC measurements for y position. 
+
+Configures pins to obtain the ADC measurement of the y position which will be converted to mm. \begin{DoxyReturn}{Returns}
+The value of y position in mm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtouchpad_1_1_touchpad_ae9551bd5f8725be88c259df0f69a3bd1}\label{classtouchpad_1_1_touchpad_ae9551bd5f8725be88c259df0f69a3bd1}} 
+\index{touchpad.Touchpad@{touchpad.Touchpad}!zScan@{zScan}}
+\index{zScan@{zScan}!touchpad.Touchpad@{touchpad.Touchpad}}
+\doxysubsubsection{\texorpdfstring{zScan()}{zScan()}}
+{\footnotesize\ttfamily def touchpad.\+Touchpad.\+z\+Scan (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Determines if ball is in contact with pad. 
+
+Configures the pins to determine if the ball is in current contact or is not on the touchpad. \begin{DoxyReturn}{Returns}
+The value of z 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{touchpad_8py}{touchpad.\+py}}\end{DoxyCompactItemize}

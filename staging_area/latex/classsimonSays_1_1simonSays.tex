@@ -1,0 +1,169 @@
+\hypertarget{classsimonSays_1_1simonSays}{}\doxysection{simon\+Says.\+simon\+Says Class Reference}
+\label{classsimonSays_1_1simonSays}\index{simonSays.simonSays@{simonSays.simonSays}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a457737dcef63dec9127fb2ddd53727ca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classsimonSays_1_1simonSays_a34bc189495fee46a516f88a1584ced3b}{morse\+\_\+unit}}=1000, \mbox{\hyperlink{classsimonSays_1_1simonSays_a24bbd6daa0ddf8270e2046156016492c}{error\+\_\+allow}}=1000, \mbox{\hyperlink{classsimonSays_1_1simonSays_af8df013b14e31786d85b1fc7322071de}{DBG\+\_\+flag}}=False)
+\begin{DoxyCompactList}\small\item\em Initializes parameters/variables of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a52ffa60fbf28ad9557a7cfc14e3263b6}\label{classsimonSays_1_1simonSays_a52ffa60fbf28ad9557a7cfc14e3263b6}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a52ffa60fbf28ad9557a7cfc14e3263b6}{run}} (self)
+\begin{DoxyCompactList}\small\item\em Runs game FSM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a0914f36ac8b82e19a4eac369a4cf7df3}\label{classsimonSays_1_1simonSays_a0914f36ac8b82e19a4eac369a4cf7df3}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a0914f36ac8b82e19a4eac369a4cf7df3}{transition\+To}} (self, \mbox{\hyperlink{classsimonSays_1_1simonSays_a24ed15f4c4d96eb6a24204b8f87e2b3d}{new\+State}})
+\begin{DoxyCompactList}\small\item\em Transitions to the next specified state in the FSM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a856ff90fabf4d263397f2d6fbddf68e4}\label{classsimonSays_1_1simonSays_a856ff90fabf4d263397f2d6fbddf68e4}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a856ff90fabf4d263397f2d6fbddf68e4}{standby}} (self)
+\begin{DoxyCompactList}\small\item\em Sends user to a standby state where they must button push to continue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a8efe7afc4e74b53ba0a2cab0e7affc87}\label{classsimonSays_1_1simonSays_a8efe7afc4e74b53ba0a2cab0e7affc87}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a8efe7afc4e74b53ba0a2cab0e7affc87}{convert\+Morse\+To\+Time}} (self)
+\begin{DoxyCompactList}\small\item\em Converts Morse Code to Times for PWM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a4cc3c9dbe0ee1c321ed75968ebe287d0}\label{classsimonSays_1_1simonSays_a4cc3c9dbe0ee1c321ed75968ebe287d0}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a4cc3c9dbe0ee1c321ed75968ebe287d0}{get\+Ready}} (self)
+\begin{DoxyCompactList}\small\item\em Gives three ready statements as a buffer before proceeding in the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a23f9cc90ccd8afda3b1ee0d70aba62b1}\label{classsimonSays_1_1simonSays_a23f9cc90ccd8afda3b1ee0d70aba62b1}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a23f9cc90ccd8afda3b1ee0d70aba62b1}{lights}} (self)
+\begin{DoxyCompactList}\small\item\em Displays morse sequence on the LED of Pin C13. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a03cd88e66bf92dd193debd5e5f812f6b}\label{classsimonSays_1_1simonSays_a03cd88e66bf92dd193debd5e5f812f6b}} 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a03cd88e66bf92dd193debd5e5f812f6b}{check\+User}} (self)
+\begin{DoxyCompactList}\small\item\em Checks user\textquotesingle{}s button pushes and compares them to the given seq. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classsimonSays_1_1simonSays_a0e60b479a8afbae30f9e8d07fed21723}{on\+Button\+Press\+FCN}} (self, IRQ\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Commands Nucleo upon button push. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a37a4178c4347624beef19e94f7bc19e2}{state}}
+\begin{DoxyCompactList}\small\item\em The current state of the finite state machine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a2a7ed8ea54c7ad94a7a66e57da9362ae}\label{classsimonSays_1_1simonSays_a2a7ed8ea54c7ad94a7a66e57da9362ae}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a2a7ed8ea54c7ad94a7a66e57da9362ae}{level}}
+\begin{DoxyCompactList}\small\item\em Level of Game Play. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a8d4fc8f6849ee98ba42172d7e727dd43}{button\+Pushed}}
+\begin{DoxyCompactList}\small\item\em Flag to indicate button has been pushed or released. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_af8df013b14e31786d85b1fc7322071de}\label{classsimonSays_1_1simonSays_af8df013b14e31786d85b1fc7322071de}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_af8df013b14e31786d85b1fc7322071de}{DBG\+\_\+flag}}
+\begin{DoxyCompactList}\small\item\em Flag to specify if debug messages print. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a34bc189495fee46a516f88a1584ced3b}\label{classsimonSays_1_1simonSays_a34bc189495fee46a516f88a1584ced3b}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a34bc189495fee46a516f88a1584ced3b}{morse\+\_\+unit}}
+\begin{DoxyCompactList}\small\item\em Standard unit to be used for timing of morse characters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a24bbd6daa0ddf8270e2046156016492c}\label{classsimonSays_1_1simonSays_a24bbd6daa0ddf8270e2046156016492c}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a24bbd6daa0ddf8270e2046156016492c}{error\+\_\+allow}}
+\begin{DoxyCompactList}\small\item\em The allowed time difference between the actual morse sequence and the user\textquotesingle{}s button presses in microseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a26bd24e561915462c4c1a277e2ace2ab}\label{classsimonSays_1_1simonSays_a26bd24e561915462c4c1a277e2ace2ab}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a26bd24e561915462c4c1a277e2ace2ab}{Button\+Int}}
+\begin{DoxyCompactList}\small\item\em Assign external Button Interrupt. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a24ed15f4c4d96eb6a24204b8f87e2b3d}\label{classsimonSays_1_1simonSays_a24ed15f4c4d96eb6a24204b8f87e2b3d}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a24ed15f4c4d96eb6a24204b8f87e2b3d}{new\+State}}
+\begin{DoxyCompactList}\small\item\em Serves as variable to establish next state in FSM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_ad3c7b48b93fa0bd623bd2814cd318c6b}\label{classsimonSays_1_1simonSays_ad3c7b48b93fa0bd623bd2814cd318c6b}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_ad3c7b48b93fa0bd623bd2814cd318c6b}{rand\+Phrase}}
+\begin{DoxyCompactList}\small\item\em Randomly generated character or list of characters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a9b45b0e3f470587d275fafd37da18ad3}\label{classsimonSays_1_1simonSays_a9b45b0e3f470587d275fafd37da18ad3}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a9b45b0e3f470587d275fafd37da18ad3}{morse\+Phrase}}
+\begin{DoxyCompactList}\small\item\em List filled with morse equivalents of the rand\+Phrase. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a679a6a72764d15a5700a5021219c3364}\label{classsimonSays_1_1simonSays_a679a6a72764d15a5700a5021219c3364}} 
+\mbox{\hyperlink{classsimonSays_1_1simonSays_a679a6a72764d15a5700a5021219c3364}{time\+Phrase}}
+\begin{DoxyCompactList}\small\item\em List containing Morse sequences converted into units of time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a2b4487ce5f497d35d1db1766cb0cfd2b}\label{classsimonSays_1_1simonSays_a2b4487ce5f497d35d1db1766cb0cfd2b}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_a2b4487ce5f497d35d1db1766cb0cfd2b}{S0\+\_\+\+INIT}} = 0
+\begin{DoxyCompactList}\small\item\em Init state sets state to starts game and displays rules if user is ready. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a4513b030f468502fca5d99686e8e51ef}\label{classsimonSays_1_1simonSays_a4513b030f468502fca5d99686e8e51ef}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_a4513b030f468502fca5d99686e8e51ef}{S1\+\_\+\+CREATE\+\_\+\+PHRASE}} = 1
+\begin{DoxyCompactList}\small\item\em State 1 generates random phrase and converts it to Morse/\+PWM Time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_afa925553b965961ff7cd2d827debce15}\label{classsimonSays_1_1simonSays_afa925553b965961ff7cd2d827debce15}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_afa925553b965961ff7cd2d827debce15}{S2\+\_\+\+SHOW\+\_\+\+SEQ}} = 2
+\begin{DoxyCompactList}\small\item\em State 2 blinks the Morse sequence on the Nucleo LED. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a4e9b6b589e0b7f50c0b326d3c4f29d8c}\label{classsimonSays_1_1simonSays_a4e9b6b589e0b7f50c0b326d3c4f29d8c}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_a4e9b6b589e0b7f50c0b326d3c4f29d8c}{S3\+\_\+\+USER\+\_\+\+TRIAL}} = 3
+\begin{DoxyCompactList}\small\item\em State 3 evaluates a user\textquotesingle{}s attempt at copying the given Morse sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a6ebcc06695775f0079760de7d951bd84}\label{classsimonSays_1_1simonSays_a6ebcc06695775f0079760de7d951bd84}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_a6ebcc06695775f0079760de7d951bd84}{S4\+\_\+\+SUCCESS}} = 4
+\begin{DoxyCompactList}\small\item\em State 4 declares the user successful and updates the game play level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a9770cb4d993db918a06f3776d567ee7a}\label{classsimonSays_1_1simonSays_a9770cb4d993db918a06f3776d567ee7a}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_a9770cb4d993db918a06f3776d567ee7a}{S5\+\_\+\+STANDBY}} = 5
+\begin{DoxyCompactList}\small\item\em State 5 waits for the user to push button to continue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_ae5810a7decf8c018ce0c7bea3bfe89a2}\label{classsimonSays_1_1simonSays_ae5810a7decf8c018ce0c7bea3bfe89a2}} 
+int \mbox{\hyperlink{classsimonSays_1_1simonSays_ae5810a7decf8c018ce0c7bea3bfe89a2}{S6\+\_\+\+FAIL}} = 6
+\begin{DoxyCompactList}\small\item\em State 6 occurs if user fails in copying the LED sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a457737dcef63dec9127fb2ddd53727ca}\label{classsimonSays_1_1simonSays_a457737dcef63dec9127fb2ddd53727ca}} 
+\index{simonSays.simonSays@{simonSays.simonSays}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!simonSays.simonSays@{simonSays.simonSays}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def simon\+Says.\+simon\+Says.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{morse\+\_\+unit = {\ttfamily 1000},  }\item[{}]{error\+\_\+allow = {\ttfamily 1000},  }\item[{}]{DBG\+\_\+flag = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+Initializes parameters/variables of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+\_\+allow} & Time in \mbox{[}ms\mbox{]} of allowed error between user\textquotesingle{}s input and the actual morse sequence \\
+\hline
+{\em morse\+\_\+unit} & Amount of time in \mbox{[}ms\mbox{]} for one base unit used to create morse characters\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a0e60b479a8afbae30f9e8d07fed21723}\label{classsimonSays_1_1simonSays_a0e60b479a8afbae30f9e8d07fed21723}} 
+\index{simonSays.simonSays@{simonSays.simonSays}!onButtonPressFCN@{onButtonPressFCN}}
+\index{onButtonPressFCN@{onButtonPressFCN}!simonSays.simonSays@{simonSays.simonSays}}
+\doxysubsubsection{\texorpdfstring{onButtonPressFCN()}{onButtonPressFCN()}}
+{\footnotesize\ttfamily def simon\+Says.\+simon\+Says.\+on\+Button\+Press\+FCN (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+
+
+Commands Nucleo upon button push. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQ\+\_\+src} & Associated with button interrupt \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsimonSays_1_1simonSays_a8d4fc8f6849ee98ba42172d7e727dd43}\label{classsimonSays_1_1simonSays_a8d4fc8f6849ee98ba42172d7e727dd43}} 
+\index{simonSays.simonSays@{simonSays.simonSays}!buttonPushed@{buttonPushed}}
+\index{buttonPushed@{buttonPushed}!simonSays.simonSays@{simonSays.simonSays}}
+\doxysubsubsection{\texorpdfstring{buttonPushed}{buttonPushed}}
+{\footnotesize\ttfamily simon\+Says.\+simon\+Says.\+button\+Pushed}
+
+
+
+Flag to indicate button has been pushed or released. 
+
+Flag Variable. \mbox{\Hypertarget{classsimonSays_1_1simonSays_a37a4178c4347624beef19e94f7bc19e2}\label{classsimonSays_1_1simonSays_a37a4178c4347624beef19e94f7bc19e2}} 
+\index{simonSays.simonSays@{simonSays.simonSays}!state@{state}}
+\index{state@{state}!simonSays.simonSays@{simonSays.simonSays}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily simon\+Says.\+simon\+Says.\+state}
+
+
+
+The current state of the finite state machine. 
+
+State 6\+: User Fails to Match Sequence.
+
+State 5\+: Standby.
+
+State 4\+: User Successfully Matches Sequence.
+
+State 3\+: User Matches LED Morse Sequence.
+
+State 2\+: Show LED Morse Sequence.
+
+State 1\+: Creating Random Character/\+Phrase.
+
+State 0\+: Initializing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{simonSays_8py}{simon\+Says.\+py}}\end{DoxyCompactItemize}

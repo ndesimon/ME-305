@@ -1,0 +1,154 @@
+\hypertarget{led2test_8py}{}\doxysection{led2test.\+py File Reference}
+\label{led2test_8py}\index{led2test.py@{led2test.py}}
+
+
+Cycles through LED pulse patterns.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{led2test_8py_a834b4fe330dd5c3534a7833597dc3a9d}{led2test.\+on\+Button\+Press\+FCN}} (IRQ\+\_\+src)
+\begin{DoxyCompactList}\small\item\em Commands Nucleo upon button push. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{led2test_8py_ac0636619fdfca758fc0ab3b52392a38a}{led2test.\+square\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs square wave LED pattern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{led2test_8py_a3b9095f3c67d8772bb076572dc43eca6}{led2test.\+sine\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs sine wave LED pattern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{led2test_8py_a55bf37298de52a5250c87a42377dedf0}{led2test.\+saw\+Wave}} (time\+\_\+diff)
+\begin{DoxyCompactList}\small\item\em Runs saw wave LED pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{led2test_8py_a1b31fb8f336ad477cec4107f6773a9b5}\label{led2test_8py_a1b31fb8f336ad477cec4107f6773a9b5}} 
+bool {\bfseries led2test.\+button\+Pushed} = False
+\item 
+\mbox{\Hypertarget{led2test_8py_a27a436e90257f57f6d422c10082802fc}\label{led2test_8py_a27a436e90257f57f6d422c10082802fc}} 
+{\bfseries led2test.\+pin\+C13} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+C13)
+\item 
+\mbox{\Hypertarget{led2test_8py_a9c637e7d2be6a139ab6320e14a8e093f}\label{led2test_8py_a9c637e7d2be6a139ab6320e14a8e093f}} 
+{\bfseries led2test.\+pin\+A5} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+A5)
+\item 
+\mbox{\Hypertarget{led2test_8py_a2c771cbc77ee6a78f6866cbee874a58f}\label{led2test_8py_a2c771cbc77ee6a78f6866cbee874a58f}} 
+{\bfseries led2test.\+tim2} = pyb.\+Timer(2, freq = 20000)
+\item 
+\mbox{\Hypertarget{led2test_8py_a0595b79cf8647422cd3c07c1ac795eba}\label{led2test_8py_a0595b79cf8647422cd3c07c1ac795eba}} 
+{\bfseries led2test.\+t2ch1} = tim2.\+channel(1, pyb.\+Timer.\+PWM, pin=pin\+A5)
+\item 
+{\bfseries led2test.\+Button\+Int}
+\item 
+\mbox{\Hypertarget{led2test_8py_a5dadfd148992875dbc2aeedd244319d8}\label{led2test_8py_a5dadfd148992875dbc2aeedd244319d8}} 
+int \mbox{\hyperlink{led2test_8py_a5dadfd148992875dbc2aeedd244319d8}{led2test.\+state}} = 0
+\begin{DoxyCompactList}\small\item\em The current state of the finite state machine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{led2test_8py_aa81475c942d581e4a78c3238332fcaf2}\label{led2test_8py_aa81475c942d581e4a78c3238332fcaf2}} 
+int \mbox{\hyperlink{led2test_8py_aa81475c942d581e4a78c3238332fcaf2}{led2test.\+time\+\_\+one}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for square wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{led2test_8py_a53e61f2e31d542e22b240a66861d7332}\label{led2test_8py_a53e61f2e31d542e22b240a66861d7332}} 
+int \mbox{\hyperlink{led2test_8py_a53e61f2e31d542e22b240a66861d7332}{led2test.\+time\+\_\+two}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for sine wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{led2test_8py_ab1ac0b238b702b4849c59702811c6fd5}\label{led2test_8py_ab1ac0b238b702b4849c59702811c6fd5}} 
+int \mbox{\hyperlink{led2test_8py_ab1ac0b238b702b4849c59702811c6fd5}{led2test.\+time\+\_\+three}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for saw wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{led2test_8py_adc8de88e489f0535289020eda648a003}\label{led2test_8py_adc8de88e489f0535289020eda648a003}} 
+int \mbox{\hyperlink{led2test_8py_adc8de88e489f0535289020eda648a003}{led2test.\+duty}} = 0
+\begin{DoxyCompactList}\small\item\em Defines duty cycle for the desired waveform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{led2test_8py_af54a5434aadb0fec9e8f3b91345d59b9}\label{led2test_8py_af54a5434aadb0fec9e8f3b91345d59b9}} 
+int \mbox{\hyperlink{led2test_8py_af54a5434aadb0fec9e8f3b91345d59b9}{led2test.\+time\+\_\+diff}} = 0
+\begin{DoxyCompactList}\small\item\em Calculates difference between current time and latest button push. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cycles through LED pulse patterns. 
+
+Implements finite state machine, shown below, and Nucleo blue user button to cycle through LED pulse patterns
+
+
+
+See source code here\+: \href{https://bitbucket.org/ndesimon/me405_labs/src/master/HW\%202/}{\texttt{ https\+://bitbucket.\+org/ndesimon/me405\+\_\+labs/src/master/\+HW\%202/}}
+
+\begin{DoxyAuthor}{Author}
+Nick De Simone 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/4/2021 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+License Info Here 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{led2test_8py_a834b4fe330dd5c3534a7833597dc3a9d}\label{led2test_8py_a834b4fe330dd5c3534a7833597dc3a9d}} 
+\index{led2test.py@{led2test.py}!onButtonPressFCN@{onButtonPressFCN}}
+\index{onButtonPressFCN@{onButtonPressFCN}!led2test.py@{led2test.py}}
+\doxysubsubsection{\texorpdfstring{onButtonPressFCN()}{onButtonPressFCN()}}
+{\footnotesize\ttfamily def led2test.\+on\+Button\+Press\+FCN (\begin{DoxyParamCaption}\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+
+
+Commands Nucleo upon button push. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em IRQ\+\_\+src} & Associated with button interrupt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{led2test_8py_a55bf37298de52a5250c87a42377dedf0}\label{led2test_8py_a55bf37298de52a5250c87a42377dedf0}} 
+\index{led2test.py@{led2test.py}!sawWave@{sawWave}}
+\index{sawWave@{sawWave}!led2test.py@{led2test.py}}
+\doxysubsubsection{\texorpdfstring{sawWave()}{sawWave()}}
+{\footnotesize\ttfamily def led2test.\+saw\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs saw wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{led2test_8py_a3b9095f3c67d8772bb076572dc43eca6}\label{led2test_8py_a3b9095f3c67d8772bb076572dc43eca6}} 
+\index{led2test.py@{led2test.py}!sineWave@{sineWave}}
+\index{sineWave@{sineWave}!led2test.py@{led2test.py}}
+\doxysubsubsection{\texorpdfstring{sineWave()}{sineWave()}}
+{\footnotesize\ttfamily def led2test.\+sine\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs sine wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{led2test_8py_ac0636619fdfca758fc0ab3b52392a38a}\label{led2test_8py_ac0636619fdfca758fc0ab3b52392a38a}} 
+\index{led2test.py@{led2test.py}!squareWave@{squareWave}}
+\index{squareWave@{squareWave}!led2test.py@{led2test.py}}
+\doxysubsubsection{\texorpdfstring{squareWave()}{squareWave()}}
+{\footnotesize\ttfamily def led2test.\+square\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+
+
+Runs square wave LED pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+\_\+diff} & Difference between current time and latest button push \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{led2test_8py_a849fe2e1cbf7b0a596cd7a6672e3720f}\label{led2test_8py_a849fe2e1cbf7b0a596cd7a6672e3720f}} 
+\index{led2test.py@{led2test.py}!ButtonInt@{ButtonInt}}
+\index{ButtonInt@{ButtonInt}!led2test.py@{led2test.py}}
+\doxysubsubsection{\texorpdfstring{ButtonInt}{ButtonInt}}
+{\footnotesize\ttfamily led2test.\+Button\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  pyb.ExtInt(pinC13, mode=pyb.ExtInt.IRQ\_FALLING,}
+\DoxyCodeLine{2                            pull=pyb.Pin.PULL\_NONE, callback=onButtonPressFCN)}
+
+\end{DoxyCode}

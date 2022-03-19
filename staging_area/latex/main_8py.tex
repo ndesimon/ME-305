@@ -1,0 +1,254 @@
+\hypertarget{main_8py}{}\doxysection{main.\+py File Reference}
+\label{main_8py}\index{main.py@{main.py}}
+
+
+Runs all the tasks.  
+
+
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8py_a4f911a1828df7baf0a3e060305223057}\label{main_8py_a4f911a1828df7baf0a3e060305223057}} 
+{\bfseries main.\+duty1} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\item 
+\mbox{\Hypertarget{main_8py_ac52b4d68543efdb75c86ea26b8171085}\label{main_8py_ac52b4d68543efdb75c86ea26b8171085}} 
+{\bfseries main.\+duty2} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\item 
+\mbox{\Hypertarget{main_8py_adc8cada9668df7df70a1dc36bfdf98a9}\label{main_8py_adc8cada9668df7df70a1dc36bfdf98a9}} 
+{\bfseries main.\+cal\+Stat} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}((0,0,0,0))
+\item 
+\mbox{\Hypertarget{main_8py_a2c2202f997d2c638252e50a1d3914fd7}\label{main_8py_a2c2202f997d2c638252e50a1d3914fd7}} 
+{\bfseries main.\+eul\+Ang} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}((0,0,0))
+\item 
+\mbox{\Hypertarget{main_8py_aa1516f3ac36ef5d24a3582306e82f25a}\label{main_8py_aa1516f3ac36ef5d24a3582306e82f25a}} 
+{\bfseries main.\+gyr\+Vel} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}((0,0,0))
+\item 
+\mbox{\hyperlink{main_8py_aefd2609fbac5bb90174f549d6e05a324}{main.\+Kp\+Share}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for Kp for inner loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_ad7f53a667d0b894609415646c1fdfd2b}{main.\+Kd\+Share}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for Kd for inner loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_ad0b8247a732f1d05546f392e69011bd7}{main.\+Ki\+Share}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for Ki for inner loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a7a9fbfafa5aa3dda005234a63f5cc812}{main.\+Kp\+Out}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for Kp for outer loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a28d9d7821c72172fc1eaef303de6eea4}{main.\+Kd\+Out}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for Kd for outer loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_ab539fdd79e7776ec0d98f8fa9ccd37bc}{main.\+Ki\+Out}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for Ki for outer loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a1b5dae3b692788ce856ca301171c8605}{main.\+y\+Share}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for the desired angle for motor 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_aa3e3abc7217c7fc16e223a5be21628f3}{main.\+YSHARE}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)
+\begin{DoxyCompactList}\small\item\em Share variable for the desired angle for motor 2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_adb73a928ab7e7d5796235dbacbbb8183}{main.\+y\+Flag}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)
+\begin{DoxyCompactList}\small\item\em Flag determining whether \textquotesingle{}y\textquotesingle{} or Y has been pressed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a5d33e0fa560043d9a8d6db75b92f85f4}{main.\+w\+Flag}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)
+\begin{DoxyCompactList}\small\item\em Share variable for initiation of closed loop control. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_a3fe7d3dadb4fdfe8e8f7ae173ac13688}{main.\+d\+Flag}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)
+\begin{DoxyCompactList}\small\item\em Share variable for printing the duty cycle 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{main_8py_aa977327d44d5c6c39b883f4014dd8757}{main.\+DFlag}} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)
+\begin{DoxyCompactList}\small\item\em Share variable for printing the duty cycle 2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_a0157511361f60af12b9b1d621cf685ad}\label{main_8py_a0157511361f60af12b9b1d621cf685ad}} 
+{\bfseries main.\+Pos} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}((0,0,0))
+\item 
+\mbox{\Hypertarget{main_8py_ac419acfe375a62b1a9ef10cab6776b31}\label{main_8py_ac419acfe375a62b1a9ef10cab6776b31}} 
+{\bfseries main.\+abf\+Share} = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}((0,0,0,0,0))
+\item 
+\mbox{\Hypertarget{main_8py_a8c6b788401e5193e85faa861047749f4}\label{main_8py_a8c6b788401e5193e85faa861047749f4}} 
+{\bfseries main.\+motor\+\_\+1} = \mbox{\hyperlink{classmotor5_1_1_motor}{motor5.\+Motor}}(3, Pin.\+cpu.\+B4, Pin.\+cpu.\+B5, 1, 2)
+\item 
+\mbox{\Hypertarget{main_8py_ad7ac91a26b464ff7e43c69c29fe5dc2d}\label{main_8py_ad7ac91a26b464ff7e43c69c29fe5dc2d}} 
+{\bfseries main.\+motor\+\_\+2} = \mbox{\hyperlink{classmotor5_1_1_motor}{motor5.\+Motor}}(3, Pin.\+cpu.\+B0, Pin.\+cpu.\+B1, 3, 4)
+\item 
+\mbox{\Hypertarget{main_8py_a459d7b1303a9a02110bf2fd1f8b73d16}\label{main_8py_a459d7b1303a9a02110bf2fd1f8b73d16}} 
+{\bfseries main.\+bno\+\_\+obj} = \mbox{\hyperlink{class_b_n_o055_1_1_b_n_o055}{BNO055.\+BNO055}}()
+\item 
+\mbox{\Hypertarget{main_8py_ac7c6b9fa0f9fb5acda80036a57635dfa}\label{main_8py_ac7c6b9fa0f9fb5acda80036a57635dfa}} 
+{\bfseries main.\+touch} = \mbox{\hyperlink{classtouchpad_1_1_touchpad}{touchpad.\+Touchpad}}(Pin.\+cpu.\+A7, Pin.\+cpu.\+A1, Pin.\+cpu.\+A6, Pin.\+cpu.\+A0, 176, 100)
+\item 
+\mbox{\Hypertarget{main_8py_a674e57b3e3390c92ee31d6f4ff83c03f}\label{main_8py_a674e57b3e3390c92ee31d6f4ff83c03f}} 
+{\bfseries main.\+CLC\+\_\+\+O1} = \mbox{\hyperlink{classclosedloop5_1_1_closed_loop}{closedloop5.\+Closed\+Loop}}(0, 0, 0, y\+Share, 12, -\/12)
+\item 
+\mbox{\Hypertarget{main_8py_a3096d7a6e749c49c04a7a91eae9a39d6}\label{main_8py_a3096d7a6e749c49c04a7a91eae9a39d6}} 
+{\bfseries main.\+CLC\+\_\+\+O2} = \mbox{\hyperlink{classclosedloop5_1_1_closed_loop}{closedloop5.\+Closed\+Loop}}(0, 0, 0, y\+Share, 12, -\/12)
+\item 
+\mbox{\Hypertarget{main_8py_a1e14caed1615d4108321a7d402c8f270}\label{main_8py_a1e14caed1615d4108321a7d402c8f270}} 
+{\bfseries main.\+CLC\+\_\+\+I1} = \mbox{\hyperlink{classclosedloop5_1_1_closed_loop}{closedloop5.\+Closed\+Loop}}(0, 0, 0, y\+Share, 45, -\/45)
+\item 
+\mbox{\Hypertarget{main_8py_a2ebb83cda747dbe9c1d7281feaffc361}\label{main_8py_a2ebb83cda747dbe9c1d7281feaffc361}} 
+{\bfseries main.\+CLC\+\_\+\+I2} = \mbox{\hyperlink{classclosedloop5_1_1_closed_loop}{closedloop5.\+Closed\+Loop}}(0, 0, 0, y\+Share, 45, -\/45)
+\item 
+list \mbox{\hyperlink{main_8py_a37acff9251c443ec14c1f449b6b6a745}{main.\+task\+List}}
+\begin{DoxyCompactList}\small\item\em Creates a list of tasks to be computed simultaneously. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Runs all the tasks. 
+
+~\newline
+
+
+This file runs all the tasks and classes necessary to run the user interface. ~\newline
+ \begin{DoxyVerb}     See source code:
+     https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab2/main.py
+\end{DoxyVerb}
+ \begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03-\/18-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8py_a3fe7d3dadb4fdfe8e8f7ae173ac13688}\label{main_8py_a3fe7d3dadb4fdfe8e8f7ae173ac13688}} 
+\index{main.py@{main.py}!dFlag@{dFlag}}
+\index{dFlag@{dFlag}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{dFlag}{dFlag}}
+{\footnotesize\ttfamily main.\+d\+Flag = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)}
+
+
+
+Share variable for printing the duty cycle 1. 
+
+Communicates that the value of duty cycle motor 1 is desired to be printed \mbox{\Hypertarget{main_8py_aa977327d44d5c6c39b883f4014dd8757}\label{main_8py_aa977327d44d5c6c39b883f4014dd8757}} 
+\index{main.py@{main.py}!DFlag@{DFlag}}
+\index{DFlag@{DFlag}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{DFlag}{DFlag}}
+{\footnotesize\ttfamily main.\+DFlag = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)}
+
+
+
+Share variable for printing the duty cycle 2. 
+
+Communicates that the value of duty cycle motor 2 is desired to be printed \mbox{\Hypertarget{main_8py_a28d9d7821c72172fc1eaef303de6eea4}\label{main_8py_a28d9d7821c72172fc1eaef303de6eea4}} 
+\index{main.py@{main.py}!KdOut@{KdOut}}
+\index{KdOut@{KdOut}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{KdOut}{KdOut}}
+{\footnotesize\ttfamily main.\+Kd\+Out = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for Kd for outer loop. 
+
+Shares user input Kd values to to outer loop control \mbox{\Hypertarget{main_8py_ad7f53a667d0b894609415646c1fdfd2b}\label{main_8py_ad7f53a667d0b894609415646c1fdfd2b}} 
+\index{main.py@{main.py}!KdShare@{KdShare}}
+\index{KdShare@{KdShare}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{KdShare}{KdShare}}
+{\footnotesize\ttfamily main.\+Kd\+Share = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for Kd for inner loop. 
+
+Shares user input Kd values to inner loop control \mbox{\Hypertarget{main_8py_ab539fdd79e7776ec0d98f8fa9ccd37bc}\label{main_8py_ab539fdd79e7776ec0d98f8fa9ccd37bc}} 
+\index{main.py@{main.py}!KiOut@{KiOut}}
+\index{KiOut@{KiOut}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{KiOut}{KiOut}}
+{\footnotesize\ttfamily main.\+Ki\+Out = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for Ki for outer loop. 
+
+Shares user input Ki values to to outer loop control \mbox{\Hypertarget{main_8py_ad0b8247a732f1d05546f392e69011bd7}\label{main_8py_ad0b8247a732f1d05546f392e69011bd7}} 
+\index{main.py@{main.py}!KiShare@{KiShare}}
+\index{KiShare@{KiShare}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{KiShare}{KiShare}}
+{\footnotesize\ttfamily main.\+Ki\+Share = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for Ki for inner loop. 
+
+Shares user input Ki values to to inner loop control \mbox{\Hypertarget{main_8py_a7a9fbfafa5aa3dda005234a63f5cc812}\label{main_8py_a7a9fbfafa5aa3dda005234a63f5cc812}} 
+\index{main.py@{main.py}!KpOut@{KpOut}}
+\index{KpOut@{KpOut}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{KpOut}{KpOut}}
+{\footnotesize\ttfamily main.\+Kp\+Out = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for Kp for outer loop. 
+
+Shares user input Kp values to to outer loop control \mbox{\Hypertarget{main_8py_aefd2609fbac5bb90174f549d6e05a324}\label{main_8py_aefd2609fbac5bb90174f549d6e05a324}} 
+\index{main.py@{main.py}!KpShare@{KpShare}}
+\index{KpShare@{KpShare}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{KpShare}{KpShare}}
+{\footnotesize\ttfamily main.\+Kp\+Share = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for Kp for inner loop. 
+
+Shares user input Kp values to inner loop control \mbox{\Hypertarget{main_8py_a37acff9251c443ec14c1f449b6b6a745}\label{main_8py_a37acff9251c443ec14c1f449b6b6a745}} 
+\index{main.py@{main.py}!taskList@{taskList}}
+\index{taskList@{taskList}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{taskList}{taskList}}
+{\footnotesize\ttfamily list main.\+task\+List}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [UTask5.taskUserFCN (\textcolor{stringliteral}{'Task User'}, 50\_000, eulAng, gyrVel, duty1, duty2, KpShare, KdShare, KiShare, KpOut, KdOut, KiOut, wFlag, dFlag, DFlag, abfShare, yShare, YSHARE, yFlag),}
+\DoxyCodeLine{2                 \textcolor{comment}{\#ETask5.updateFunction ('Task Encoder', 10\_000, zFlag, encData, ENC1, deltaTime, CLC),}}
+\DoxyCodeLine{3                 MTask5.motorFunction (\textcolor{stringliteral}{'Task Motor 1'}, 10\_000, motor\_1, duty1),}
+\DoxyCodeLine{4                 MTask5.motorFunction (\textcolor{stringliteral}{'Task Motor 2'}, 10\_000, motor\_2, duty2),}
+\DoxyCodeLine{5                 \textcolor{comment}{\#STask4.safetyFunction('Task Safety', 10\_000, motor\_drv, cFlag, eFlag),}}
+\DoxyCodeLine{6                 \mbox{\hyperlink{_c_task5_8py_a92687487c4ab685384d0a0acfe412062}{CTask5.loopFunction}}(\textcolor{stringliteral}{'Task Motor Control 1'}, 10\_000, CLC\_O1, CLC\_I1, eulAng, wFlag, KpShare, KdShare, KiShare, KpOut, KdOut, KiOut, duty1, gyrVel, 1, 1, dFlag, DFlag, abfShare, 0, 1, yShare, yFlag),}
+\DoxyCodeLine{7                 \mbox{\hyperlink{_c_task5_8py_a92687487c4ab685384d0a0acfe412062}{CTask5.loopFunction}}(\textcolor{stringliteral}{'Task Motor Control 2'}, 10\_000, CLC\_O2, CLC\_I2, eulAng, wFlag, KpShare, KdShare, KiShare, KpOut, KdOut, KiOut, duty2, gyrVel, 2, 0, dFlag, DFlag, abfShare, 2, 3, YSHARE, yFlag),}
+\DoxyCodeLine{8 \textcolor{comment}{\#                CTask5.loopFunction('Task Inner Loop 1', 10\_000, kFlag, CLC, eulAng, wFlag, KpShare, KdShare, KiShare, yShare, duty1, gyrVel, 1, 1, dFlag),}}
+\DoxyCodeLine{9 \textcolor{comment}{\#                CTask5.loopFunction('Task Inner Loop 2', 10\_000, kFlag, CLC, eulAng, wFlag, KpShare, KdShare, KiShare, yShare, duty2, gyrVel, 2, 0, dFlag),}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11                 \mbox{\hyperlink{_i_m_u_task_8py_a71982cb1650ff1a6146855fc3df5db85}{IMUTask.bnoFunction}}(\textcolor{stringliteral}{'Task IMU'}, 10\_000, calStat, bno\_obj, eulAng, gyrVel),}
+\DoxyCodeLine{12                 \mbox{\hyperlink{_t_task_8py_a295f91f155ec4104e5f38b7fa5c132f5}{TTask.TouchpadFunction}}(\textcolor{stringliteral}{'Task Touchpad'}, 10\_000, Pos, touch, 0.85, 0.005, abfShare)]}
+
+\end{DoxyCode}
+
+
+Creates a list of tasks to be computed simultaneously. 
+
+Contains the tasks that are used to run the User Interface. The tasks run in a cooperative fashion. ~\newline
+ \mbox{\Hypertarget{main_8py_a5d33e0fa560043d9a8d6db75b92f85f4}\label{main_8py_a5d33e0fa560043d9a8d6db75b92f85f4}} 
+\index{main.py@{main.py}!wFlag@{wFlag}}
+\index{wFlag@{wFlag}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{wFlag}{wFlag}}
+{\footnotesize\ttfamily main.\+w\+Flag = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)}
+
+
+
+Share variable for initiation of closed loop control. 
+
+Communicates to other tasks whether user has selected closed loop control of motor. \mbox{\Hypertarget{main_8py_adb73a928ab7e7d5796235dbacbbb8183}\label{main_8py_adb73a928ab7e7d5796235dbacbbb8183}} 
+\index{main.py@{main.py}!yFlag@{yFlag}}
+\index{yFlag@{yFlag}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{yFlag}{yFlag}}
+{\footnotesize\ttfamily main.\+y\+Flag = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(False)}
+
+
+
+Flag determining whether \textquotesingle{}y\textquotesingle{} or Y has been pressed. 
+
+Used for switching between closed loop control determined by location of ball and closed loop control determined by user input \mbox{\Hypertarget{main_8py_a1b5dae3b692788ce856ca301171c8605}\label{main_8py_a1b5dae3b692788ce856ca301171c8605}} 
+\index{main.py@{main.py}!yShare@{yShare}}
+\index{yShare@{yShare}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{yShare}{yShare}}
+{\footnotesize\ttfamily main.\+y\+Share = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for the desired angle for motor 1. 
+
+Allows the user to set the reference angle for motor 1 \mbox{\Hypertarget{main_8py_aa3e3abc7217c7fc16e223a5be21628f3}\label{main_8py_aa3e3abc7217c7fc16e223a5be21628f3}} 
+\index{main.py@{main.py}!YSHARE@{YSHARE}}
+\index{YSHARE@{YSHARE}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{YSHARE}{YSHARE}}
+{\footnotesize\ttfamily main.\+YSHARE = \mbox{\hyperlink{classshares_1_1_share}{shares.\+Share}}(0)}
+
+
+
+Share variable for the desired angle for motor 2. 
+
+Allows the user to set the reference angle for motor 2 

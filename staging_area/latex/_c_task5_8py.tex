@@ -1,0 +1,137 @@
+\hypertarget{_c_task5_8py}{}\doxysection{CTask5.\+py File Reference}
+\label{_c_task5_8py}\index{CTask5.py@{CTask5.py}}
+
+
+Determines actuation for motor control.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_c_task5_8py_a92687487c4ab685384d0a0acfe412062}{CTask5.\+loop\+Function}} (task\+Name, period, CLC\+\_\+\+OUT, CLC\+\_\+\+IN, eul\+Ang, w\+Flag, Kp\+Share, Kd\+Share, Ki\+Share, Kp\+Out, Kd\+Out, Ki\+Out, duty, gyr\+Vel, num\+Eul, num\+Gyr, d\+Flag, DFlag, abf\+Share, pos\+Idx, vel\+Idx, Ref\+Val, y\+Flag)
+\begin{DoxyCompactList}\small\item\em Closed\+Loop function that passes the values for closed loop control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_task5_8py_ab42d78048144ac36fcfb79b385722de6}{CTask5.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_c_task5_8py_afa49ab8d33cb768f8d337f22f4a93045}{CTask5.\+S1\+\_\+\+RUN\+\_\+\+OUTER}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+RUN\+\_\+\+OUTER. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_c_task5_8py_a0b39e9ca08d6a7a91089acea716cd776}{CTask5.\+S2\+\_\+\+RUN\+\_\+\+INNER}} = micropython.\+const (2)
+\begin{DoxyCompactList}\small\item\em Creates a state called S2\+\_\+\+RUN\+\_\+\+INNER. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Determines actuation for motor control. 
+
+This task computes the actuation for motors. It receives desired velocity values from the UTask, measured velocity values from the ETask, and sends the required duty cycle to the MTask. ~\newline
+
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab4/CTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab4/\+CTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03-\/18-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_c_task5_8py_a92687487c4ab685384d0a0acfe412062}\label{_c_task5_8py_a92687487c4ab685384d0a0acfe412062}} 
+\index{CTask5.py@{CTask5.py}!loopFunction@{loopFunction}}
+\index{loopFunction@{loopFunction}!CTask5.py@{CTask5.py}}
+\doxysubsubsection{\texorpdfstring{loopFunction()}{loopFunction()}}
+{\footnotesize\ttfamily def CTask5.\+loop\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{CLC\+\_\+\+OUT,  }\item[{}]{CLC\+\_\+\+IN,  }\item[{}]{eul\+Ang,  }\item[{}]{w\+Flag,  }\item[{}]{Kp\+Share,  }\item[{}]{Kd\+Share,  }\item[{}]{Ki\+Share,  }\item[{}]{Kp\+Out,  }\item[{}]{Kd\+Out,  }\item[{}]{Ki\+Out,  }\item[{}]{duty,  }\item[{}]{gyr\+Vel,  }\item[{}]{num\+Eul,  }\item[{}]{num\+Gyr,  }\item[{}]{d\+Flag,  }\item[{}]{DFlag,  }\item[{}]{abf\+Share,  }\item[{}]{pos\+Idx,  }\item[{}]{vel\+Idx,  }\item[{}]{Ref\+Val,  }\item[{}]{y\+Flag }\end{DoxyParamCaption})}
+
+
+
+Closed\+Loop function that passes the values for closed loop control. 
+
+This function passes the euler angles, angular velocities, gain values, and flags to read and write the values used in closed loop control. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em CLC\+\_\+\+OUT} & A shared parameter that indicates the outer loop reference angle limits. \\
+\hline
+{\em CLC\+\_\+\+IN} & A shared parameter that indicates the inner loop saturation limits. \\
+\hline
+{\em eul\+Ang} & A tuple containing the angular position for x,y,z. \\
+\hline
+{\em w\+Flag} & A shared parameter that indicates if the closed loop control keys have been pressed. \\
+\hline
+{\em Kp\+Share} & A shared parameter that indicates the gain value Kp for the inner loop. \\
+\hline
+{\em Kd\+Share} & A shared parameter that indicates the gain value Kd for the inner loop. \\
+\hline
+{\em Ki\+Share} & A shared parameter that indicates the gain value Ki for the inner loop. \\
+\hline
+{\em Kp\+Out} & A shared parameter that indicates the gain value Kp for the outer loop. \\
+\hline
+{\em Kd\+Out} & A shared parameter that indicates the gain value Kd for the outer loop. \\
+\hline
+{\em Ki\+Out} & A shared parameter that indicates the gain value Ki for the outer loop. \\
+\hline
+{\em duty} & A shared parameter that indicates the value of the duty cycle for the motor. \\
+\hline
+{\em gyr\+Vel} & A tuple the angular velocities for x,y,z. \\
+\hline
+{\em num\+Eul} & An input parameter for angles to determine if we are in the x or y axis for platform. \\
+\hline
+{\em num\+Gyr} & An input parameter for angular velocities to determine if we are in the x or y axis for the platform. \\
+\hline
+{\em d\+Flag} & A shared parameter that indicates if the value for duty cycle of motor 1 are wanted. \\
+\hline
+{\em DFlag} & A shared parameter that indicates if the value for duty cycle of motor 2 are wanted. \\
+\hline
+{\em abfshare} & A shared parameter that indicates the position and velocities of the ball for filtering. \\
+\hline
+{\em pos\+Idx} & An input parameter for the position to determine if we are in the x or y axis for the ball. \\
+\hline
+{\em vel\+Idx} & An input parameter for the velocities to determine if we are in the x or y axis for the ball. \\
+\hline
+{\em Ref\+Val} & A shared parameter that indicates the value of the reference velocity. \\
+\hline
+{\em y\+Flag} & A shared parameter that indicates if the set motor angle control keys have been pressed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_c_task5_8py_ab42d78048144ac36fcfb79b385722de6}\label{_c_task5_8py_ab42d78048144ac36fcfb79b385722de6}} 
+\index{CTask5.py@{CTask5.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!CTask5.py@{CTask5.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily CTask5.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{_c_task5_8py_afa49ab8d33cb768f8d337f22f4a93045}\label{_c_task5_8py_afa49ab8d33cb768f8d337f22f4a93045}} 
+\index{CTask5.py@{CTask5.py}!S1\_RUN\_OUTER@{S1\_RUN\_OUTER}}
+\index{S1\_RUN\_OUTER@{S1\_RUN\_OUTER}!CTask5.py@{CTask5.py}}
+\doxysubsubsection{\texorpdfstring{S1\_RUN\_OUTER}{S1\_RUN\_OUTER}}
+{\footnotesize\ttfamily CTask5.\+S1\+\_\+\+RUN\+\_\+\+OUTER = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+RUN\+\_\+\+OUTER. 
+
+Variable will be the state for running the outer loop \mbox{\Hypertarget{_c_task5_8py_a0b39e9ca08d6a7a91089acea716cd776}\label{_c_task5_8py_a0b39e9ca08d6a7a91089acea716cd776}} 
+\index{CTask5.py@{CTask5.py}!S2\_RUN\_INNER@{S2\_RUN\_INNER}}
+\index{S2\_RUN\_INNER@{S2\_RUN\_INNER}!CTask5.py@{CTask5.py}}
+\doxysubsubsection{\texorpdfstring{S2\_RUN\_INNER}{S2\_RUN\_INNER}}
+{\footnotesize\ttfamily CTask5.\+S2\+\_\+\+RUN\+\_\+\+INNER = micropython.\+const (2)}
+
+
+
+Creates a state called S2\+\_\+\+RUN\+\_\+\+INNER. 
+
+Variable will be the state for running the inner loop 

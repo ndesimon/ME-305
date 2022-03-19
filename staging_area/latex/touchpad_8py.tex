@@ -1,0 +1,50 @@
+\hypertarget{touchpad_8py}{}\doxysection{touchpad.\+py File Reference}
+\label{touchpad_8py}\index{touchpad.py@{touchpad.py}}
+
+
+Interacts with touchpad to determine ball position and velocity.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtouchpad_1_1_touchpad}{touchpad.\+Touchpad}}
+\begin{DoxyCompactList}\small\item\em Contains methods to obtain values from the touchpad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{touchpad_8py_a85999853a0eea2fd1d2e7ebd502e8692}\label{touchpad_8py_a85999853a0eea2fd1d2e7ebd502e8692}} 
+{\bfseries touchpad.\+x} = Touchpad(Pin.\+cpu.\+A7, Pin.\+cpu.\+A1, Pin.\+cpu.\+A6, Pin.\+cpu.\+A0, 176, 100)
+\item 
+\mbox{\Hypertarget{touchpad_8py_a718dbffb32c7d37b78b9e2e106adad0a}\label{touchpad_8py_a718dbffb32c7d37b78b9e2e106adad0a}} 
+int {\bfseries touchpad.\+n} = 0
+\item 
+\mbox{\Hypertarget{touchpad_8py_ae0159570cbc02c5e3b4130b8fb170976}\label{touchpad_8py_ae0159570cbc02c5e3b4130b8fb170976}} 
+{\bfseries touchpad.\+t1} = utime.\+ticks\+\_\+us()
+\item 
+\mbox{\Hypertarget{touchpad_8py_ac11d283408a9a72d639d2521f226bbc8}\label{touchpad_8py_ac11d283408a9a72d639d2521f226bbc8}} 
+{\bfseries touchpad.\+t2} = utime.\+ticks\+\_\+us()
+\item 
+\mbox{\Hypertarget{touchpad_8py_adef878d9bf57babf007f9c95b48a8ada}\label{touchpad_8py_adef878d9bf57babf007f9c95b48a8ada}} 
+int {\bfseries touchpad.\+t} = utime.\+ticks\+\_\+diff(t2, t1)/100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interacts with touchpad to determine ball position and velocity. 
+
+Creates a Touchpad class. Configures the four pins of the panel such that ADC measurements can be read. ~\newline
+
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab2/encoder.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab2/encoder.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03-\/18-\/22 
+\end{DoxyDate}

@@ -1,0 +1,210 @@
+\hypertarget{classclosedloop5_1_1_closed_loop}{}\doxysection{closedloop5.\+Closed\+Loop Class Reference}
+\label{classclosedloop5_1_1_closed_loop}\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+
+
+Enables closed loop control.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_a1eeec9d384920195c34646ac9d9b8064}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Kp, Kd, Ki, setpoint, sathigh, satlow)
+\begin{DoxyCompactList}\small\item\em Creates the initial setup for the closed loop driver. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_af2ed135dc077bb6e3a637b57d2342bfb}{run}} (self, position, velocity, ref, loop, zflag)
+\begin{DoxyCompactList}\small\item\em Computes the actuation signal sent to the motor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_a67d58fd1733d418a589c77374b51ebce}{set\+\_\+\+Gain}} (self, Kp, Kd, Ki)
+\begin{DoxyCompactList}\small\item\em Set the gain for the motor. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_a1fefaee78fe69f04ec4b2dd844ce8d06}{get\+\_\+\+Kp}} (self)
+\begin{DoxyCompactList}\small\item\em Return the value of Kp. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_a01081abceccf08aaeaceb4a00a3f874b}{set\+\_\+\+Reference}} (self, reference)
+\begin{DoxyCompactList}\small\item\em Set the reference veloctiy for the calculations. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_aa3762edb369caa4159237b040e942d52}{get\+\_\+\+Reference}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the reference velocity. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classclosedloop5_1_1_closed_loop_afc536844efcc1da7a7fafa57cd1eda79}{get\+\_\+\+Actuation}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the value for actuation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a6b415416049e8df951b5ec9d7f609d2c}\label{classclosedloop5_1_1_closed_loop_a6b415416049e8df951b5ec9d7f609d2c}} 
+{\bfseries Kp}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_aa2759e0c2d02196338efb34350f3a7d2}\label{classclosedloop5_1_1_closed_loop_aa2759e0c2d02196338efb34350f3a7d2}} 
+{\bfseries Kd}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_ac0d06562585eeca743ae624331ff40e5}\label{classclosedloop5_1_1_closed_loop_ac0d06562585eeca743ae624331ff40e5}} 
+{\bfseries Ki}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a41cb74446602c8400078466192e59da3}\label{classclosedloop5_1_1_closed_loop_a41cb74446602c8400078466192e59da3}} 
+{\bfseries reference}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_adf049c5b02d89087353afda85c9c70dc}\label{classclosedloop5_1_1_closed_loop_adf049c5b02d89087353afda85c9c70dc}} 
+{\bfseries sathigh}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a232d114a828f1c5aa4180492b5f17fb3}\label{classclosedloop5_1_1_closed_loop_a232d114a828f1c5aa4180492b5f17fb3}} 
+{\bfseries satlow}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a822576ac5e6a0b5a0bc7e32091841bb4}\label{classclosedloop5_1_1_closed_loop_a822576ac5e6a0b5a0bc7e32091841bb4}} 
+{\bfseries actuation}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_afbfa87a859b9c6778dba61ec4a3c73f9}\label{classclosedloop5_1_1_closed_loop_afbfa87a859b9c6778dba61ec4a3c73f9}} 
+{\bfseries error}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a041c879b0537c623cdbe25abcb1328cd}\label{classclosedloop5_1_1_closed_loop_a041c879b0537c623cdbe25abcb1328cd}} 
+{\bfseries position\+\_\+sum}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a7318932d7d12581e5d05d5e2df84585e}\label{classclosedloop5_1_1_closed_loop_a7318932d7d12581e5d05d5e2df84585e}} 
+{\bfseries wind\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a7b5d282997250a6a99874de74016b49e}\label{classclosedloop5_1_1_closed_loop_a7b5d282997250a6a99874de74016b49e}} 
+{\bfseries wind\+\_\+neg}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a8bf61a0c6fcce8c07b2ca619268a2389}\label{classclosedloop5_1_1_closed_loop_a8bf61a0c6fcce8c07b2ca619268a2389}} 
+{\bfseries Ti}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a3390adf36c38f535e314d6604505b409}\label{classclosedloop5_1_1_closed_loop_a3390adf36c38f535e314d6604505b409}} 
+{\bfseries Ti\+Ts}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a5fb8ca93d1f147ab0b137bc43ac5f382}\label{classclosedloop5_1_1_closed_loop_a5fb8ca93d1f147ab0b137bc43ac5f382}} 
+{\bfseries position}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a88fdcba1c306df84f4156dc953e09a69}\label{classclosedloop5_1_1_closed_loop_a88fdcba1c306df84f4156dc953e09a69}} 
+{\bfseries vel}
+\item 
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a1ece5e789cd110a06dded0f3019df225}\label{classclosedloop5_1_1_closed_loop_a1ece5e789cd110a06dded0f3019df225}} 
+{\bfseries Ts\+Ti}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Enables closed loop control. 
+
+Uses error to compute the gain necessary for closed loop control 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a1eeec9d384920195c34646ac9d9b8064}\label{classclosedloop5_1_1_closed_loop_a1eeec9d384920195c34646ac9d9b8064}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{Kd,  }\item[{}]{Ki,  }\item[{}]{setpoint,  }\item[{}]{sathigh,  }\item[{}]{satlow }\end{DoxyParamCaption})}
+
+
+
+Creates the initial setup for the closed loop driver. 
+
+Objects of this class should not be instantiated directly. Instead create a Closed Loop object and use that to create Motor objects using the methods within this class. 
+\begin{DoxyParams}{Parameters}
+{\em Kp} & Placeholder for the gain Kp of the motor \\
+\hline
+{\em Kd} & Placeholder for the gain Kd of the motor \\
+\hline
+{\em Ki} & Placeholder for the gain Ki of the motor \\
+\hline
+{\em setpoint} & Placeholder for the reference velocity inputted from y\+Share \\
+\hline
+{\em sathigh} & Placeholder for the maximum saturation value \\
+\hline
+{\em satlow} & Placeholder for the minimum saturation value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_afc536844efcc1da7a7fafa57cd1eda79}\label{classclosedloop5_1_1_closed_loop_afc536844efcc1da7a7fafa57cd1eda79}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!get\_Actuation@{get\_Actuation}}
+\index{get\_Actuation@{get\_Actuation}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Actuation()}{get\_Actuation()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+get\+\_\+\+Actuation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the value for actuation. 
+
+\begin{DoxyReturn}{Returns}
+Gives the actuation value calculated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a1fefaee78fe69f04ec4b2dd844ce8d06}\label{classclosedloop5_1_1_closed_loop_a1fefaee78fe69f04ec4b2dd844ce8d06}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!get\_Kp@{get\_Kp}}
+\index{get\_Kp@{get\_Kp}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Kp()}{get\_Kp()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+get\+\_\+\+Kp (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Return the value of Kp. 
+
+\begin{DoxyReturn}{Returns}
+Gives the proportional gain value Kp 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_aa3762edb369caa4159237b040e942d52}\label{classclosedloop5_1_1_closed_loop_aa3762edb369caa4159237b040e942d52}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!get\_Reference@{get\_Reference}}
+\index{get\_Reference@{get\_Reference}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Reference()}{get\_Reference()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+get\+\_\+\+Reference (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the reference velocity. 
+
+\begin{DoxyReturn}{Returns}
+Gives the value of the reference velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_af2ed135dc077bb6e3a637b57d2342bfb}\label{classclosedloop5_1_1_closed_loop_af2ed135dc077bb6e3a637b57d2342bfb}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!run@{run}}
+\index{run@{run}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position,  }\item[{}]{velocity,  }\item[{}]{ref,  }\item[{}]{loop,  }\item[{}]{zflag }\end{DoxyParamCaption})}
+
+
+
+Computes the actuation signal sent to the motor. 
+
+Based on the position, velocity, and reference measured values from the IMU. 
+\begin{DoxyParams}{Parameters}
+{\em position} & calculates the angular position \\
+\hline
+{\em velocity} & calculates the angular velocity \\
+\hline
+{\em ref} & calculates the reference angle \\
+\hline
+{\em loop} & sets a value for loop to be used as a flag \\
+\hline
+{\em zflag} & sets a value for zflag to be used as a flag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a67d58fd1733d418a589c77374b51ebce}\label{classclosedloop5_1_1_closed_loop_a67d58fd1733d418a589c77374b51ebce}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!set\_Gain@{set\_Gain}}
+\index{set\_Gain@{set\_Gain}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Gain()}{set\_Gain()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+set\+\_\+\+Gain (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{Kp,  }\item[{}]{Kd,  }\item[{}]{Ki }\end{DoxyParamCaption})}
+
+
+
+Set the gain for the motor. 
+
+This method sets the gain to be sent to the motor with the value for Kp or Ki. 
+\begin{DoxyParams}{Parameters}
+{\em Kp} & gain value for proportional control \\
+\hline
+{\em Kd} & gain value for derivative control \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclosedloop5_1_1_closed_loop_a01081abceccf08aaeaceb4a00a3f874b}\label{classclosedloop5_1_1_closed_loop_a01081abceccf08aaeaceb4a00a3f874b}} 
+\index{closedloop5.ClosedLoop@{closedloop5.ClosedLoop}!set\_Reference@{set\_Reference}}
+\index{set\_Reference@{set\_Reference}!closedloop5.ClosedLoop@{closedloop5.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Reference()}{set\_Reference()}}
+{\footnotesize\ttfamily def closedloop5.\+Closed\+Loop.\+set\+\_\+\+Reference (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{reference }\end{DoxyParamCaption})}
+
+
+
+Set the reference veloctiy for the calculations. 
+
+This method sets the reference velocity used for the calculations to find the duty cycle 
+\begin{DoxyParams}{Parameters}
+{\em reference} & velocity passed from the setpoint \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{closedloop5_8py}{closedloop5.\+py}}\end{DoxyCompactItemize}

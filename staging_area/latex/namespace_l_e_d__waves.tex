@@ -1,0 +1,130 @@
+\hypertarget{namespace_l_e_d__waves}{}\doxysection{LED\+\_\+waves Namespace Reference}
+\label{namespace_l_e_d__waves}\index{LED\_waves@{LED\_waves}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_l_e_d__waves_ac34a47e6d17bbf00a11f00d4b14e30c0}{on\+Button\+Press\+FCN}} (IRQ\+\_\+src)
+\item 
+def \mbox{\hyperlink{namespace_l_e_d__waves_aa7547ce337e2e80b97383414e6582337}{square\+Wave}} (\mbox{\hyperlink{namespace_l_e_d__waves_afb036c8f0de4298828126a7711152691}{time\+\_\+diff}})
+\item 
+def \mbox{\hyperlink{namespace_l_e_d__waves_a56ad7839576eea259f7533f411131006}{sine\+Wave}} (\mbox{\hyperlink{namespace_l_e_d__waves_afb036c8f0de4298828126a7711152691}{time\+\_\+diff}})
+\item 
+def \mbox{\hyperlink{namespace_l_e_d__waves_a67523e8218641f4296ed76191010a935}{saw\+Wave}} (\mbox{\hyperlink{namespace_l_e_d__waves_afb036c8f0de4298828126a7711152691}{time\+\_\+diff}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a5586352019554f64cf52c90dd54e940f}\label{namespace_l_e_d__waves_a5586352019554f64cf52c90dd54e940f}} 
+bool {\bfseries button\+Pushed} = False
+\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_aa43aa68fe821020af7b6d42c250ea6d6}\label{namespace_l_e_d__waves_aa43aa68fe821020af7b6d42c250ea6d6}} 
+\mbox{\hyperlink{namespace_l_e_d__waves_aa43aa68fe821020af7b6d42c250ea6d6}{pin\+C13}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+C13)
+\begin{DoxyCompactList}\small\item\em Assign Pin C13 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a8514180ff5198524dc30f9be318fcb71}\label{namespace_l_e_d__waves_a8514180ff5198524dc30f9be318fcb71}} 
+\mbox{\hyperlink{namespace_l_e_d__waves_a8514180ff5198524dc30f9be318fcb71}{pin\+A5}} = pyb.\+Pin (pyb.\+Pin.\+cpu.\+A5)
+\begin{DoxyCompactList}\small\item\em Assign Pin A5 to board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a71593cc09f656e9248c24b8eacdce414}\label{namespace_l_e_d__waves_a71593cc09f656e9248c24b8eacdce414}} 
+\mbox{\hyperlink{namespace_l_e_d__waves_a71593cc09f656e9248c24b8eacdce414}{tim2}} = pyb.\+Timer(2, freq = 20000)
+\begin{DoxyCompactList}\small\item\em Timer for PWM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a461f6c0c58c18e4d87bd0eaa2a4b78e7}\label{namespace_l_e_d__waves_a461f6c0c58c18e4d87bd0eaa2a4b78e7}} 
+\mbox{\hyperlink{namespace_l_e_d__waves_a461f6c0c58c18e4d87bd0eaa2a4b78e7}{t2ch1}} = tim2.\+channel(1, pyb.\+Timer.\+PWM, pin=\mbox{\hyperlink{namespace_l_e_d__waves_a8514180ff5198524dc30f9be318fcb71}{pin\+A5}})
+\begin{DoxyCompactList}\small\item\em Pulse Width Modulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_l_e_d__waves_a8eb0f16f5ee3c10c0298fd1930073ae4}{Button\+Int}}
+\begin{DoxyCompactList}\small\item\em External interrupt associated with button callback function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_ae9f3ab5883b6c0a1c9e49dbaab7dd1b3}\label{namespace_l_e_d__waves_ae9f3ab5883b6c0a1c9e49dbaab7dd1b3}} 
+int \mbox{\hyperlink{namespace_l_e_d__waves_ae9f3ab5883b6c0a1c9e49dbaab7dd1b3}{state}} = 0
+\begin{DoxyCompactList}\small\item\em The current state of the finite state machine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a1f17aa72cf90d8320e834f909aeb5f45}\label{namespace_l_e_d__waves_a1f17aa72cf90d8320e834f909aeb5f45}} 
+int \mbox{\hyperlink{namespace_l_e_d__waves_a1f17aa72cf90d8320e834f909aeb5f45}{time\+\_\+one}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for square wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a9fc56dd165a0227144974636bae2944e}\label{namespace_l_e_d__waves_a9fc56dd165a0227144974636bae2944e}} 
+int \mbox{\hyperlink{namespace_l_e_d__waves_a9fc56dd165a0227144974636bae2944e}{time\+\_\+two}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for sine wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a6f0608c1ae90fd8b43328c035391396f}\label{namespace_l_e_d__waves_a6f0608c1ae90fd8b43328c035391396f}} 
+int \mbox{\hyperlink{namespace_l_e_d__waves_a6f0608c1ae90fd8b43328c035391396f}{time\+\_\+three}} = 0
+\begin{DoxyCompactList}\small\item\em Stores time at which button is pushed for saw wave. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_a175276c80c0cde998728baf387404291}\label{namespace_l_e_d__waves_a175276c80c0cde998728baf387404291}} 
+int \mbox{\hyperlink{namespace_l_e_d__waves_a175276c80c0cde998728baf387404291}{duty}} = 0
+\begin{DoxyCompactList}\small\item\em Defines duty cycle for the desired waveform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_l_e_d__waves_afb036c8f0de4298828126a7711152691}\label{namespace_l_e_d__waves_afb036c8f0de4298828126a7711152691}} 
+int \mbox{\hyperlink{namespace_l_e_d__waves_afb036c8f0de4298828126a7711152691}{time\+\_\+diff}} = 0
+\begin{DoxyCompactList}\small\item\em Calculates difference between current time and latest button push. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file LED_waves.py
+@brief   Cycles through LED pulse patterns
+@details Implements finite state machine, shown below, and Nucleo blue user 
+         button to cycle through LED pulse patterns
+         
+         @image html led_fsm.png
+            
+         See source code here: 
+             https://bitbucket.org/ndesimon/me405_labs/src/master/Lab%202/
+             
+         See short demonstration video here:
+             https://drive.google.com/file/d/1gsICIg6rI42QG8VJxdCG4akqodxdDdyq/view?usp=sharing
+            
+             
+@author Nick De Simone
+@date   2/4/2021
+@copyright License Info Here
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_l_e_d__waves_ac34a47e6d17bbf00a11f00d4b14e30c0}\label{namespace_l_e_d__waves_ac34a47e6d17bbf00a11f00d4b14e30c0}} 
+\index{LED\_waves@{LED\_waves}!onButtonPressFCN@{onButtonPressFCN}}
+\index{onButtonPressFCN@{onButtonPressFCN}!LED\_waves@{LED\_waves}}
+\doxysubsubsection{\texorpdfstring{onButtonPressFCN()}{onButtonPressFCN()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+on\+Button\+Press\+FCN (\begin{DoxyParamCaption}\item[{}]{IRQ\+\_\+src }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Commands Nucleo upon button push
+   @param IRQ_src Associated with button interrupt 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d__waves_a67523e8218641f4296ed76191010a935}\label{namespace_l_e_d__waves_a67523e8218641f4296ed76191010a935}} 
+\index{LED\_waves@{LED\_waves}!sawWave@{sawWave}}
+\index{sawWave@{sawWave}!LED\_waves@{LED\_waves}}
+\doxysubsubsection{\texorpdfstring{sawWave()}{sawWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+saw\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Runs saw wave LED pattern
+   @param time_diff Difference between current time and latest button push
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d__waves_a56ad7839576eea259f7533f411131006}\label{namespace_l_e_d__waves_a56ad7839576eea259f7533f411131006}} 
+\index{LED\_waves@{LED\_waves}!sineWave@{sineWave}}
+\index{sineWave@{sineWave}!LED\_waves@{LED\_waves}}
+\doxysubsubsection{\texorpdfstring{sineWave()}{sineWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+sine\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Runs sine wave LED pattern
+   @param time_diff Difference between current time and latest button push
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespace_l_e_d__waves_aa7547ce337e2e80b97383414e6582337}\label{namespace_l_e_d__waves_aa7547ce337e2e80b97383414e6582337}} 
+\index{LED\_waves@{LED\_waves}!squareWave@{squareWave}}
+\index{squareWave@{squareWave}!LED\_waves@{LED\_waves}}
+\doxysubsubsection{\texorpdfstring{squareWave()}{squareWave()}}
+{\footnotesize\ttfamily def LED\+\_\+waves.\+square\+Wave (\begin{DoxyParamCaption}\item[{}]{time\+\_\+diff }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Runs square wave LED pattern
+   @param time_diff Difference between current time and latest button push
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_l_e_d__waves_a8eb0f16f5ee3c10c0298fd1930073ae4}\label{namespace_l_e_d__waves_a8eb0f16f5ee3c10c0298fd1930073ae4}} 
+\index{LED\_waves@{LED\_waves}!ButtonInt@{ButtonInt}}
+\index{ButtonInt@{ButtonInt}!LED\_waves@{LED\_waves}}
+\doxysubsubsection{\texorpdfstring{ButtonInt}{ButtonInt}}
+{\footnotesize\ttfamily LED\+\_\+waves.\+Button\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  pyb.ExtInt(pinC13, mode=pyb.ExtInt.IRQ\_FALLING,}
+\DoxyCodeLine{2                            pull=pyb.Pin.PULL\_NONE, callback=onButtonPressFCN)}
+
+\end{DoxyCode}
+
+
+External interrupt associated with button callback function. 
+

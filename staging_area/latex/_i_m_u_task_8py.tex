@@ -1,0 +1,119 @@
+\hypertarget{_i_m_u_task_8py}{}\doxysection{IMUTask.\+py File Reference}
+\label{_i_m_u_task_8py}\index{IMUTask.py@{IMUTask.py}}
+
+
+Determines the measurements from the IMU.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{_i_m_u_task_8py_a71982cb1650ff1a6146855fc3df5db85}{IMUTask.\+bno\+Function}} (task\+Name, period, cal\+Stat, bno\+\_\+obj, eul\+Ang, gyr\+Vel)
+\begin{DoxyCompactList}\small\item\em BNO function that passes the calibration, euler angles, and angular velocities. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{_i_m_u_task_8py_a5250e95d2ab4913e8af4b950d366a239}{IMUTask.\+cal\+Info}} ()
+\item 
+def \mbox{\hyperlink{_i_m_u_task_8py_ab94be82619f8adc66716f98a23ea08e2}{IMUTask.\+get\+Ready}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_i_m_u_task_8py_abf910e534c2c10c2443513731dea2c0a}{IMUTask.\+S0\+\_\+\+INIT}} = micropython.\+const(0)
+\begin{DoxyCompactList}\small\item\em Creates a state called S0\+\_\+\+INIT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_i_m_u_task_8py_a606b47d0b06f92ee82a5e66719c62927}{IMUTask.\+S1\+\_\+\+RUN}} = micropython.\+const (1)
+\begin{DoxyCompactList}\small\item\em Creates a state called S1\+\_\+\+RUN. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_i_m_u_task_8py_af61519baabc432c687fb6dbf14bfd092}\label{_i_m_u_task_8py_af61519baabc432c687fb6dbf14bfd092}} 
+{\bfseries IMUTask.\+S2\+\_\+\+CALIB} = micropython.\+const (2)
+\item 
+\mbox{\Hypertarget{_i_m_u_task_8py_a0b875330a6d09d9483053c8a8ea310e6}\label{_i_m_u_task_8py_a0b875330a6d09d9483053c8a8ea310e6}} 
+{\bfseries IMUTask.\+S3\+\_\+\+SAVE\+\_\+\+CAL\+\_\+\+COEFFS} = micropython.\+const (3)
+\item 
+\mbox{\Hypertarget{_i_m_u_task_8py_aa16dffa22acc65030cb48adc1c387116}\label{_i_m_u_task_8py_aa16dffa22acc65030cb48adc1c387116}} 
+{\bfseries IMUTask.\+S4\+\_\+\+WRITE\+\_\+\+CAL\+\_\+\+COEFFS} = micropython.\+const (4)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Determines the measurements from the IMU. 
+
+This task obtains the measurements from the IMU to calculate the calibration coefficients, euler angles and angular velocity. Fills these values into buffers to be calculated in the BNO055 driver class.
+
+See source code\+: \href{https://bitbucket.org/bbartl01/mechatronics-labs/src/master/Lab4/CTask.py}{\texttt{ https\+://bitbucket.\+org/bbartl01/mechatronics-\/labs/src/master/\+Lab4/\+CTask.\+py}}
+
+\begin{DoxyAuthor}{Author}
+Baxter Bartlett 
+
+Nick De\+Simone 
+
+Miles Ibarra 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03-\/03-\/22 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_i_m_u_task_8py_a71982cb1650ff1a6146855fc3df5db85}\label{_i_m_u_task_8py_a71982cb1650ff1a6146855fc3df5db85}} 
+\index{IMUTask.py@{IMUTask.py}!bnoFunction@{bnoFunction}}
+\index{bnoFunction@{bnoFunction}!IMUTask.py@{IMUTask.py}}
+\doxysubsubsection{\texorpdfstring{bnoFunction()}{bnoFunction()}}
+{\footnotesize\ttfamily def IMUTask.\+bno\+Function (\begin{DoxyParamCaption}\item[{}]{task\+Name,  }\item[{}]{period,  }\item[{}]{cal\+Stat,  }\item[{}]{bno\+\_\+obj,  }\item[{}]{eul\+Ang,  }\item[{}]{gyr\+Vel }\end{DoxyParamCaption})}
+
+
+
+BNO function that passes the calibration, euler angles, and angular velocities. 
+
+This function passes the values of calibration coeffiecients, euler angles, and angular velocities to the method of set\+\_\+cal\+\_\+coeff. 
+\begin{DoxyParams}{Parameters}
+{\em task\+Name} & Names the task so that multiple tasks can be run simultaneously. \\
+\hline
+{\em period} & Passes in the period at which the code is run. \\
+\hline
+{\em cal\+Stat} & A tuple containing mag, accel, gyro, and system values \\
+\hline
+{\em bno\+\_\+obj} & Passes in an object of the BNO055 driver \\
+\hline
+{\em eul\+Ang} & A shared parameter that contains the euler angles \\
+\hline
+{\em gyr\+Vel} & A shared parameter that contains the angular velocities \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_i_m_u_task_8py_a5250e95d2ab4913e8af4b950d366a239}\label{_i_m_u_task_8py_a5250e95d2ab4913e8af4b950d366a239}} 
+\index{IMUTask.py@{IMUTask.py}!calInfo@{calInfo}}
+\index{calInfo@{calInfo}!IMUTask.py@{IMUTask.py}}
+\doxysubsubsection{\texorpdfstring{calInfo()}{calInfo()}}
+{\footnotesize\ttfamily def IMUTask.\+cal\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Prints IMU calibration instructions
+@details Prints three strings in a 3 second interval in order to inform the user\end{DoxyVerb}
+ \mbox{\Hypertarget{_i_m_u_task_8py_ab94be82619f8adc66716f98a23ea08e2}\label{_i_m_u_task_8py_ab94be82619f8adc66716f98a23ea08e2}} 
+\index{IMUTask.py@{IMUTask.py}!getReady@{getReady}}
+\index{getReady@{getReady}!IMUTask.py@{IMUTask.py}}
+\doxysubsubsection{\texorpdfstring{getReady()}{getReady()}}
+{\footnotesize\ttfamily def IMUTask.\+get\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Gives three ready statements as a buffer before calibration
+@details Prints three strings in a 3 second interval in order to inform the user\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_i_m_u_task_8py_abf910e534c2c10c2443513731dea2c0a}\label{_i_m_u_task_8py_abf910e534c2c10c2443513731dea2c0a}} 
+\index{IMUTask.py@{IMUTask.py}!S0\_INIT@{S0\_INIT}}
+\index{S0\_INIT@{S0\_INIT}!IMUTask.py@{IMUTask.py}}
+\doxysubsubsection{\texorpdfstring{S0\_INIT}{S0\_INIT}}
+{\footnotesize\ttfamily IMUTask.\+S0\+\_\+\+INIT = micropython.\+const(0)}
+
+
+
+Creates a state called S0\+\_\+\+INIT. 
+
+Variable will be the state 0 for starting the program \mbox{\Hypertarget{_i_m_u_task_8py_a606b47d0b06f92ee82a5e66719c62927}\label{_i_m_u_task_8py_a606b47d0b06f92ee82a5e66719c62927}} 
+\index{IMUTask.py@{IMUTask.py}!S1\_RUN@{S1\_RUN}}
+\index{S1\_RUN@{S1\_RUN}!IMUTask.py@{IMUTask.py}}
+\doxysubsubsection{\texorpdfstring{S1\_RUN}{S1\_RUN}}
+{\footnotesize\ttfamily IMUTask.\+S1\+\_\+\+RUN = micropython.\+const (1)}
+
+
+
+Creates a state called S1\+\_\+\+RUN. 
+
+Variable will be the state 1 for reading and wriing values 
